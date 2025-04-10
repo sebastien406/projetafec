@@ -4,57 +4,116 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Canirando</title>
-	<meta name="description" content="" />
+	<meta name="description" content="site de randonne canine" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link id="main-css" rel="stylesheet" href="dist/css/theme.css" />
+	<link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 <body>
 	<header>
-		<div class="">
-			<img src="images/logo bulma.jpg" alt="joli chien avec une laisse dans la gueule"
-				style="height: 150px; width: 200px;border-radius: 90px;">
-				<p><a href="Canirando">Canirando</a></p>
-				<p><a href="Mon compte">Mon compte</a></p>
-				<div class="">
-			<img src="images/profil.webp" alt="icon tete de chien pour le profil du compte"
-			    style="height: 40px; width: 50px;border-radius: 90px;">
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo bulma.jpg" alt="joli chien avec une laisse dans la gueule"
+					style="height: 70px; width: 80px;border-radius: 90px;">
+			</div>
+			<div class="icon">
+				<div class="icon-profil">
+					<img src="images/iconprofil.png" alt="icon de mon profil" srcset="">
 				</div>
-				<div class="">
-					<a href="https://www.instagram.com/"><img src="images/insta.webp" alt="logo instagram"
-						style="height: 40px; width: 50px;border-radius: 90px;"></a>
+				<div class="icon-groupe">
+					<img src="images/iconprofilgroupe.png" alt="icon deprofil pour le groupe" srcset="">
 				</div>
-				<div class="">
-					<a href="https://www.facebook.com/?locale=fr_FR"><img src="images/facebook.png" alt="logo facebook"
-				style="height: 40px; width: 50px;border-radius: 90px;"></a>
-				</div>
+			</div>
+			<div class="nom-du-site">
+				<h1>CANIRANDO</h1>
+			</div>
+		</div>
 		</div>
 	</header>
+	<section class="recherche">
+		<div class="barre-de-recherche">
+			<div class="button-recherche">
+				<input class="input" type="search" name="button">
+			</div>
+			<div class="loupe">
+				<img src="images/loupe.png" alt="loupe">
+			</div>
+			<div class="burger">
+				<img src="images/burger.png" alt="menu burger">
+			</div>
+		</div>
+	</section>
 
 	<section>
-		<div class="">
-			<h1>Idée de rando autour de chez moi</h1>
+		<div class="button-select">
+			<button class="button" type="button">A proximité</button>
+			<button class="button" type="button">Campagne</button>
+			<button class="button" type="button">Forêt</button>
+			<button class="button" type="button">Montagne</button>
+			<button class="button" type="button">Océan</button>
 		</div>
-		<div class="">
-			<img src="images/rando campagne.jpg" alt=" rando a la campagne">
-		
-			<img src="images/rando montagne.jpg" alt=" rando a la montagne">
-			
-			<img src="images/rando océan.jpg" alt="rando au bord de l'océan">
-		</div>
-		<div class=""><br>
-			<p>Périmètre de recherche<img src="images/Arrow 1.jpg" alt=" flèche"></p>
-		</div>
-		<div class><br>
-			<img src="images/maps accueil.jpg" alt="une carte avec des pattes de chiens">
-		</div>
-		<div class><br>
-			<h2>Groupes de randonneurs autour de chez moi</h2>
-			<img src="images/groupes randonneurs.jpg" alt="groupes de randonneurs">
-
-		</div>
-		
+		<section class="randonnees">
+			<div class="rando">
+				<div class="images">
+					<img src="images/rando campagne.jpg" alt=" rando a la campagne" ">
+				</div>
+				<div class="titre-rando">
+					<h2>La casse patte</h2>
+				</div>
+				<div class="lieu-rando">
+					<p>Pyrénées-Atlantiques, Ibardin</p>
+				</div>
+				<div class="info-rando">
+					<img src="images/icon chien.png" alt="icon de chien" srcset="">
+					<p>Facile-24km-1h</p>
+				</div>
+			</div>
+		</section>
 	</section>
+	<section class="randonnees">
+		<div class="rando">
+			<div class="images">
+				<img src="images/rando montagne.jpg" alt=" rando a la campagne" ">
+			</div>
+			<div class="titre-rando">
+				<h2>La casse patte</h2>
+			</div>
+			<div class="lieu-rando">
+				<p>Pyrénées-Atlantiques, Ibardin</p>
+			</div>
+			<div class="info-rando">
+				<img src="images/icon chien.png" alt="icon de chien" srcset="">
+				<p>Facile-24km-1h</p>
+			</div>
+		</div>
+	</section>
+</section>
+<section class="randonnees">
+	<div class="rando">
+		<div class="images">
+			<img src="images/rando océan.jpg" alt=" rando a la campagne" ">
+		</div>
+		<div class="titre-rando">
+			<h2>La casse patte</h2>
+		</div>
+		<div class="lieu-rando">
+			<p>Pyrénées-Atlantiques, Ibardin</p>
+		</div>
+		<div class="info-rando">
+			<img src="images/icon chien.png" alt="icon de chien" srcset="">
+			<p>Facile-24km-1h</p>
+		</div>
+	</div>
+</section>
+<div class="">
+	<img src="images/rando campagne.jpg" alt=" rando a la campagne">
+
+	<img src="images/rando montagne.jpg" alt=" rando a la montagne">
+
+	<img src="images/rando océan.jpg" alt="rando au bord de l'océan">
+</div>
+</section>
 
 	<script defer src="dist/js/theme.js"></script>
 </body>
