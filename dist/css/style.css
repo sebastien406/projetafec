@@ -67,16 +67,24 @@ margin-top: -45px;
     border-radius: 10%;
     margin-left: 110px;
     margin-right: 110px;
+    box-shadow:0px 5px 5px black;
 }
 .rando{
     margin-top: 5%;
     border-radius: 10px;
+    /* overflow: hidden; */
+}
+.images{
+    animation: rando 10s infinite ease-in-out;
+    display: flex;
 }
 .images img{
-    width:100%;
+    flex-shrink: 0;
+    max-width:100%;
     border-radius: 10px;
     box-shadow:0px 5px 5px black;
     border: solid 1px;
+    margin: 10px;
 }
 .titre-rando{
     display: flex;
@@ -84,8 +92,41 @@ margin-top: -45px;
     margin-bottom: 5%;
     margin-top: 5%;
 }
+.lieu-rando{
+    display: flex;
+    justify-content: center;
+}
 .info-rando{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* 
+   5% par transition, nombre choisi arbitrairement.
+
+   reste divisé par nb de pauses
+   80(%) / 4 = 20(%) par pause
+*/
+
+@keyframes rando {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+} 
