@@ -72,7 +72,7 @@ margin-top: -45px;
 .rando{
     margin-top: 5%;
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .images{
     animation: rando 10s infinite ease-in-out;
