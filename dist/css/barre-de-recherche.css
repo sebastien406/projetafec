@@ -1,0 +1,25 @@
+.recherche{
+    display: flex;
+    justify-content: center
+}
+
+.icon-recherche{
+    display: flex;
+
+}
+.input{
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 10%;
+    background-color: #e2e3e1;
+    box-shadow: 10px 5px 5px black;
+}
+.loupe{
+margin-top: -39px;
+margin-left: 10px;
+}
+.burger{
+margin-left: 240px;
+margin-top: -45px;
+}

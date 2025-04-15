@@ -1,0 +1,6 @@
+.button-select{
+    display: flex;
+    gap: 10%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
