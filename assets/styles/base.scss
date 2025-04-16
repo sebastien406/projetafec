@@ -1,7 +1,28 @@
-@use 'elements/reset';
-@use 'elements/document';
+@import 'elements/reset';
 
-@use 'settings/config.colors';
+// Settings
+@import 'settings/config.colors';
+@import 'settings/config.variables';
+@import 'settings/config.breakpoints';
 
-@use 'components/sections';
+// Document
+@import 'elements/document';
+
+
+// Layout
+@import 'layout/header';
+
+// Components
+@import 'components/searchbar';
+@import 'components/container';
+@import 'components/links';
+
+// Custom pages
+@import 'pages/home';
+@import 'pages/rando';
+
+
+// Shame : Css à trier
+@import 'shame';
+
 

@@ -9,7 +9,7 @@
       "scss-lint": "stylelint \"**/*.scss\" --formatter verbose",
       "scss-fix": "stylelint \"**/*.scss\" --fix"
     },
-    "author": "Touchet Laurent",
+    "author": "Sébastien",
     "license": "",
     "devDependencies": {
       "@fullhuman/postcss-purgecss": "^7.0.2",

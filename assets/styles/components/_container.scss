@@ -1,0 +1,74 @@
+body.has-overlay:before {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+body.has-modal-open {
+  max-height: 100vh;
+  overflow: hidden; /* empeche le scroll */
+  width: 100%;
+}
+
+body.has-modal-open .box-container {
+  margin: 0 30px;
+  position: relative;
+  height: 100vh;
+}
+
+body.has-modal-open .box-wrapper {
+  z-index: 3;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box {
+  display: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: var(--border-radius-large);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 800px;
+}
+
+body.has-modal-open .box {
+  display: block;
+}
+
+body.has-modal-open .box-title {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+body.has-modal-open .box-content {
+  display: flex;
+  justify-content: center;
+  outline: none;
+  padding: 40px;
+  gap: 20px;
+}
