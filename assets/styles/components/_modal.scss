@@ -38,7 +38,7 @@ body.has-modal-open .box-wrapper {
 .box {
   display: none;
   background-color: rgb(255, 255, 255);
-  border-radius: var(--border-radius-large);
+  border-radius: var($border-radius-large);
   position: absolute;
   top: 0;
   left: 0;

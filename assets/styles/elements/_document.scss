@@ -5,7 +5,6 @@ html {
 :root {
     --font-size-base: 18px;
     --line-height-base: 1.5;
-    --text-color: #222;
 
     @media (max-width: $media-phone) {
         --font-size-base: 15px;
@@ -13,7 +12,7 @@ html {
 }
 body {
     background-color:#ffffff;
-    color: var(--text-color);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
+    color:  var(--text-color);
+    font-size:var(--font-size-base);
+    line-height:var(--line-height-base);
 }

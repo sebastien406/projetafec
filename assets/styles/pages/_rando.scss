@@ -1,0 +1,16 @@
+
+.images{
+display: flex;
+overflow-x: auto;
+
+}
+
+.images img{
+    min-width: 430px;
+}
+.info-rando-complete{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    padding: var(--padding-xs);
+}

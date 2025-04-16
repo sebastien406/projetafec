@@ -38,7 +38,7 @@ body.has-modal-open .box-wrapper {
 .box {
   display: none;
   background-color: rgb(255, 255, 255);
-  border-radius: var(--border-radius-large);
+  border-radius:var(--border-radius-sm);
   position: absolute;
   top: 0;
   left: 0;
@@ -60,7 +60,7 @@ body.has-modal-open .box-title {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  font-family: var(--font-family);
+  font-family:  var(--font-family);
   text-transform: uppercase;
   font-size: 24px;
 }
