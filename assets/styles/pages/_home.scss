@@ -56,7 +56,11 @@
 #maps {
   display: flex;
   justify-content: end;
-  width: 150px;
-  height: 150px;
-  margin-top: -70px;
+  width: 120px;
+  height: 100px;
+  margin-top: -50px;
+  margin-right: 30px;
+  border-radius:var(--border-radius-sm);
+  box-shadow: var(--shadow-box);
+  margin-bottom: 20px;
 }
