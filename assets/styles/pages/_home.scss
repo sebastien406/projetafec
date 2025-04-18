@@ -1,10 +1,11 @@
 .randonnees {
-  background: linear-gradient(#EFE3C2,#85A947);
+  background:linear-gradient(#deeb2b,#94d12b);
   display: flex;
   justify-content: center;
   border-radius: 10%;
   margin: 10px 10px 30px 10px;
   text-decoration: none;
+  box-shadow: var(--shadow-box);
   a{
     text-decoration: none;
   }
@@ -13,6 +14,7 @@
 .rando {
   border-radius: 10px;
   overflow: hidden;
+
 }
 .titre-rando {
  text-align: start;
@@ -56,9 +58,9 @@
 #maps {
   display: flex;
   justify-content: end;
-  width: 120px;
-  height: 100px;
-  margin-top: -50px;
+  width: 80px;
+  height: 70px;
+  margin-top: -30px;
   margin-right: 30px;
   border-radius:var(--border-radius-sm);
   box-shadow: var(--shadow-box);

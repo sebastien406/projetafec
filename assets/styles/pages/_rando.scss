@@ -5,13 +5,20 @@ overflow-x: auto;
 
 }
 
+
 .images img{
     min-width: 430px;
-
+    max-height: 300px;
+    position: relative;
 }
 .info-rando-complete{
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    transform: translate(0%,-20%);
     padding: 50px;
-    border-radius: var(--border-radius-lg);
+ 
+    border-radius: 50px;
     margin: -30px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -19,14 +26,13 @@ overflow-x: auto;
     // font-weight: bold;
 }
  .titre-rando{
-    margin-top: 20px;
+    
     font-weight: bold;
  }
  .info{
     margin-top: 20px;
     padding-top: 20px;
     border-top: solid 1px #85A947;
-    width: 80%;
 
     h2{
         font-size: var(--font-h2);
@@ -34,15 +40,14 @@ overflow-x: auto;
     }
 }   
 .indication{
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        justify-items: center;
+        display: flex;
+       flex-direction: row;
+       justify-content: space-around;
 }
 .description{
     margin-top: 20px;
     padding-top: 20px;
     border-top: solid 1px #85A947;
-    width: 80%;
     display: flex;
     flex-direction: column;
 
@@ -60,7 +65,7 @@ overflow-x: auto;
    
     padding: 20px;
     border-radius: var(--border-radius-lg) ;
-    background-color: #85A947;
+    background:linear-gradient(#deeb2b,#94d12b);
     text-decoration: none;
     margin: 20px;
     box-shadow: var(  --shadow-box);
@@ -77,16 +82,53 @@ overflow-x: auto;
     margin-top: 20px;
     padding-top: 20px;
     border-top: solid 1px #85A947;
-    width: 80%;
     h2{
         font-size: var(--font-h2);
         padding-bottom: 20px;   
     }
 }
 .jour{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   display:flex;
+   flex-direction: row;
+   gap: 40px;
+   font-weight: bold;
 }
+.indications{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+.gif-meteo{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.taille {
+    height: 50px;
 
-
+    img{
+height: 100%;
+object-fit: fill;
+}
+}
+.indications-plus{
+   display: flex;
+   h3{
+    font-weight: bold;
+    font-size: var(--font-size);
+   }
+}
+.indications-plus-info{
+   justify-items: center;
+p{
+   text-align: center;
+}
+  }
+  .avis{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: solid 1px #85A947;
+    h2{
+        font-size: var(--font-h2);
+    }
+  }
