@@ -4,6 +4,10 @@ display: flex;
 overflow-x: auto;
 
 }
+.relief{
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(  --shadow-box);
+}
 
 
 .images img{
@@ -14,7 +18,7 @@ overflow-x: auto;
 .info-rando-complete{
     position: absolute;
     left: 0%;
-    top: 90%;
+    top: 100%;
     transform: translate(0%,-20%);
     padding: 50px;
  
@@ -23,7 +27,6 @@ overflow-x: auto;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: var(--font-size);
-    // font-weight: bold;
 }
  .titre-rando{
     
@@ -43,10 +46,14 @@ overflow-x: auto;
         display: flex;
        flex-direction: row;
        justify-content: space-around;
+        span{
+            font-weight: bold;
+        }
+       
 }
 .description{
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 15%;
+    padding-top: 10%;
     border-top: solid 1px #85A947;
     display: flex;
     flex-direction: column;
@@ -71,6 +78,8 @@ overflow-x: auto;
     box-shadow: var(  --shadow-box);
 }
 .maps-rando{
+    border-bottom: solid 1px #85A947;
+    padding-bottom: 10%;
     
     img{
         width: 100%;
@@ -79,9 +88,10 @@ overflow-x: auto;
     }
 }
 .meteo{
-    margin-top: 20px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(  --shadow-box);
+    margin-top: 10%;
     padding-top: 20px;
-    border-top: solid 1px #85A947;
     h2{
         font-size: var(--font-h2);
         padding-bottom: 20px;   
@@ -125,10 +135,29 @@ p{
 }
   }
   .avis{
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 15%;
+    padding-top: 10%;
     border-top: solid 1px #85A947;
     h2{
         font-size: var(--font-h2);
     }
   }
+  .text-avis{
+    border-radius: var(--border-radius-lg);
+    background:linear-gradient(#deeb2b,#94d12b);
+    margin-top: 10%;
+    padding: 10%;
+    box-shadow: var(--shadow-box);
+    .avis-utilisateur{
+        margin: 5%;
+        h2{
+            font-size: var(--font-h2);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+  }
+.avis-utilisateur-note{
+    font-size: var(--font-size);
+}
