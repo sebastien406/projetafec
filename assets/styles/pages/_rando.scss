@@ -17,13 +17,9 @@ overflow-x: auto;
 }
 .info-rando-complete{
     position: absolute;
-    left: 0%;
-    top: 100%;
-    transform: translate(0%,-20%);
     padding: 50px;
- 
     border-radius: 50px;
-    margin: -30px;
+    margin: -05%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: var(--font-size);
