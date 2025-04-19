@@ -1,7 +1,9 @@
 
 .images{
+    border: solid 1px rgb(0, 4, 255);
 display: flex;
-overflow-x: auto;
+overflow-x: auto; 
+min-width: 398px;
 
 }
 .relief{
@@ -11,15 +13,15 @@ overflow-x: auto;
 
 
 .images img{
-    min-width: 430px;
+    // border: solid 1px red;
+    min-width: 500px;
     max-height: 300px;
-    position: relative;
 }
 .info-rando-complete{
-    position: absolute;
-    padding: 50px;
+    // padding: 50px;
     border-radius: 50px;
-    margin: -05%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: var(--font-size);

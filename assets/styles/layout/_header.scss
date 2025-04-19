@@ -5,18 +5,24 @@
 }
 .icon{
     display: flex;
-    justify-content: end;
-    margin-top: -60px;
-    margin-right: 10px;
-}
-.icon-profil{
-    margin-right: 20px;
+   flex-direction: row; 
+   justify-content: end;
+   margin-top: -30px;
+   gap: 10px;
+   padding-right: 30px;
+    
+    .icon-profil img {
+        max-width : 20px;
+    }
+    .icon-groupe img{
+        max-width: 20px;
+    }
 }
 .nom-du-site{
     display: flex;
     justify-content: center;
-    font-size: xx-large;
+    align-content: center;
+    font-size: x-large;
     font-weight: bold;
-    margin-top: -55px;
-    margin-left: -50px;
+   margin-top: -50px;
 }

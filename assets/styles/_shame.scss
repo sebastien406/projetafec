@@ -1,29 +1,30 @@
 /*  */
+.recherche{
+  display: flex;
+  flex-direction: column;
+}
+.button-recherche{
+  display: flex;
+  justify-content: center;
+   input{
+  border-radius: var(--border-radius-lg);
+  width: 80%;
+  height: 40px;
+  padding-left: 15%;
+  box-shadow: var(--shadow-box);
+  margin-top: 5%;
+}
+}
+.items-recherche{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -40px;
+  gap: 30%;
+}
 
-.recherche {
-    display: flex;
-    justify-content: center;
-  }
+
   
-  .icon-recherche {
-    display: flex;
-  }
+ 
   
-  .input {
-    width: 400px;
-    height: 40px;
-    border-radius: 50px;
-    margin-top: 5%;
-    background-color: #e2e3e1;
-    box-shadow: 10px 5px 5px black;
-    padding-left: 15%;
-  }
-  .loupe {
-    margin-top: -39px;
-    margin-left: 10px;
-  }
-  .burger {
-    margin-left: 340px;
-    margin-top: -50px;
-  }
   
