@@ -1,28 +1,27 @@
 
 .images{
-    border: solid 1px rgb(0, 4, 255);
 display: flex;
 overflow-x: auto; 
-min-width: 398px;
+border-bottom: solid 5px rgb(0, 0, 0);
+border-radius: 0px 0px 20px 20px;
+// box-shadow: var(  --shadow-box);
 
 }
 .relief{
+    padding-top: 50px;
     border-radius: var(--border-radius-lg);
     box-shadow: var(  --shadow-box);
 }
 
 
 .images img{
-    // border: solid 1px red;
-    min-width: 500px;
-    max-height: 300px;
+    min-width: 100%;
+    max-height: 250px;
 }
 .info-rando-complete{
-    // padding: 50px;
     border-radius: 50px;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: var(--font-size);
 }
@@ -98,7 +97,7 @@ min-width: 398px;
 .jour{
    display:flex;
    flex-direction: row;
-   gap: 40px;
+   gap: 20px;
    font-weight: bold;
 }
 .indications{
