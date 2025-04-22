@@ -48,6 +48,9 @@ border-radius: 0px 0px 20px 20px;
         }
        
 }
+#more{
+    display: none;
+}
 .description{
     margin-top: 15%;
     padding-top: 10%;
@@ -65,14 +68,22 @@ border-radius: 0px 0px 20px 20px;
     flex-direction: row;
     justify-content: center;
 }
+#myBtn{
+    padding: 20px;
+    border-radius: var(--border-radius-lg) ;
+    background:linear-gradient(#deeb2b,#94d12b);
+    margin: 20px;
+    box-shadow: var(  --shadow-box);
+    font-weight: bold;
+}
 .button{
-   
     padding: 20px;
     border-radius: var(--border-radius-lg) ;
     background:linear-gradient(#deeb2b,#94d12b);
     text-decoration: none;
     margin: 20px;
     box-shadow: var(  --shadow-box);
+    font-weight: bold;
 }
 .maps-rando{
     border-bottom: solid 1px #85A947;
@@ -97,13 +108,20 @@ border-radius: 0px 0px 20px 20px;
 .jour{
    display:flex;
    flex-direction: row;
+   justify-content: space-around;
    gap: 20px;
    font-weight: bold;
+   #jour-un{
+    border: solid 1px rgb(5, 5, 5);
+    text-align: center;
+    border-radius: var(--border-radius-lg);
+    background: linear-gradient(#deeb2b,#94d12b);
+   }
 }
 .indications{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .gif-meteo{
@@ -120,6 +138,7 @@ object-fit: fill;
 }
 .indications-plus{
    display: flex;
+   justify-content: space-around;
    h3{
     font-weight: bold;
     font-size: var(--font-size);
