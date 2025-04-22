@@ -15,8 +15,8 @@ btn.onclick = function(){
         target.id="target";
         target.src="images/beaugosse.png";
         container.appendChild(target) ;
-        target.style.top = Math.random() * (250 - target.offsetHeight) + 'px';
-        target.style.left = Math.random() * (300 - target.offsetWidth) + 'px';
+        target.style.top = Math.random() * (500 - target.offsetHeight) + 'px';
+        target.style.left = Math.random() * (600 - target.offsetWidth) + 'px';
 
         // faire disparaitre la cible
         setTimeout(function(){
