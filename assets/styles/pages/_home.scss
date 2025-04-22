@@ -1,3 +1,13 @@
+.button-jeu{
+display: flex;
+justify-content: center;
+.clique-jeu{
+  background:linear-gradient(orange,red);
+  font-size: var(--font-size);
+box-shadow: var(--shadow-box);
+}
+}
+
 .randonnees {
   background:linear-gradient(#deeb2b,#94d12b);
   display: flex;

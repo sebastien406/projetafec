@@ -1,0 +1,71 @@
+.jeu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    @media(max-width:768px){
+        padding: -20px;
+        border: solid 1px red;
+    }
+}
+.game{
+    @media(max-width:768px){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+      }
+}
+.start_btn{
+
+  
+}
+.game_infos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+    @media(max-width:768px){
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+}
+.container{
+    height: 400px;
+    width: 500px;
+    border: solid 1px black;
+    cursor: crosshair;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-box);
+    border-radius: 6px;
+    overflow: hidden;
+    @media(max-width:768px){
+        padding: 20px;
+        width: 100%;
+    }
+}
+#target{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 10s infinite;
+}
+button{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background:linear-gradient(#deeb2b,#94d12b) ;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+}
+@keyframes animateTarget{
+    to{
+        transform: translateY(-200px) rotate(90deg);
+    }
+}
