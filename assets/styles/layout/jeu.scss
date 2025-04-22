@@ -5,20 +5,23 @@
     height: 100vh;
     background-position: center;
     background-size: cover;
-    @media(max-width:768px){
-       
-    }
+   
 }
 .game{
     @media(max-width:768px){
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        width: 80%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
       }
 }
 .start_btn{
-
+    @media(max-width:768px){
+        width: 200px;
+        height: 70px;
+      
+    }
   
 }
 .game_infos{
