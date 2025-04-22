@@ -51,6 +51,12 @@ input{
  list-style: none;
  padding: 20px;
  background:linear-gradient(#deeb2b,#94d12b) ;
+
+ .close{
+  display: flex;
+  justify-content: space-between;
+ }
+
  h2{
   font-size: var(--font-h2);
  }
