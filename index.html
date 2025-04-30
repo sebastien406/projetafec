@@ -23,16 +23,17 @@
 			</div>
 			<div class="icon">
 				<div class="icon-profil">
-					<a href=""><img src="images/iconprofil.png" alt="icon de mon profil" srcset=""></a>
+					<a href="compte.html"><img src="images/iconprofil.png" alt="icon de mon profil" srcset=""></a>
 				</div>
 				<div class="icon-groupe">
 					<a href=""><img src="images/groupe.png" alt="icon deprofil pour le groupe" srcset=""></a>
 				</div>
 			</div>
-
-		</div>
 		</div>
 	</header>
+	<div class="fil-ariane">
+		<a href="accueil">Accueil</a>
+	</div>
 	<section class="recherche">
 		<div class="button-recherche">
 			<input class="input" type="search" name="button" placeholder="rechercher un lieu, une rando...">
@@ -42,7 +43,7 @@
 				<a href=""><img src="images/loupe.png" alt="loupe"></a>
 			</div>
 			<div class="mobile-menu">
-				<span onclick="toggler()" id="toggler"><img src="images/burger.png" alt="menu burger"></span>
+				<span id="toggler"><img src="images/burger.png" alt="menu burger"></span>
 			</div>
 		</div>
 	</section>
@@ -84,38 +85,7 @@
 	</div>
 
 	<div class="container-univers">
-		<section class="univers">
-			<div class="univers_item">
-				<a href="">
-					<img src="images/radar.gif" />
-					<span class="univers_item_label">A proximité</span>
-				</a>
-			</div>
-			<div class="univers_item">
-				<a href="">
-					<img src="images/vache.gif " />
-					<span class="univers_item_label">Campagne</span>
-				</a>
-			</div>
-			<div class="univers_item">
-				<a href="">
-					<img src="images/foret.gif" />
-					<span class="univers_item_label">Forêt</span>
-				</a>
-			</div>
-			<div class="univers_item">
-				<a href="">
-					<img src="images/montagnes.gif " />
-					<span class="univers_item_label">Montagne</span>
-				</a>
-			</div>
-			<div class="univers_item">
-				<a href="">
-					<img src="images/plage.gif" />
-					<span class="univers_item_label">Plage</span>
-				</a>
-			</div>
-		</section>
+		<section  id="univers"  class="univers"></section>
 	</div>
 	<section>
 		<section class="randonnees">
@@ -248,7 +218,7 @@
 
 
 
-	<script defer src="assets/scripts/menu.js"></script>
+	<script async src="dist/js/theme.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,66 @@
+
+body{
+    // margin:20px
+}
+.connection{
+    margin: var( --margin-md);
+    padding: 20px;
+    border: solid 1px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var( --shadow-box);
+
+    h2{
+        font-size: var(--font-h2);
+        text-align: center;
+        border: solid 1px;
+        border-radius: var(--border-radius-lg);
+        background: linear-gradient(#deeb2b,#94d12b);
+    }
+    label{
+        font-weight: bold;
+    }
+    input{
+       border-radius: var(--border-radius-lg);
+       padding:var( --padding-xxs);
+       margin:var(--margin-xxs);
+    }
+    .img-profil{
+        box-shadow: var( --shadow-box); 
+    }
+   
+}
+.btn{
+    margin-top:var(--margin-top);
+    box-shadow: var( --shadow-box);
+    font-weight: bold;
+}
+.inscription{
+    padding: 10px;
+    margin: var(--margin-sm);
+    border: solid 1px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var( --shadow-box);
+    text-decoration: none;
+
+    h2{
+        font-size: var(--font-h2);
+        text-align: center;
+      }
+
+      .form-group{
+        display: flex;
+        align-items: center;
+
+      }
+}
+
+
+.contact-form {
+    margin: var(--margin-md);
+    input {
+        border-radius: var(--border-radius-lg);
+        box-shadow: var( --shadow-box);
+        margin-bottom: 20px;
+        padding:15px;
+    }
+}

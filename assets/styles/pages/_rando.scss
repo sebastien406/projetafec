@@ -3,8 +3,8 @@
 display: flex;
 overflow-x: auto; 
 border-bottom: solid 5px rgb(0, 0, 0);
-border-radius: 0px 0px 20px 20px;
-// box-shadow: var(  --shadow-box);
+border-radius:var(--border-radius-lg);
+
 
 }
 .relief{
@@ -17,11 +17,11 @@ border-radius: 0px 0px 20px 20px;
 .images img{
     min-width: 100%;
     max-height: 250px;
+ 
 }
 .info-rando-complete{
     border-radius: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: var(--margin-sm);
     color: rgb(0, 0, 0);
     font-size: var(--font-size);
 }
@@ -161,7 +161,7 @@ p{
   .text-avis{
     border-radius: var(--border-radius-lg);
     background:linear-gradient(#deeb2b,#94d12b);
-    margin-top: 10%;
+    margin: 10% 0% 10% 0%;
     padding: 10%;
     box-shadow: var(--shadow-box);
     .avis-utilisateur{

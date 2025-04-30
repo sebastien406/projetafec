@@ -1,4 +1,4 @@
-function myFunction() {
+function AfficherPlus() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
@@ -13,4 +13,10 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+let afficherPlusBtn = document.getElementById('myBtn');
+
+if (afficherPlusBtn) {
+  afficherPlusBtn.addEventListener('click', AfficherPlus);
+}
  

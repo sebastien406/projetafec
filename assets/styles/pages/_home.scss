@@ -29,7 +29,6 @@ box-shadow: var(--shadow-box);
 .titre-rando {
  text-align: start;
  font-size:  var(--font-h2) ;
- margin-top: -20px;
  padding-left: 30px;
 }
 .picture {
@@ -37,18 +36,17 @@ box-shadow: var(--shadow-box);
   overflow-x: auto;
   gap: 35px;
   margin: 20px;
+  border-radius:var(--border-radius-lg);
+  box-shadow: var(--shadow-box);
+
+
 }
 .picture img {
-  max-height: 200px;
-  min-width: 350px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-box);
-  // border: solid 1px;
-  margin-bottom: 10px;
+  max-height: 220px;
+  min-width: 100%;
+  border-radius:var(--border-radius-lg);
 }
-.picture .one {
-  margin-left: 10px;
-}
+
 
 .lieu-rando {
   display: flex;
