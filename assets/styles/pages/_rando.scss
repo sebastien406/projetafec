@@ -1,4 +1,6 @@
-
+body{
+    
+}
 .images{
 display: flex;
 overflow-x: auto; 
@@ -20,7 +22,7 @@ border-radius:var(--border-radius-lg);
  
 }
 .info-rando-complete{
-    border-radius: 50px;
+    border-radius:var(--border-radius-lg);
     margin: var(--margin-sm);
     color: rgb(0, 0, 0);
     font-size: var(--font-size);
