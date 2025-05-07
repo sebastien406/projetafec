@@ -1,6 +1,6 @@
     footer{
         width: 100%;
-        background:linear-gradient(#deeb2b,#94d12b); 
+        background:linear-gradient(#d8ed20,#15b71d); 
         border-radius: var(--border-radius-lg);
         border-top: solid 2px;
     }
@@ -8,6 +8,7 @@
     .logo-footer{
          display: flex;
         justify-content: center;
+        margin-top: -30px;
     }
     .info-footer{
         margin: var( --margin-sm);

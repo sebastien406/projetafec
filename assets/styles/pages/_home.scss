@@ -7,9 +7,12 @@ justify-content: center;
 box-shadow: var(--shadow-box);
 }
 }
-
+ body {
+  background-color: rgb(228, 228, 227);
+ }
 .randonnees {
-  background:linear-gradient(#deeb2b,#94d12b);
+  background-color: aliceblue;
+  // background:linear-gradient(#d8ed20,#25e72f);
   display: flex;
   justify-content: center;
   border-radius: 10%;

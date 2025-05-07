@@ -1,0 +1,21 @@
+.groupe{
+   
+}
+.admin {
+
+    border-radius: var(--border-radius-lg);
+
+    h2{
+        font-size: var(--font-h2);
+        text-align: center;
+        padding-top: 10px;
+    }
+    .form-group{
+        margin-top: -50px;
+    }
+}
+.form-group a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}

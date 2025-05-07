@@ -1,0 +1,39 @@
+
+.groupe-rando{
+   padding: 20px 20px;
+}
+
+.les-truffes{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+}
+.les-membres{
+    font-size: var(--font-h2);
+    text-align: center;
+}
+.image-groupe {
+    img{
+        border-radius: var(--border-radius-lg);
+        width: 100%;
+        box-shadow: var(--shadow-box);
+        }
+}
+.title-menbres{
+    
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-box);
+    background-color: rgb(255, 255, 255);
+}
+.menu-groupe{
+
+    padding :20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+.menbres{
+    text-align: center;
+}
