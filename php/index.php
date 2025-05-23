@@ -7,7 +7,7 @@
     <meta name="description"
         content="Découvrez les meilleures randonnées à faire avec votre chien en montagne, à la plage, en campagne et à l'océan." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="dist/css/theme.css">
+    <link rel="stylesheet" href="css/">
     <link rel="shortcut icon" href="images/logo bulma.png">
 </head>
 
@@ -40,7 +40,7 @@
     </header>
 
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content">     
             <h1>Explorez le monde avec votre fidèle compagnon</h1>
             <p>Trouvez et partagez les meilleures randonnées seule ou en groupe pour vous et votre chien.</p>
             <div class="search-bar">

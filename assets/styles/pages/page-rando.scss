@@ -1,0 +1,382 @@
+body {
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--blanc-casse); 
+    color: var(--gris-anthracite); 
+    line-height: 1.6; 
+    box-sizing: border-box; 
+}
+
+h1, h2, h3 {
+    color: var(--vert-foret-profond); 
+    margin-top: 1.5rem; 
+    margin-bottom: 0.8rem;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem; 
+}
+
+p {
+    margin-bottom: 1rem; 
+}
+
+a {
+    color: var(--terre-de-sienne);
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: var(--orange-vibrant); 
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: var(--border-radius-base); 
+}
+
+button {
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: var(--border-radius-base); 
+    background-color: var(--vert-foret-profond); 
+    color: var(--blanc-casse); 
+    cursor: pointer; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: var(--shadow-light); 
+
+button:hover {
+    background-color: var(--terre-de-sienne); 
+    transform: translateY(-2px); 
+}
+}
+
+
+.nom-du-site h1 {
+    margin: 0;
+    color: var(--blanc-casse);
+    font-size: 2rem;
+}
+
+
+.images {
+    display: flex;
+    overflow-x: auto;
+}
+.info-rando-complete {
+    
+    max-width: 90%; 
+    margin:  auto; 
+    padding: var(--padding-base) 1.5rem; 
+    background-color: #fff;
+    border-radius: var(--border-radius-base); 
+    box-shadow: var(--shadow-light); 
+}
+
+.relief, .description, .maps-rando, .meteo, .avis, .text-avis {
+    margin-bottom: 2rem; 
+    padding: 1rem; 
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.relief:last-child, .avis:last-child, .text-avis:last-child {
+    border-bottom: none; 
+}
+.titre-rando h2 {
+    font-size: 2.2rem;
+    color: var(--terre-de-sienne);
+    text-align: center; 
+    margin-bottom: 0.5rem;
+}
+
+.lieu-rando p {
+    text-align: center; 
+    font-style: italic; 
+    color: var(--gris-anthracite);
+    margin-bottom: 1.5rem;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.indication {
+    display: flex; 
+    justify-content: space-around; 
+    gap: 10px;
+    text-align: center; 
+     flex: 1;
+    padding: 1rem;
+    background-color: var(--blanc-casse); 
+    border-radius: var(--border-radius-base);
+    border: 1px solid var(--gris-clair);
+}
+
+.indication span {
+font-weight: bold;
+    color: var(--vert-foret-profond);
+    display: block; 
+    margin-bottom: 0.5rem;
+   
+}
+
+.distance, .duree, .difficulte {
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--blanc-casse); 
+    border-radius: var(--border-radius-base);
+    border: 1px solid var(--gris-clair);
+    background-color: var(--gris-clair);
+}
+
+
+
+.description #dots {
+    display: inline; 
+}
+
+.description #more {
+    display: none; 
+}
+
+.description p {
+    text-align: justify; 
+}
+
+.button-btn {
+    text-align: center; 
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#myBtn {
+    background-color: var(--orange-vibrant); 
+    color: white;
+}
+
+#myBtn:hover {
+    background-color: var(--terre-de-sienne);
+}
+
+
+.maps-rando img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    border: 2px solid var(--vert-foret-profond); 
+    border-radius: 20px;
+}
+
+
+.meteo h2 {
+    text-align: center;
+}
+
+.jour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--vert-foret-profond);
+    color: var(--blanc-casse);
+    border-radius: var(--border-radius-base);
+    padding: 10px;
+    flex-wrap: wrap; 
+}
+
+.jour p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.indications {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+.gif-meteo {
+    text-align: center;
+    flex: 1;
+    min-width: 100px; 
+    padding: 0.5rem;
+}
+
+.gif-meteo img {
+    height: 50px; 
+    width: 50px; 
+    margin: 0 auto;
+}
+
+.gif-meteo p {
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+}
+
+.indications-plus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--blanc-casse);
+    border-radius: var(--border-radius-base);
+    border: 1px solid var(--gris-clair);
+    padding: 10px;
+    
+}
+
+.indications-plus-info {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+    background-color: var(--gris-clair);
+    border-radius: var(--border-radius-base);
+}
+
+.indications-plus-info h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--vert-foret-profond);
+}
+
+.indications-plus-info p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+.avis h2 {
+    text-align: center;
+}
+
+.text-avis {
+    background-color: var(--blanc-casse);
+    padding: 1.2rem;
+    border-radius: var(--border-radius-base);
+    box-shadow: var(--shadow-light);
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--gris-clair);
+}
+
+.avis-utilisateur {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.avis-utilisateur img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.avis-utilisateur h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--terre-de-sienne);
+}
+
+.avis-utilisateur-note p {
+    font-style: italic;
+    color: var(--gris-anthracite);
+}
+ 
+
+.box-wrapper {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.box-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: var(--border-radius-base);
+    box-shadow: var(--shadow-medium);
+    max-width: 400px; 
+    width: 90%; 
+    position: relative; 
+}
+
+.box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--vert-foret-profond);
+    border-bottom: 1px solid var(--gris-clair);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.button-exit {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}
+
+.btn-close {
+    background: none; 
+    color: var(--gris-anthracite);
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: none; 
+}
+
+.btn-close:hover {
+    background-color: var(--gris-clair);
+    color: var(--terre-de-sienne);
+    transform: none; 
+}
+
+.box-content h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--terre-de-sienne);
+}
+
+.espace-avis {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.envoyer {
+    background-color: var(--orange-vibrant);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+}
+
+.envoyer:hover {
+    background-color: var(--terre-de-sienne);
+}
+
+
+
+
+
+
+
+

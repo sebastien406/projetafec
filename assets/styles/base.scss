@@ -8,39 +8,15 @@
 @import 'settings/config.padding';
 @import 'settings/config.margin';
 
-// Document
-@import 'elements/document';
-
-
-// Layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/menu';
-@import 'layout/jeu';
-@import 'layout/filariane';
-
-
-// Components
-@import 'components/searchbar';
-@import 'components/container';
-@import 'components/links';
-
-
 // Custom pages
-@import 'pages/home';
-@import 'pages/rando';
-@import 'pages/maps';
-@import 'pages/avis';
+@import 'pages/accueil';
 @import 'pages/compte';
-@import 'pages/inscription';
-@import 'pages/groupe';
-@import 'pages/creationgroupe';
-@import 'pages/grouperando';
-
-
-
-
-// Shame : Css à trier
-@import 'shame';
-
-
+@import 'pages/page-rando';
+// @import 'pages/rando';
+// @import 'pages/maps';
+// @import 'pages/avis';
+// @import 'pages/compte';
+// @import 'pages/inscription';
+// @import 'pages/groupe';
+// @import 'pages/creationgroupe';
+// @import 'pages/grouperando';
