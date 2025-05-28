@@ -72,6 +72,11 @@ button:hover {
 .images {
     display: flex;
     overflow-x: auto;
+     gap: 15px;
+     border-radius:var(--border-radius-lg);
+}
+.images img{
+     border-radius:var(--border-radius-lg);
 }
 .info-rando-complete {
     
@@ -118,7 +123,7 @@ button:hover {
      flex: 1;
     padding: 1rem;
     background-color: var(--blanc-casse); 
-    border-radius: var(--border-radius-base);
+    border-radius: var(--border-radius-lg);
     border: 1px solid var(--gris-clair);
 }
 
@@ -132,9 +137,9 @@ font-weight: bold;
 
 .distance, .duree, .difficulte {
     flex: 1;
-    padding: 1rem;
+
     background-color: var(--blanc-casse); 
-    border-radius: var(--border-radius-base);
+    border-radius: var(--border-radius-lg);
     border: 1px solid var(--gris-clair);
     background-color: var(--gris-clair);
 }

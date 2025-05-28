@@ -1,3 +1,1 @@
-
-import './button';
-
+import './button.js';

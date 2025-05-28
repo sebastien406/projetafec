@@ -8,7 +8,7 @@
 	<meta name="description" content="site de randonne canine" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="dist/css/theme.css">
-	<link rel="shortcut icon" href="images/logo bulma.jpg">
+	<link rel="shortcut icon" href="images/logo bulma.png">
 </head>
 
 <body>

@@ -1,0 +1,50 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--vert-foret-profond);
+    color: var(--blanc-casse);
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    margin-top: 100px;
+   
+}
+
+.logo-footer img {
+     margin-top: -80px;
+    height: 100px;
+    width: 100px;   
+}
+
+
+.info-footer {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  @media (max-width: 468px){
+    gap: 20px;
+  } 
+}
+
+.a-propos h2, .informations h2 {
+    color: var(--orange-vibrant);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+
+.a-propos a, .informations a {
+    color: var(--blanc-casse);
+    display: block; 
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.a-propos a:hover, .informations a:hover {
+    color: var(--bleu-ciel-doux);
+    text-decoration: underline;
+}

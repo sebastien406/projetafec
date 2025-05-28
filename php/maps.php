@@ -6,67 +6,27 @@
 	<title>Canirando</title>
 	<meta name="description" content="site de randonne canine" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" href="css/variable.css">
-    <link rel="shortcut icon" href="images/logo bulma.png">
+	 <link rel="stylesheet" href="<?php echo css_dir ?>theme.css">
+    <link rel="shortcut icon" href="<?php echo images_dir ?>logo bulma.png">
 </head>
 
 <body>
-	<header>
-        <div class="header">
-            <div class="logo">
-                <img src="images/logo bulma.png" alt="Joli chien avec une laisse dans la gueule">
-            </div>
-            <div class="nom-du-site">
-                <h1>CANIRANDO</h1>
-            </div>
-            <div class="icon">
-                <div class="icon-profil">
-                    <a href="compte.html"><img src="images/iconprofil.png" alt="Icon de mon profil"></a>
-                </div>
-                <div class="icon-groupe">
-                    <a href="groupe.html"><img src="images/groupe.png" alt="Icon de profil pour le groupe"></a>
-                </div>
-            </div>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#boutique">La boutique</a></li>
-                <li><a href="#conseil">Nos conseils</a></li>
-                <li><a href="#destinations">Nos Destinations</a></li>
-                <li><a href="#apropos">À Propos</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include ('layout/header.php'); ?>
+     <div class="fil-ariane">
+        <ul>
+       <li><a href="index.php">Accueil</a></li> 
+        <li><a href="page-rando.php">Rando</a></li> 
+        <li><a href="maps.php">Carte</a></li> 
+    </ul>
+    </div>
 
 <body>
     <section>
         <div class="maps">
             <a href=""><img src="images/maps-rando.png" alt="une carte de randonnée"></a>
         </div>
+        <?php include ('layout/footer.php'); ?>
     </section>
-	 <footer>
-        <div class="logo-footer">
-            <a href=""><img src="images/logo bulma.png" alt="logo avec une tête de chien"></a>
-        </div>
-        <div class="info-footer">
-            <div class="a-propos">
-                <h2>A propos</h2>
-                <p><a href="">Trouver une randonnée</a></p>
-                <p><a href="">Groupes de randonneurs</a></p>
-                <p><a href="">Mes messages</a></p>
-                <p><a href="">Mon compte</a></p>
-                <a href="">Se déconnecter</a>
-            </div>
-            <div class="informations">
-                <h2>Informations</h2>
-                <p><a href="">A propos</a></p>
-                <p><a href="">Mentions légales</a></p>
-                <p><a href="">Politique de confidentialité</a></p>
-                <p><a href="">Nous contacter</a></p>
-            </div>
-        </div>
-        <p>&copy; 2025 Canirando - Tous droits réservés.</p>
-    </footer>
+	 
 </body>
 </html>

@@ -1,3 +1,9 @@
+<?php
+require_once("config/setting.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,46 +13,25 @@
     <meta name="description"
         content="Découvrez les meilleures randonnées à faire avec votre chien en montagne, à la plage, en campagne et à l'océan." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/">
-    <link rel="shortcut icon" href="images/logo bulma.png">
+    <link rel="stylesheet" href="<?php echo css_dir ?>theme.css?<?php echo time(); ?>">
+    <link rel="shortcut icon" href="<?php echo images_dir ?>logo bulma.png">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <img src="images/logo bulma.png" alt="Joli chien avec une laisse dans la gueule">
-            </div>
-            <div class="nom-du-site">
-                <h1>CANIRANDO</h1>
-            </div>
-            <div class="icon">
-                <div class="icon-profil">
-                    <a href="compte.html"><img src="images/iconprofil.png" alt="Icon de mon profil"></a>
-                </div>
-                <div class="icon-groupe">
-                    <a href="groupe.html"><img src="images/groupe.png" alt="Icon de profil pour le groupe"></a>
-                </div>
-            </div>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#boutique">La boutique</a></li>
-                <li><a href="#conseil">Nos conseils</a></li>
-                <li><a href="#destinations">Nos Destinations</a></li>
-                <li><a href="#apropos">À Propos</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <?php include ('layout/header.php'); ?>
+<div class="fil-ariane">
+		<ul>
+		<li><a href="accueil">Accueil</a></li>
+	</ul>
+   <?php //include ('layout/menuFiltre.php'); ?>
     <section class="hero">
         <div class="hero-content">     
             <h1>Explorez le monde avec votre fidèle compagnon</h1>
             <p>Trouvez et partagez les meilleures randonnées seule ou en groupe pour vous et votre chien.</p>
-            <div class="search-bar">
-                <input type="search" placeholder="Rechercher une rando, un lieu...">
+            <form  class="search-bar" method="get" action="listing.php" >
+                <input name="keywords" type="search" placeholder="Rechercher une rando, un lieu...">
                 <button type="submit">Go !</button>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -55,28 +40,28 @@
             <h2>Choisissez votre prochaine aventure</h2>
             <div class="univers-grid">
                 <div class="grid-overflow">
-                    <a href="rando-proximite.html" class="univers-item proximite">
-                        <img src="images/radar.gif" alt="Icône a proximite">
+                    <a href="rando-proximite.php" class="univers-item proximite">
+                        <img src="<?php echo images_dir ?>radar.gif" alt="Icône a proximite">
                         <h3>A proximité</h3>
                         <p>Des rando autour de soi.</p>
                     </a>
-                    <a href="rando-montagne.html" class="univers-item montagne">
-                        <img src="images/montagnes.gif" alt="Icône Montagne">
+                    <a href="rando-montagne.php" class="univers-item montagne">
+                        <img src="<?php echo images_dir ?>montagnes.gif" alt="Icône Montagne">
                         <h3>Montagne</h3>
                         <p>Des sommets à conquérir ensemble.</p>
                     </a>
-                    <a href="rando-plage.html" class="univers-item plage">
-                        <img src="images/plage.gif" alt="Icône Plage">
+                    <a href="rando-plage.php" class="univers-item plage">
+                        <img src="<?php echo images_dir ?>plage.gif" alt="Icône Plage">
                         <h3>Plage</h3>
                         <p>Balades iodées et jeux dans le sable.</p>
                     </a>
-                    <a href="rando-campagne.html" class="univers-item campagne">
-                        <img src="images/vache.gif" alt="Icône Campagne">
+                    <a href="rando-campagne.php" class="univers-item campagne">
+                        <img src="<?php echo images_dir ?>vache.gif" alt="Icône Campagne">
                         <h3>Campagne</h3>
                         <p>Chemins ruraux.</p>
                     </a>
-                    <a href="rando-foret.html" class="univers-item foret">
-                        <img src="images/foret.gif" alt="Icône foret">
+                    <a href="rando-foret.php" class="univers-item foret">
+                        <img src="<?php echo images_dir ?>foret.gif" alt="Icône foret">
                         <h3>Forêt</h3>
                         <p>Sentiers forestiers.</p>
                     </a>
@@ -88,10 +73,10 @@
         <h2>Nos randonnées les plus populaires</h2>
         <div class="randonnees-grid">
             <section class="randonnees">
-                <a href="page-rando.html">
+                <a href="page-rando.php">
                     <div class="rando">
                         <div class="picture">
-                            <img src="images/rando-montagne.jpg" alt="Rando à la campagne">
+                            <img src="<?php echo images_dir ?>rando-montagne.jpg" alt="Rando à la campagne">
                         </div>
                         <div class="titre-rando">
                             <h2>La casse patte</h2>
@@ -102,17 +87,17 @@
                         <div class="info-rando">
                             <p>Facile - 24km - 1h</p>
                             <div class="maps-info">
-                                <a href="maps.html"><img id="maps" src="images/carte.png" alt="Icon d'une carte"></a>
+                                <a href="maps.php"><img id="maps" src="<?php echo images_dir ?>carte.png" alt="Icon d'une carte"></a>
                             </div>
                         </div>
                     </div>
                 </a>
             </section>
             <section class="randonnees">
-                <a href="page-rando.html">
+                <a href="page-rando.php">
                     <div class="rando">
                         <div class="picture">
-                            <img src="images/volcan2.jpg" alt="Rando en montagne">
+                            <img src="<?php echo images_dir ?>volcan2.jpg" alt="Rando en montagne">
                         </div>
                         <div class="titre-rando">
                             <h2>La feu au cul</h2>
@@ -123,17 +108,17 @@
                         <div class="info-rando">
                             <p>Moyen - 15km - 3h</p>
                             <div class="maps-info">
-                                <a href="maps.html"><img id="maps" src="images/carte.png" alt="Icon d'une carte"></a>
+                                <a href="maps.php"><img id="maps" src="<?php echo images_dir ?>carte.png" alt="Icon d'une carte"></a>
                             </div>
                         </div>
                     </div>
                 </a>
             </section>
             <section class="randonnees">
-                <a href="page-rando.html">
+                <a href="page-rando.php">
                     <div class="rando">
                         <div class="picture">
-                            <img src="images/plage.jpg" alt="Rando à la plage">
+                            <img src="<?php echo images_dir ?>plage.jpg" alt="Rando à la plage">
                         </div>
                         <div class="titre-rando">
                             <h2>La tranquillou</h2>
@@ -144,17 +129,17 @@
                         <div class="info-rando">
                             <p>Facile - 8km - 2h</p>
                             <div class="maps-info">
-                                <a href="maps.html"><img id="maps" src="images/carte.png" alt="Icon d'une carte"></a>
+                                <a href="maps.php"><img id="maps" src="<?php echo images_dir ?>carte.png" alt="Icon d'une carte"></a>
                             </div>
                         </div>
                     </div>
                 </a>
             </section>
             <section class="randonnees">
-                <a href="page-rando.html">
+                <a href="page-rando.php">
                     <div class="rando">
                         <div class="picture">
-                            <img src="images/campagnarde.jpg" alt="Rando à la campagne">
+                            <img src="<?php echo images_dir ?>campagnarde.jpg" alt="Rando à la campagne">
                         </div>
                         <div class="titre-rando">
                             <h2>La campagnarde</h2>
@@ -165,7 +150,7 @@
                         <div class="info-rando">
                             <p>Facile - 10km - 3h</p>
                             <div class="maps-info">
-                                <a href="maps.html"><img id="maps" src="images/carte.png" alt="Icon d'une carte"></a>
+                                <a href="maps.php"><img id="maps" src="<?php echo images_dir ?>carte.png" alt="Icon d'une carte"></a>
                             </div>
                         </div>
                     </div>
@@ -178,33 +163,10 @@
         <h2>À propos de Canirando</h2>
         <p>Canirando est une communauté passionnée par la randonnée et nos amis à quatre pattes. Notre objectif est de
             faciliter la découverte de sentiers , de partager des conseils et des expériences pour pratiquer cette
-            activité en toute sécurité et dans le respect de nos chiens et de l'environnement</p>
-    </section>
-    <footer>
-        <div class="logo-footer">
-            <a href=""><img src="images/logo bulma.png" alt="logo avec une tête de chien"></a>
-        </div>
-        <div class="info-footer">
-            <div class="a-propos">
-                <h2>A propos</h2>
-                <p><a href="">Trouver une randonnée</a></p>
-                <p><a href="">Groupes de randonneurs</a></p>
-                <p><a href="">Mes messages</a></p>
-                <p><a href="">Mon compte</a></p>
-                <a href="">Se déconnecter</a>
-            </div>
-            <div class="informations">
-                <h2>Informations</h2>
-                <p><a href="">A propos</a></p>
-                <p><a href="">Mentions légales</a></p>
-                <p><a href="">Politique de confidentialité</a></p>
-                <p><a href="">Nous contacter</a></p>
-            </div>
-        </div>
-        <p>&copy; 2025 Canirando - Tous droits réservés.</p>
-    </footer>
-
-    <script defer src="javaScript/button.js"></script>
+            activité en toute sécurité et dans le respect de nos chiens et de l'environnement.</p>
+</section>
+    <?php include ('layout/footer.php'); ?>
+    <script src="<?php echo js_dir; ?>theme.js?<?=time();?>" defer></script>
 
 </body>
 

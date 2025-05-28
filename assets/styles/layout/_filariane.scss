@@ -1,0 +1,28 @@
+
+.fil-ariane {
+    font-size: 0.9em; 
+    color: #000000; 
+  }
+  
+  .fil-ariane ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .fil-ariane li {
+    margin-right: 0.5em;
+  }
+  
+  .fil-ariane li:not(:last-child)::after {
+    content: "→"; 
+    margin-left: 0.5em;
+    color: #000000; 
+  }
+  
+  .fil-ariane a {
+    text-decoration: none;
+   
+  }

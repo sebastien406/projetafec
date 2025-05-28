@@ -1,3 +1,9 @@
+<?php
+require_once("config/setting.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,13 +12,12 @@
     <title>Canirando</title>
     <meta name="description" content="site de randonne canine" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/page-rando.css">
-    <link rel="stylesheet" href="css/variable.css">
-    <link rel="shortcut icon" href="images/logo bulma.png">
+      <link rel="stylesheet" href="<?php echo css_dir ?>theme.css?<?php echo time(); ?>">
+    <link rel="shortcut icon" href="<?php echo images_dir ?>logo bulma.png">
 </head>
 
 <body>
-    <div class="box-wrapper">
+    <!-- <div class="box-wrapper">
         <div class="box-container">
             <div class="box">
                 <div class="box-title">
@@ -29,41 +34,20 @@
                 </div>
             </div>
         </div>
+    </div> -->
+   <?php include ('layout/header.php'); ?>
+     <div class="fil-ariane">
+        <ul>
+       <li><a href="index.php">Accueil</a></li> 
+        <li><a href="page-rando.php">Rando</a></li> 
+    </ul>
     </div>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <img src="images/logo bulma.png" alt="joli chien avec une laisse dans la gueule">
-            </div>
-            <div class="nom-du-site">
-                <h1>CANIRANDO</h1>
-            </div>
-            <div class="icon">
-                <div class="icon-profil">
-                    <a href=""><img src="images/iconprofil.png" alt="icon de mon profil" srcset=""></a>
-                </div>
-                <div class="icon-groupe">
-                    <a href=""><img src="images/groupe.png" alt="icon deprofil pour le groupe" srcset=""></a>
-                </div>
-            </div>
-
-        </div>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#boutique">La boutique</a></li>
-                <li><a href="#conseil">Nos conseils</a></li>
-                <li><a href="#destinations">Nos Destinations</a></li>
-                <li><a href="#apropos">À Propos</a></li>
-            </ul>
-        </nav>
-    </header>
     <section>
         <div class="images">
-            <img src="images/rando.jpg" alt=" rando a la campagne">
-            <img src="images/rando2.jpg" alt=" rando a la campagne">
-            <img src="images/rando3.jpg" alt=" rando a la campagne">
-            <img src="images/rando4.jpg" alt=" rando a la campagne">
+            <img src="<?php echo images_dir ?>rando.jpg" alt=" rando a la campagne">
+            <img src="<?php echo images_dir ?>rando2.jpg" alt=" rando a la campagne">
+            <img src="<?php echo images_dir ?>rando3.jpg" alt=" rando a la campagne">
+            <img src="<?php echo images_dir ?>rando4.jpg" alt=" rando a la campagne">
         </div>
         <section class="info-rando-complete">
             <div class="relief">
@@ -76,13 +60,17 @@
                 <div class="info">
                     <h2>Infos:</h2>
                     <div class="indication">
+                        <div class="difficulte">
+                            <span>Difficulté</span>
+                            <p>Facile</p>
+                        </div>
                         <div class="distance">
                             <span>Distance</span>
                             <p>7Km</p>
                         </div>
                         <div class="duree">
                             <span>Durée moyenne</span>
-                            <p> 2h38min</p>
+                            <p> 2 h38min</p>
                         </div>
                     </div>
                 </div>
@@ -99,7 +87,7 @@
                 <button onclick="myFunction()" id="myBtn">Afficher plus</button>
             </div>
             <div class="maps-rando">
-                <a href="maps.html"><img src="images/maps rando.jpg" alt="carte de randonne"></a>
+                <a href="maps.php"><img src="<?php echo images_dir ?>maps rando.jpg" alt="carte de randonne"></a>
             </div>
             <div class="meteo">
                 <h2>Météo:</h2>
@@ -112,19 +100,18 @@
                     <p>M 07</p>
                     <p>M 08</p>
                     <p>J 09</p>
-
                 </div>
                 <div class="indications">
                     <div class="gif-meteo">
-                        <div class="taille"><img src="images/soleil.gif" alt="icon soleil"></div>
+                        <div class="taille"><img src="<?php echo images_dir ?>soleil.gif" alt="icon soleil"></div>
                         <p>21°C </p>
                     </div>
                     <div class="gif-meteo">
-                        <div class="taille"><img src="images/venteux.gif" alt="icon vent"></div>
+                        <div class="taille"><img src="<?php echo images_dir ?>venteux.gif" alt="icon vent"></div>
                         <p>8Km </p>
                     </div>
                     <div class="gif-meteo">
-                        <div class="taille"> <img src="images/pluie.gif" alt="icon nuage"></div>
+                        <div class="taille"> <img src="<?php echo images_dir ?>pluie.gif" alt="icon nuage"></div>
                         <p>0mm</p>
                     </div>
                 </div>
@@ -147,11 +134,11 @@
                 <h2>Avis:</h2>
             </div>
             <div class="button-btn">
-                <a href="avis.html"><button class="button" type="button">Laisser un avis</button></a>
+                <a href="avis.php"><button class="button" type="button">Laisser un avis</button></a>
             </div>
             <div class="text-avis">
                 <div class="avis-utilisateur">
-                    <h2><img src="images/icon-profil-femme.png" alt="image de profil d'une femme">Tiphaine40</h2>
+                    <h2><img src="<?php echo images_dir ?>icon-profil-femme.png" alt="image de profil d'une femme">Tiphaine40</h2>
                 </div>
                 <div class="avis-utilisateur-note">
                     <p>Les chemins sont praticables même apres une forte pluie, il y a de l’ombre sur une grande partie
@@ -161,7 +148,7 @@
             </div>
             <div class="text-avis">
                 <div class="avis-utilisateur">
-                    <h2><img src="images/icon-profil-homme.png" alt="image de profil d'un homme">Timothé</h2>
+                    <h2><img src="<?php echo images_dir ?>icon-profil-homme.png" alt="image de profil d'un homme">Timothé</h2>
                 </div>
                 <div class="avis-utilisateur-note">
                     <p>Les chemins sont praticables même apres une forte pluie, il y a de l’ombre sur une grande partie
@@ -171,7 +158,7 @@
             </div>
             <div class="text-avis">
                 <div class="avis-utilisateur">
-                    <h2><img src="images/icon-profil-gars.png" alt="image de profil d'un garçon">Billy1984</h2>
+                    <h2><img src="<?php echo images_dir ?>icon-profil-gars.png" alt="image de profil d'un garçon">Billy1984</h2>
                 </div>
                 <div class="avis-utilisateur-note">
                     <p>Les chemins sont praticables même apres une forte pluie, il y a de l’ombre sur une grande partie
@@ -180,34 +167,12 @@
                 </div>
             </div>
 
-            <footer>
-                <div class="logo-footer">
-                    <a href=""><img src="images/logo bulma.png" alt="logo avec une tête de chien"></a>
-                </div>
-                <div class="info-footer">
-                    <div class="a-propos">
-                        <h2>A propos</h2>
-                        <p><a href="">Trouver une randonnée</a></p>
-                        <p><a href="">Groupes de randonneurs</a></p>
-                        <p><a href="">Mes messages</a></p>
-                        <p><a href="">Mon compte</a></p>
-                        <a href="">Se déconnecter</a>
-                    </div>
-                    <div class="informations">
-                        <h2>Informations</h2>
-                        <p><a href="">A propos</a></p>
-                        <p><a href="">Mentions légales</a></p>
-                        <p><a href="">Politique de confidentialité</a></p>
-                        <p><a href="">Nous contacter</a></p>
-                    </div>
-                </div>
-                <p>&copy; 2025 Canirando - Tous droits réservés.</p>
-            </footer>
+           <?php include ('layout/footer.php'); ?>
         </section>
 
 
 
-        <script defer src="javaScript/button.js"></script>
+        <script src="<?php echo js_dir; ?>theme.js?<?=time();?>" defer></script>
 </body>
 
 </html>

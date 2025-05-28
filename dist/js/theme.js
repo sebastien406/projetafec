@@ -1,1 +1,90 @@
-(()=>{var e={177:()=>{document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".box-wrapper"),t=document.querySelector(".btn-close"),n=document.querySelector(".avis + .button-btn .button");n&&n.addEventListener("click",(function(t){t.preventDefault(),e.style.display="flex"})),t&&t.addEventListener("click",(function(){e.style.display="none"})),e&&e.addEventListener("click",(function(t){t.target===e&&(e.style.display="none")}));const o=document.getElementById("myBtn"),r=document.getElementById("dots"),i=document.getElementById("more");o&&r&&i&&o.addEventListener("click",(function(){"none"===r.style.display?(r.style.display="inline",o.innerHTML="Afficher plus",i.style.display="none"):(r.style.display="none",o.innerHTML="Afficher moins",i.style.display="inline")}))}))}},t={};function n(o){var r=t[o];if(void 0!==r)return r.exports;var i=t[o]={exports:{}};return e[o](i,i.exports,n),i.exports}n.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return n.d(t,{a:t}),t},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{"use strict";n(177)})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./assets/scripts/base.js":
+/*!********************************!*\
+  !*** ./assets/scripts/base.js ***!
+  \********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.js */ \"./assets/scripts/button.js\");\n\n\n//# sourceURL=webpack://Afec_Starter_kit/./assets/scripts/base.js?");
+
+/***/ }),
+
+/***/ "./assets/scripts/button.js":
+/*!**********************************!*\
+  !*** ./assets/scripts/button.js ***!
+  \**********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\nfunction AfficherPlus() {\n  var dots = document.getElementById(\"dots\");\n  var moreText = document.getElementById(\"more\");\n  var btnText = document.getElementById(\"myBtn\");\n  if (dots.style.display === \"none\") {\n    dots.style.display = \"inline\";\n    btnText.innerHTML = \"Afficher plus\";\n    moreText.style.display = \"none\";\n  } else {\n    dots.style.display = \"none\";\n    btnText.innerHTML = \"Afficher moins\";\n    moreText.style.display = \"inline\";\n  }\n}\nvar afficherPlusBtn = document.getElementById('myBtn');\nif (afficherPlusBtn) {\n  afficherPlusBtn.addEventListener('click', AfficherPlus);\n}\n\n//# sourceURL=webpack://Afec_Starter_kit/./assets/scripts/button.js?");
+
+/***/ }),
+
+/***/ "./assets/styles/base.scss":
+/*!*********************************!*\
+  !*** ./assets/styles/base.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Afec_Starter_kit/./assets/styles/base.scss?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	__webpack_require__("./assets/scripts/base.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./assets/styles/base.scss");
+/******/ 	
+/******/ })()
+;

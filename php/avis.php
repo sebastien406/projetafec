@@ -6,33 +6,13 @@
 	<title>Canirando</title>
 	<meta name="description" content="site de randonne canine" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="variable.css">
-	<link rel="shortcut icon" href="images/logo bulma.pngg">
+	<link rel="stylesheet" href="<?php echo css_dir ?>theme.css">
+    <link rel="shortcut icon" href="<?php echo images_dir ?>logo bulma.jpg">
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> -->
 </head>
 
 <body>
-	<header>
-		<div class="header">
-			<div class="logo">
-				<img src="images/logo bulma.pngg" alt="joli chien avec une laisse dans la gueule"
-					>
-			</div>
-			<div class="nom-du-site">
-				<h1>CANIRANDO</h1>
-			</div>
-			<div class="icon">
-				<div class="icon-profil">
-					<a href=""><img src="images/iconprofil.png" alt="icon de mon profil" srcset=""></a>
-				</div>
-				<div class="icon-groupe">
-					<a href=""><img src="images/groupe.png" alt="icon deprofil pour le groupe" srcset=""></a>
-				</div>
-			</div>
-
-		</div>
-		</div>
-	</header>
+	<?php include ('layout/header.php'); ?>
     <section>
         <div class="images">
             <img src="images/rando.jpg" alt=" rando a la campagne">
