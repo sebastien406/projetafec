@@ -1,8 +1,16 @@
 <?php
-$host = 'localhost';
-$dbname = 'canirando';
-$user = 'root';
-$password = '';
+if (ENV == "local") {
+    $host = 'localhost';
+    $dbname = "canirando";
+    $user = 'root';
+    $password = '';
+} else {
+    $host = 'blobidesafec.mysql.db';
+    $dbname = "blobidesafec";
+    $user = 'blobidesafec';
+    $password = 'Afec2025Dax';
+    // https://phpmyadmin.hosting.ovh.net/index.php?pma_username=blobidesafec&pma_servername=blobidesafec.mysql.db
+}
 
 try { 
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $password);
@@ -14,3 +22,4 @@ try {
     die('Connexion échouée : ' . $e->getMessage());
 }
 ?>
+

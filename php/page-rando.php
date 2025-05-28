@@ -17,7 +17,7 @@ require_once("config/setting.php");
 </head>
 
 <body>
-    <!-- <div class="box-wrapper">
+    <div class="box-wrapper">
         <div class="box-container">
             <div class="box">
                 <div class="box-title">
@@ -34,7 +34,7 @@ require_once("config/setting.php");
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
    <?php include ('layout/header.php'); ?>
      <div class="fil-ariane">
         <ul>
@@ -134,7 +134,7 @@ require_once("config/setting.php");
                 <h2>Avis:</h2>
             </div>
             <div class="button-btn">
-                <a href="avis.php"><button class="button" type="button">Laisser un avis</button></a>
+                <button class="button" type="button" id="openModalReviewBtn">Laisser un avis</button>
             </div>
             <div class="text-avis">
                 <div class="avis-utilisateur">

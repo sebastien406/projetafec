@@ -6,36 +6,17 @@
 	<title>Canirando</title>
 	<meta name="description" content="site de randonne canine" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="dist/css/theme.css">
-	<link rel="shortcut icon" href="images/logo bulma.png">
+    <link rel="stylesheet" href="<?php echo css_dir ?>theme.css?<?php echo time(); ?>">
+    <link rel="shortcut icon" href="<?php echo images_dir ?>logo bulma.png">
 </head>
 
-<body>
-	<header>
-		<div class="header">
-			<div class="logo">
-				<img src="images/logo bulma.jpg" alt="joli chien avec une laisse dans la gueule"
-					style="height: 70px; width: 80px;border-radius: 90px;">
-			</div>
-			<div class="icon">
-				<div class="icon-profil">
-					<a href="compte.html"><img src="images/iconprofil.png" alt="icon de mon profil" srcset=""></a>
-				</div>
-				<div class="icon-groupe">
-					<a href="groupe.html"><img src="images/groupe.png" alt="icon deprofil pour le groupe" srcset=""></a>
-				</div>
-			</div>
-			<div class="nom-du-site">
-				<h1>CANIRANDO</h1>
-			</div>
-		</div>
-		</div>
-	</header>
+	
+    <?php include ('layout/header.php'); ?>
     <div class="fil-ariane">
 		<ul>
-		<li><a href="index.html">Accueil</a></li>
-        <li><a href="compte.html">Mon compte</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
+		<li><a href="index.php">Accueil</a></li>
+        <li><a href="compte.php">Mon compte</a></li>
+        <li><a href="inscription.php">Inscription</a></li>
 	</ul>
 	</div>
 <body>
@@ -92,5 +73,9 @@
 			</div>
 		</form>
 	</div>
+
+		 
+      <?php include ('layout/footer.php'); ?>
+    <script src="<?php echo js_dir; ?>theme.js?<?=time();?>" defer></script>
 </body>
 </html>
