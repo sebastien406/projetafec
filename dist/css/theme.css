@@ -657,6 +657,10 @@ button button:hover {
   color: var(--gris-anthracite);
 }
 
+.form-group .input {
+  display: flex;
+}
+
 header {
   background-color: var(--vert-foret-profond);
   color: var(--blanc-casse);
