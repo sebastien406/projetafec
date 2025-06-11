@@ -100,8 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const moreText = document.getElementById("more");
 
     if (myBtn && dots && moreText) {
-        // Supprimez l'attribut onclick="myFunction()" du HTML pour ce bouton,
-        // car nous gérons l'événement ici avec addEventListener
         myBtn.addEventListener('click', function() {
             if (dots.style.display === "none") {
                 dots.style.display = "inline";

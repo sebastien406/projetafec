@@ -54,17 +54,25 @@ header {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
 .main-nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     background-color:#1c4529;
     padding: 20px;
+    height: 100px; 
+    gap: 200px;
+    
+          @media (max-width: 468px){
     height: 80px;
-
-
+    gap: 20px;
+  } 
   
 }
+
 .main-nav a {
     font-size:var( --font-size) ;
     display: flex;
@@ -77,6 +85,10 @@ header {
     border-radius:var( --border-radius-lg) ;
           @media (max-width: 468px){
     padding: 3px 2px;
+    font-size: medium;
+    height: 50px;
+    display: flex;
+    align-items: center;
   } 
     
 }

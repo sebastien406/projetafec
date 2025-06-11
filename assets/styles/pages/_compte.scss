@@ -28,3 +28,39 @@ input{
     border-radius:var(--border-radius-lg) ;
     margin: var(--margin-md);
 }
+
+.form-group {
+  display: flex; 
+  align-items: center;
+}
+
+.drop-container{
+    margin: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-xs);
+    border: 2px solid var(--vert-foret-profond);
+    border-radius: var( --border-radius-lg);
+    color:var(--vert-foret-profond); //texte aucun fichier choisi voir comment le faire disparaitre
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+
+}
+.drop-container:hover{
+    background-color:var( --gris-clair);
+} 
+.drop-title{
+    color:var(--vert-foret-profond);
+    font-size:  var( --font-size);
+    font-weight: bold;
+    text-align: center;
+}
+input[type=file]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;}

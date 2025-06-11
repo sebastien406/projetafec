@@ -1,3 +1,7 @@
+<?php
+require_once("config/setting.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -23,16 +27,33 @@
     <section>
         <div class="connection">
             <h2>Inscription</h2>
-            <div class="photo-profil">
-                <div class="img-profil">
-                    <p>Déposer votre photo de profil</p>
-                </div>
-                <div class="img-profil">
-                    <p>Déposer la photo de votre chien</p>
-                </div>
-            </div>
+            < class="photo-profil">
+             <div>
 
-        </div>
+                <label for="photo" class="drop-container" id="dropcontainer">
+                  <span class="drop-title"></span>
+                
+                  <span class="btn">Choisir votre photo</span>
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                />
+                </label>
+            </div>
+                <div>
+                <label for="photo" class="drop-container" id="dropcontainer">
+                  <span class="drop-title"></span>
+            
+                  <span class="btn">Choisir la photo de votre compagnion</span>
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                />
+                </label>
+            </div>
+		</div>
     </section>
 	<div class="contact-form">
 		<form action="" method="post" enctype="multipart/form-data">

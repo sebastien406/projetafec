@@ -123,7 +123,7 @@ body {
   .hero {
     height: 400px;
     width: 100%;
-    padding: 10px;
+    min-height: 700px;
   }
 }
 
@@ -131,18 +131,19 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .hero h1 {
   color: var(--blanc-casse);
   font-size: 3em;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
 
 .hero p {
   font-size: 1.2em;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
 
 .search-bar {
@@ -210,8 +211,10 @@ body {
   display: flex;
   justify-content: center;
   overflow-x: auto;
+  width: 100%;
   gap: 40px;
   height: 200px;
+  justify-content: flex-start;
 }
 @media (max-width: 468px) {
   .grid-overflow {
@@ -373,6 +376,45 @@ input {
 .btn {
   border-radius: var(--border-radius-lg);
   margin: var(--margin-md);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.drop-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-xs);
+  border: 2px solid var(--vert-foret-profond);
+  border-radius: var(--border-radius-lg);
+  color: var(--vert-foret-profond);
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.drop-container:hover {
+  background-color: var(--gris-clair);
+}
+
+.drop-title {
+  color: var(--vert-foret-profond);
+  font-size: var(--font-size);
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
 }
 
 body {
@@ -658,10 +700,6 @@ button button:hover {
   color: var(--gris-anthracite);
 }
 
-.form-group .input {
-  display: flex;
-}
-
 header {
   background-color: var(--vert-foret-profond);
   color: var(--blanc-casse);
@@ -728,9 +766,18 @@ header {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   background-color: #1c4529;
   padding: 20px;
-  height: 80px;
+  height: 100px;
+  gap: 200px;
+}
+@media (max-width: 468px) {
+  .main-nav ul {
+    height: 80px;
+    gap: 20px;
+  }
 }
 
 .main-nav a {
@@ -747,6 +794,10 @@ header {
 @media (max-width: 468px) {
   .main-nav a {
     padding: 3px 2px;
+    font-size: medium;
+    height: 50px;
+    display: flex;
+    align-items: center;
   }
 }
 

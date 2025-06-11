@@ -1,3 +1,6 @@
+<?php
+require_once("config/setting.php");
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,12 +15,7 @@
 </head>
 
 
-    <div class="fil-ariane">
-		<ul>
-		<li><a href="index.html">Accueil</a></li>
-        <li><a href="creationgroupe.html">Connection groupe</a></li>
-	</ul>
-	</div>
+  
 	    <?php include ('layout/header.php'); ?>
 <div class="fil-ariane">
 		<ul>
@@ -45,7 +43,7 @@
 	<div class="inscription">
 		<h2>Créer un groupe</h2>
 		<div class="form-group">
-			<a href="creationgroupe.html"><button type="submit"class="btn" >Créer</button></a>	
+			<a href="creationgroupe.php"><button type="submit"class="btn" >Créer</button></a>	
 		</div>
 	</div>
 	 <?php include ('layout/footer.php'); ?>

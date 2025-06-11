@@ -43,7 +43,7 @@ require_once("config/setting.php");
 	<div class="inscription">
 		<h2>Pas encore inscrit?</h2>
 		<div class="form-group">
-			<a href="inscription.html"><button type="submit"class="btn" >S'incrire</button></a>	
+			<a href="inscription.php"><button type="submit"class="btn" >S'incrire</button></a>	
 		</div>
 	</div>
 	<section>
