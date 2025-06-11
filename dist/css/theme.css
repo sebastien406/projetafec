@@ -43,9 +43,13 @@
   }
 }
 :root {
-  --primary-color: #ffffff;
-  --header-color:#85A947;
-  --linear-gradient:(#deeb2b,#94d12b);
+  --vert-foret-profond: #225733;
+  --terre-de-sienne: #A0522D;
+  --orange-vibrant: #FF8C00;
+  --blanc-casse: #F8F0E3;
+  --gris-anthracite: #36454F;
+  --gris-clair: #D3D3D3;
+  --bleu-ciel-doux: #87CEEB;
 }
 
 :root {
@@ -87,7 +91,6 @@
   --margin-ld:30px;
 }
 
-/* Palette de couleurs (inspirée de notre discussion) */
 :root {
   --vert-foret-profond: #225733;
   --terre-de-sienne: #A0522D;
@@ -102,7 +105,6 @@ body {
   font-family: sans-serif;
   background-color: var(--blanc-casse);
   color: var(--gris-anthracite);
-  margin: 0;
   line-height: 1.6;
   width: 100%;
 }
@@ -113,13 +115,15 @@ body {
   background-position: center;
   color: var(--blanc-casse);
   text-align: center;
-  min-height: 800px;
+  min-height: 1300px;
   display: flex;
   align-items: center;
 }
 @media (max-width: 468px) {
   .hero {
     height: 400px;
+    width: 100%;
+    padding: 10px;
   }
 }
 
@@ -204,13 +208,16 @@ body {
 
 .grid-overflow {
   display: flex;
+  justify-content: center;
   overflow-x: auto;
-  gap: 20px;
+  gap: 40px;
   height: 200px;
 }
 @media (max-width: 468px) {
   .grid-overflow {
     height: 180px;
+    gap: 20px;
+    justify-content: flex-start;
   }
 }
 
@@ -224,14 +231,14 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  min-width: 200px;
+  min-width: 300px;
   padding: var(--padding-xs);
   justify-items: center;
 }
 @media (max-width: 468px) {
   .univers-item {
-    width: 90%;
     padding: 0px;
+    min-width: 180px;
   }
 }
 
@@ -370,8 +377,6 @@ input {
 
 body {
   font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: var(--blanc-casse);
   color: var(--gris-anthracite);
   line-height: 1.6;
@@ -390,10 +395,6 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
-}
-
-p {
-  margin-bottom: 1rem;
 }
 
 a {
@@ -686,7 +687,12 @@ header {
 }
 
 .nom-du-site h1 {
-  font-size: xx-large;
+  font-size: 80px;
+}
+@media (max-width: 468px) {
+  .nom-du-site h1 {
+    font-size: var(--font-h2);
+  }
 }
 
 .icon {
@@ -728,11 +734,20 @@ header {
 }
 
 .main-nav a {
+  font-size: var(--font-size);
   display: flex;
   text-align: center;
   justify-items: center;
   color: var(--blanc-casse);
+  background-color: var(--vert-foret-profond);
+  padding: 10px 10px;
   text-decoration: none;
+  border-radius: var(--border-radius-lg);
+}
+@media (max-width: 468px) {
+  .main-nav a {
+    padding: 3px 2px;
+  }
 }
 
 footer {
@@ -788,7 +803,6 @@ footer {
 .fil-ariane {
   font-size: 0.9em;
   color: #000000;
-  margin: 0px 10px;
 }
 
 .fil-ariane ul {

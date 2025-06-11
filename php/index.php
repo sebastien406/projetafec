@@ -1,12 +1,11 @@
 <?php
 require_once("config/setting.php");
-// Liste des plantes pour "Mon répertoire Botanique"
-$sql = "SELECT * FROM fleurs ORDER BY id DESC limit 12";
+$sql = "SELECT * FROM randonnees ORDER BY id DESC limit 12";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $repBotanique = $stmt->fetchAll();
 ?>
-?>
+
 
 
 

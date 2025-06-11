@@ -22,7 +22,10 @@ header {
 }
 
 .nom-du-site h1 {
-    font-size: xx-large;
+    font-size: 80px;
+        @media (max-width: 468px){
+   font-size: var(--font-h2);
+  } 
 
 }
 
@@ -63,10 +66,17 @@ header {
   
 }
 .main-nav a {
+    font-size:var( --font-size) ;
     display: flex;
     text-align: center;
     justify-items: center;
     color: var(--blanc-casse);
+    background-color:var(--vert-foret-profond) ;
+    padding: 10px 10px;
     text-decoration: none;
+    border-radius:var( --border-radius-lg) ;
+          @media (max-width: 468px){
+    padding: 3px 2px;
+  } 
     
 }

@@ -1,6 +1,6 @@
 <?php
-define ('ENV', 'dev');
-// define ('ENV', 'local');
+// define ('ENV', 'dev');
+define ('ENV', 'local');
 
 // Connexion à la base de données MySQL
 // http://localhost/phpmyadmin/index.php?route=/sql&db=arroso'moi

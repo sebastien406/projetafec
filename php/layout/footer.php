@@ -19,5 +19,5 @@
                 <p><a href="">Nous contacter</a></p>
             </div>
         </div>
-        <p>&copy; 2025 Canirando - Tous droits réservés.</p>
+        <p>&copy; 2025 Canirando - Tous droits réservés. Sinon je te pète la gueule</p>
     </footer>
