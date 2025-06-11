@@ -1,3 +1,5 @@
+// bouton afficher plus
+
 function AfficherPlus() {
     let dots = document.getElementById("dots");
     let moreText = document.getElementById("more");
@@ -20,7 +22,7 @@ if (afficherPlusBtn) {
   afficherPlusBtn.addEventListener('click', AfficherPlus);
 }
 
-
+// ---------------------------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
     const boxWrapper = document.querySelector('.box-wrapper');
     const closeButton = document.querySelector('.btn-close');
@@ -29,21 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitReviewBtn = document.getElementById('submitReviewBtn'); // Le bouton "Envoyer votre avis" à l'intérieur de la modale
 
 
-    console.log('--- Débogage Modale Avis ---');
-    console.log('Élément boxWrapper trouvé :', boxWrapper);
-    console.log('Élément closeButton trouvé :', closeButton);
-    console.log('Élément openReviewModalBtn trouvé :', openReviewModalBtn);
-    console.log('Élément commentTextArea trouvé :', commentTextArea);
-    console.log('Élément submitReviewBtn trouvé :', submitReviewBtn);
-
-
     // Écouteur d'événement pour ouvrir la modale
     if (openReviewModalBtn) {
         openReviewModalBtn.addEventListener('click', function(event) {
             event.preventDefault(); // Empêche le comportement par défaut du lien si le bouton est dans un <a>
             if (boxWrapper) {
                 boxWrapper.style.display = 'flex'; // Affiche la modale (utilisez 'flex' pour le centrage CSS)
-                console.log('Bouton "Laisser un avis" cliqué. Affichage de la modale défini sur flex.');
+                
             }
         });
     } else {
@@ -59,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (commentTextArea) {
                     commentTextArea.value = '';
                 }
-                console.log('Bouton de fermeture cliqué. Modale masquée.');
+               
             }
         });
     }
@@ -73,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (commentTextArea) {
                     commentTextArea.value = '';
                 }
-                console.log('Cliqué en dehors de la modale. Modale masquée.');
+               
             }
         });
     }
@@ -92,25 +86,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-
-    // --- Votre logique existante "Afficher plus" ---
-    const myBtn = document.getElementById("myBtn");
-    const dots = document.getElementById("dots");
-    const moreText = document.getElementById("more");
-
-    if (myBtn && dots && moreText) {
-        myBtn.addEventListener('click', function() {
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                myBtn.innerHTML = "Afficher plus";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                myBtn.innerHTML = "Afficher moins";
-                moreText.style.display = "inline";
-            }
-        });
-    }
-    console.log('--- Fin du débogage Modale Avis ---');
 });

@@ -84,7 +84,7 @@ require_once("config/setting.php");
                 </p>
             </div>
             <div class="button-btn">
-                <button onclick="myFunction()" id="myBtn">Afficher plus</button>
+                <button onclick="AfficherPlus()" id="myBtn">Afficher plus</button>
             </div>
             <div class="maps-rando">
                 <a href="maps.php"><img src="<?php echo images_dir ?>maps rando.jpg" alt="carte de randonne"></a>
