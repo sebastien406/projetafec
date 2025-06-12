@@ -28,6 +28,7 @@ function loadEnv($path)
         }
     }
 } 
+
 loadEnv(__DIR__. '/../.env');
 // On récupère l'environnement (local par défaut si non défini)
 $env = getenv('APP_ENV') ?: 'local';
