@@ -1,10 +1,10 @@
 <?php
-if (ENV == "local") {
+if ($env == "local") {
     $host = 'localhost';
     $dbname = "canirando";
     $user = 'root';
     $password = '';
-} else {
+} elseif ($env === "prod"){
     $host = 'blobidesafec.mysql.db';
     $dbname = "blobidesafec";
     $user = 'blobidesafec';

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const boxWrapper = document.querySelector('.box-wrapper');
     const closeButton = document.querySelector('.btn-close');
-    const openReviewModalBtn = document.getElementById('openReviewModalBtn'); 
+    const openReviewModalBtn = document.getElementById('openModalReviewBtn');
     const commentTextArea = document.getElementById('commentTextArea'); 
     const submitReviewBtn = document.getElementById('submitReviewBtn'); 
 
