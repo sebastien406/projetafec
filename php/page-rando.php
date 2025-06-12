@@ -167,9 +167,9 @@ require_once("config/setting.php");
                 </div>
             </div>
 
-           <?php include ('layout/footer.php'); ?>
+           
         </section>
-
+<?php include ('layout/footer.php'); ?>
 
 
         <script src="<?php echo js_dir; ?>theme.js?<?=time();?>" defer></script>
