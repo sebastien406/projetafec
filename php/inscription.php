@@ -26,8 +26,7 @@ require_once("config/setting.php");
 <body>
     <section>
         <div class="connection">
-            <h2>Inscription</h2>
-            < class="photo-profil">
+            
              <div>
 
                 <label for="photo" class="drop-container" id="dropcontainer">

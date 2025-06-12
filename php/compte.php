@@ -21,6 +21,7 @@ require_once("config/setting.php");
 		<li><a href="index.php">Accueil</a></li>
 		<li><a href="">Compte</a></li>
 	</ul>
+</div>
 <body>
     <div class="connection">
 		<h2>Se connecter</h2>

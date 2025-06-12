@@ -63,7 +63,7 @@ body {
     display: flex;
     max-width: 500px;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: var(--border-radius-sm);
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
      @media (max-width: 468px){

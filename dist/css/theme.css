@@ -150,7 +150,7 @@ body {
   display: flex;
   max-width: 500px;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -702,6 +702,10 @@ button button:hover {
 .avis-utilisateur-note p {
   font-style: italic;
   color: var(--gris-anthracite);
+}
+
+.conseil {
+  padding: 20px;
 }
 
 header {
