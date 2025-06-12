@@ -341,6 +341,10 @@ body {
   padding: 20px;
 }
 
+.admin h2 {
+  padding: 0px 10px;
+}
+
 .connection {
   display: flex;
   flex-direction: column;
@@ -854,6 +858,13 @@ footer {
 .fil-ariane {
   font-size: 0.9em;
   color: #000000;
+  padding: 0px 20px;
+}
+@media (max-width: 468px) {
+  .fil-ariane {
+    padding: 0px 5px;
+    font-size: x-small;
+  }
 }
 
 .fil-ariane ul {
@@ -881,78 +892,155 @@ footer {
 .box-wrapper {
   display: none;
   position: fixed;
-  top: 0;
+  z-index: 1000;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+}
+
+.box-wrapper.active {
+  display: flex;
 }
 
 .box-container {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: var(--border-radius-base);
-  box-shadow: var(--shadow-medium);
-  max-width: 400px;
+  background-color: var(--blanc-casse);
+  padding: 0;
+  border: 1px solid var(--gris-clair);
   width: 90%;
-  position: relative;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 .box-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  padding: 15px 20px;
+  background-color: var(--vert-foret-profond);
+  color: var(--blanc-casse);
+  font-size: 1.3em;
   font-weight: bold;
-  color: var(--vert-foret-profond);
-  border-bottom: 1px solid var(--gris-clair);
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--terre-de-sienne);
 }
 
 .button-exit {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  margin-left: auto;
 }
 
 .btn-close {
   background: none;
-  color: var(--gris-anthracite);
-  font-size: 1.5rem;
-  padding: 5px 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: var(--blanc-casse);
+  transition: color 0.3s ease;
+  padding: 5px;
 }
 
-.btn-close:hover {
-  background-color: var(--gris-clair);
-  color: var(--terre-de-sienne);
-  transform: none;
+.btn-close:hover,
+.btn-close:focus {
+  color: var(--orange-vibrant);
+  text-decoration: none;
+  outline: none;
+}
+
+.box-content {
+  padding: 25px;
+  text-align: center;
+  color: var(--gris-anthracite);
 }
 
 .box-content h2 {
-  text-align: center;
-  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 25px;
   color: var(--terre-de-sienne);
+  font-size: 1.8em;
+}
+
+.box-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-content textarea {
+  width: calc(100% - 20px);
+  padding: 15px;
+  border: 1px solid var(--gris-clair);
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 120px;
+  font-family: "Arial", sans-serif;
+  font-size: 1.1em;
+  color: var(--gris-anthracite);
+  background-color: white;
+}
+
+.box-content textarea::placeholder {
+  color: var(--gris-clair);
 }
 
 .espace-avis {
-  text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 15px;
 }
 
 .envoyer {
   background-color: var(--orange-vibrant);
   color: white;
   padding: 12px 25px;
-  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .envoyer:hover {
-  background-color: var(--terre-de-sienne);
+  background-color: #e67e00;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .box-container {
+    width: 95%;
+  }
+  .box-title {
+    font-size: 1.1em;
+    padding: 12px 15px;
+  }
+  .btn-close {
+    font-size: 1.5em;
+  }
+  .box-content h2 {
+    font-size: 1.5em;
+  }
+  .box-content textarea {
+    font-size: 1em;
+    min-height: 100px;
+  }
+  .envoyer {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
 }

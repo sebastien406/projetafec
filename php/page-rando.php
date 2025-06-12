@@ -17,20 +17,23 @@ require_once("config/setting.php");
 </head>
 
 <body>
-    <div class="box-wrapper">
+     <div class="box-wrapper" id="reviewModal">
         <div class="box-container">
             <div class="box">
                 <div class="box-title">
                     Partager
                     <div class="button-exit">
-                        <button class="btn btn-close" type="button">&#10006</button>
+                        <button class="btn btn-close" type="button" id="closeReviewModalBtn">&#10006</button>
                     </div>
                 </div>
                 <div class="box-content">
                     <h2>Laisser un avis</h2>
-                    <div class="espace-avis">
-                        <a href=""><button class="envoyer" type="button">Envoyer votre avis</button></a>
-                    </div>
+                    <form action="#" method="POST">
+                        <textarea name="review_text" rows="5" placeholder="Votre avis ici..."></textarea>
+                        <div class="espace-avis">
+                            <button class="envoyer" type="submit">Envoyer votre avis</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
