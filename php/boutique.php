@@ -25,16 +25,15 @@ require_once("config/setting.php");
 <body>
     
  <main class="container">
-        <h2>Nos Essentiels pour la Rando avec Chien</h2>
+        <h2>Equipez-vous pour des randonnées mémorable avec votre fidèle compagnon.</h2>
         <section id="product-list">
             <?php
-            // Simulation de données de produits (vous pouvez les récupérer d'une base de données)
             $products = [
                 [
                     'id' => 1,
-                    'name' => 'Sac à dos de bât pour chien',
+                    'name' => 'Sac à dos de ballade pour chien',
                     'price' => 45.99,
-                    'image' => 'https://via.placeholder.com/200x200?text=Sac+a+dos+chien',
+                    'image' => <img src="images/sac a dos chien" alt="" srcset="images/sac a dos chien">,
                     'description' => 'Idéal pour transporter ses affaires lors de longues randonnées.'
                 ],
                 [
