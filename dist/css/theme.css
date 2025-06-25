@@ -842,18 +842,24 @@ nav ul li a:hover {
 
 /* Modale Panier */
 .modal {
-  display: none; /* Masqué par défaut */
-  position: fixed; /* Reste en place même en scrollant */
-  z-index: 1000; /* Par-dessus tout */
+  /* Masqué par défaut. C'est la règle qui doit prévaloir au chargement. */
+  display: none;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%; /* Pleine largeur */
-  height: 100%; /* Pleine hauteur */
-  overflow: auto; /* Active le scroll si nécessaire */
-  background-color: rgba(0, 0, 0, 0.4); /* Fond noir semi-transparent */
-  display: flex; /* Utilise flexbox pour centrer */
-  align-items: center; /* Centrage vertical */
-  justify-content: center; /* Centrage horizontal */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Les propriétés flexbox seront appliquées quand la modale sera visible */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cette classe sera ajoutée par JavaScript pour afficher la modale */
+.modal.active {
+  display: flex; /* La rend visible et centrée */
 }
 
 .modal-content {
