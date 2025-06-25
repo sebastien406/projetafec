@@ -1,55 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--blanc-casse);
-    color: var(--gris-anthracite);
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-/* En-tête */
-header {
-    background-color: var(--vert-foret-profond);
-    color: var(--blanc-casse);
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: var(--orange-vibrant);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: var(--blanc-casse);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: var(--terre-de-sienne);
-}
-
 #cart-icon {
     position: relative;
 }
@@ -65,7 +13,6 @@ nav ul li a:hover {
     right: -8px;
 }
 
-/* Section Produits */
 #product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -90,8 +37,8 @@ nav ul li a:hover {
 
 .product-card img {
     max-width: 100%;
-    height: 200px; /* Taille fixe pour l'image */
-    object-fit: cover; /* Recadre l'image sans la déformer */
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -105,7 +52,7 @@ nav ul li a:hover {
 .product-card .description {
     font-size: 0.9rem;
     color: var(--gris-anthracite);
-    min-height: 40px; /* Pour éviter les décalages de hauteur si la description est courte */
+    min-height: 40px;
 }
 
 .product-card .price {
@@ -127,14 +74,11 @@ nav ul li a:hover {
 }
 
 .add-to-cart:hover {
-    background-color: #e07b00; /* Une nuance un peu plus foncée */
+    background-color: #e07b00;
 }
 
-/* Modale Panier */
 .modal {
-    /* Masqué par défaut. C'est la règle qui doit prévaloir au chargement. */
     display: none; 
-    
     position: fixed; 
     z-index: 1000; 
     left: 0;
@@ -143,14 +87,12 @@ nav ul li a:hover {
     height: 100%; 
     overflow: auto; 
     background-color: rgba(0,0,0,0.4); 
-    /* Les propriétés flexbox seront appliquées quand la modale sera visible */
     align-items: center; 
     justify-content: center; 
 }
 
-/* Cette classe sera ajoutée par JavaScript pour afficher la modale */
 .modal.active {
-    display: flex; /* La rend visible et centrée */
+    display: flex; 
 }
 
 .modal-content {
