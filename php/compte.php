@@ -36,8 +36,8 @@ require_once("config/setting.php");
 					<input type="password" name=" password">
 				</div>
 				<div class="form-group">
-					<!-- <a href="utilisateur.php"><button type="submit"class="btn" >Se connecter</button></a> -->
-					 <a href="utilisateur.php" class="bouton-connexion">Se connecter</a>
+					<a href="utilisateur.php"><button type="submit"class="btn" >Se connecter</button></a>
+					 <!-- <a href="utilisateur.php" class="bouton-connexion">Se connecter</a> -->
 				</div>
 			</form>
 		</div>
