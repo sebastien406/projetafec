@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Canirando - Mon Profil</title>
+    <meta name="description" content="page de profil utilisateur Canirando" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dist/css/theme.css">
+    <link rel="shortcut icon" href="images/logo bulma.png">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo bulma.png" alt="Joli chien avec une laisse dans la gueule">
+            </div>
+            <div class="nom-du-site">
+                <h1>CANIRANDO</h1>
+            </div>
+            <div class="icon">
+                <div class="icon-profil">
+                    <a href="compte.html"><img src="images/iconprofil.png" alt="Icon de mon profil"></a>
+                </div>
+                <div class="icon-groupe">
+                    <a href="groupe.html"><img src="images/groupe.png" alt="Icon de profil pour le groupe"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#boutique">La boutique</a></li>
+                <li><a href="#conseil">Nos conseils</a></li>
+                <li><a href="#destinations">Nos Destinations</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-profil-utilisateur">
+        <div class="entete-profil">
+            <img src="images/randonneur.png" alt="Photo de profil de l'utilisateur" class="photo-profil">
+            <img src="images/chien.png" alt="Photo de profil de l'utilisateur" class="photo-profil">
+            <div class="titre-profil">  
+            <h1>Bienvenue, BERNARD ET YOUKI !</h1>
+            <p>Votre espace personnalisé pour suivre vos aventures et gérer votre compte.</p>
+        </div>
+        </div>
+
+        <div class="grille-sections-profil">
+            <div class="carte-profil">
+                <h2>Vos Statistiques de Rando</h2>
+                <div class="liste-statistiques">
+                    <p><strong>Randonnées effectuées :</strong> 15</p>
+                    <p><strong>Distance totale :</strong> 120 km</p>
+                    <p><strong>Groupes de rando rejoints :</strong> 3</p>
+                </div>
+            </div>
+            <div class="carte-profil">
+                <h2>Votre Rang de Randonneur</h2>
+                <div class="bloc-classement">
+                    <p class="rang-actuel">Vous êtes au **15ème** rang sur 250 randonneurs !</p>
+                    <div class="progression-barre">
+                        <div class="progression-remplie" style="width: 60%;"></div>
+                    </div>
+                    <p class="prochain-niveau">Prochain niveau : **Randonneur Émérite** à 200 km !</p>
+                </div>
+                <h3 class="titre-mini-classement">Top 3 Canirando :</h3>
+                <ul class="mini-classement">
+                    <li>🥇 **AventurierMax** - 180 km</li>
+                    <li>🥈 **PatteRapide** - 175 km</li>
+                    <li>🥉 **MontagneDog** - 160 km</li>
+                </ul>
+                <a href="#" class="lien-voir-tout">Voir le classement complet</a>
+            </div>
+            <div class="carte-profil">
+                <h2>Vos Dernières Activités</h2>
+                <ul class="liste-activites">
+                    <li><a href="#">Randonnée au Lac Bleu (25/06/2025)</a></li>
+                    <li><a href="#">Sentier des Crêtes (18/06/2025)</a></li>
+                    <li><a href="#">Balade en Forêt de Chênes (10/06/2025)</a></li>
+                </ul>
+                <a href="#" class="lien-voir-tout">Voir toutes mes activités</a>
+            </div>
+
+            <div class="carte-profil">
+                <h2>Mes Groupes</h2>
+                <ul class="liste-groupes">
+                    <li><a href="groupe.html">Les P'tits Loups Randonneurs</a></li>
+                    <li><a href="groupe.html">Aventuriers Canins du Sud</a></li>
+                </ul>
+                <a href="groupe.html" class="lien-voir-tout">Gérer mes groupes</a>
+            </div>
+
+            <div class="carte-profil">
+                <h2>Mes Messages</h2>
+                <p>Vous avez <strong>2 nouveaux messages</strong>.</p>
+                <a href="#" class="lien-voir-tout">Consulter mes messages</a>
+            </div>
+
+            <div class="carte-profil actions-profil">
+                <h2>Réglages du Compte</h2>
+                <ul class="liste-actions">
+                    <li><a href="#">Modifier mon profil</a></li>
+                    <li><a href="#">Changer mon mot de passe</a></li>
+                    <li><a href="#">Historique des commandes (boutique)</a></li>
+                </ul>
+                <button class="button bouton-deconnexion" type="button">Se déconnecter</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <a href=""><img src="images/logo bulma.png" alt="logo avec une tête de chien"></a>
+        </div>
+        <div class="info-footer">
+            <div class="a-propos">
+                <h2>A propos</h2>
+                <p><a href="">Trouver une randonnée</a></p>
+                <p><a href="">Groupes de randonneurs</a></p>
+                <p><a href="">Mes messages</a></p>
+                <p><a href="">Mon compte</a></p>
+                <a href="">Se déconnecter</a>
+            </div>
+            <div class="informations">
+                <h2>Informations</h2>
+                <p><a href="">A propos</a></p>
+                <p><a href="">Mentions légales</a></p>
+                <p><a href="">Politique de confidentialité</a></p>
+                <p><a href="">Nous contacter</a></p>
+            </div>
+        </div>
+        <p>&copy; 2025 Canirando - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

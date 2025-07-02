@@ -971,6 +971,217 @@ button button:hover {
     border-radius: 8px;
   }
 }
+.page-profil-utilisateur {
+  width: 100%;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+}
+
+.entete-profil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.entete-profil .photo-profil {
+  width: 300px;
+  height: 300px;
+  border-radius: var(--border-radius-lg);
+  object-fit: cover;
+  border: 4px solid var(--vert-foret-profond);
+  margin-bottom: 0;
+}
+
+.titre-profil {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.entete-profil h1 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.entete-profil p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .entete-profil {
+    grid-template-columns: 1fr;
+  }
+  .entete-profil .photo-profil {
+    width: 200px;
+    height: 200px;
+  }
+  .titre-profil {
+    grid-column: 1;
+  }
+}
+.grille-sections-profil {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.carte-profil {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.carte-profil h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.liste-statistiques p,
+.liste-activites li,
+.liste-groupes li,
+.liste-actions li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.liste-activites,
+.liste-groupes,
+.liste-actions {
+  list-style: none;
+  padding: 0;
+}
+
+.liste-activites li a,
+.liste-groupes li a,
+.liste-actions li a,
+.lien-voir-tout {
+  text-decoration: none;
+  color: var(--gris-anthracite);
+  transition: color 0.3s ease;
+}
+
+.liste-activites li a:hover,
+.liste-groupes li a:hover,
+.liste-actions li a:hover,
+.lien-voir-tout:hover {
+  color: var(--terre-de-sienne);
+}
+
+.lien-voir-tout {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.actions-profil {
+  text-align: center;
+}
+
+.actions-profil .button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.actions-profil .button:hover {
+  background-color: #c82333;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+  .grille-sections-profil {
+    grid-template-columns: 1fr;
+  }
+  .page-profil-utilisateur {
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+}
+.bloc-classement {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.rang-actuel {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.progression-barre {
+  width: 80%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+
+.progression-remplie {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 6px;
+}
+
+.prochain-niveau {
+  font-size: 0.95em;
+  color: #777;
+}
+
+.titre-mini-classement {
+  font-size: 1.3em;
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mini-classement {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.mini-classement li {
+  font-size: 1.1em;
+  color: #555;
+  padding: 8px 0;
+  border-bottom: 1px dotted #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-classement li:last-child {
+  border-bottom: none;
+}
+
 header {
   background-color: var(--vert-foret-profond);
   color: var(--blanc-casse);
