@@ -100,10 +100,10 @@ require_once("config/setting.php");
              <div class="carte-boutique">
                 <div class="carte-apercu">
                     <div class="carte-image">
-                        <img src="<?php echo images_dir ?>trousse de secoure.png" alt="sac à dos pour chien">
+                        <img src="<?php echo images_dir ?>trousse-de-secour.png" alt="sac à dos pour chien">
                     </div>
                     <div class="carte-titre">
-                        <p>Trousse de secoure</p>
+                        <p>Trousse de secours</p>
                     </div>
                     <div class="carte-description">
                         <p>En pleine nature, les petits imprévus peuvent arriver vite. Une trousse de secours bien pensée est votre meilleure alliée pour garantir la sécurité et le bien-être de votre compagnon à quatre pattes. Des coussinets égratignés aux petites coupures, soyez toujours prêt à agir. Vérifiez régulièrement son contenu et adaptez-le à vos itinéraires.</p>
