@@ -92,7 +92,7 @@ require_once("config/setting.php");
 				<label for="name" class="text-form">Le caractère de votre chien:</label>
 				<input type="text" name=" Le caractere de votre chien" required>
 			</div>
-			<div>
+			<div class="bouton_sterilisation">
 			<label class="switch">
   				<input type="checkbox" id="toggleSterilisation">
   			<span class="slider round"></span>

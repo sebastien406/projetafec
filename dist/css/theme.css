@@ -1070,14 +1070,17 @@ footer {
     font-size: 1em;
   }
 }
+.bouton_sterilisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .switch input {
