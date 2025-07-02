@@ -5,6 +5,7 @@
             </div>
             <div class="nom-du-site">
                 <h1>CANIRANDO</h1>
+                <h2>Votre partenaire pour des aventures inoubliables avec votre chien.</h2>
             </div>
             <div class="icon">
                 <div class="icon-profil">

@@ -57,8 +57,16 @@ require_once("config/setting.php");
 	<div class="contact-form">
 		<form action="" method="post" enctype="multipart/form-data">
 			<div class="form-group">
+				<label for="name" class="text-form">Votre nom:</label>
+				<input type="text" name=" Votre nom " required>
+			</div>
+			<div class="form-group">
+				<label for="name" class="text-form">Votre prénom:</label>
+				<input type="text" name=" Votre  prénom" required>
+			</div>
+			<div class="form-group">
 				<label for="name" class="text-form">Votre pseudo:</label>
-				<input type="text" name=" Votre nom et prénom" required>
+				<input type="text" name=" Votre pseudo" required>
 			</div>
 			<div class="form-group">
 				<label for="name" class="text-form">Votre adresse e-mail:</label>
@@ -66,23 +74,23 @@ require_once("config/setting.php");
 			</div>
 			<div class="form-group">
 				<label for="name" class="text-form">Mot de passe:</label>
-				<input type="password" name=" Votre numéro de téléphone" required>
+				<input type="password" name=" Votre mot de passe" required>
 			</div>
 			<div class="form-group">
 				<label for="name" class="text-form">Le nom de votre chien:</label>
-				<input type="text" name=" Votre nom et prénom" required>
+				<input type="text" name=" Son nom" required>
 			</div>
 			<div class="form-group">
 				<label for="name" class="text-form">La race de votre chien:</label>
-				<input type="text" name=" Votre nom et prénom" required>
+				<input type="text" name=" la race de votre chien" required>
 			</div>
 			<div class="form-group">
 				<label for="name" class="text-form">L'age de votre chien:</label>
-				<input type="text" name=" Votre nom et prénom" required>
+				<input type="text" name=" Age de votre chien" required>
 			</div>
 			<div class="form-group">
 				<label for="name" class="text-form">Le caractère de votre chien:</label>
-				<input type="text" name=" Votre nom et prénom" required>
+				<input type="text" name=" Le caractere de votre chien" required>
 			</div>
 			
 			<div class="form-group">

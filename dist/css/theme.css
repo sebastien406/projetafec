@@ -708,6 +708,29 @@ button button:hover {
   padding: 20px;
 }
 
+.icon-star-filled,
+.icon-star-empty {
+  width: 20px; /* Taille des étoiles */
+  height: 20px;
+  vertical-align: middle; /* Alignement avec le texte si besoin */
+  display: inline-block; /* Pour qu'elles se comportent comme des blocs mais en ligne */
+}
+
+.icon-star-filled {
+  color: var(--orange-vibrant); /* Utilise votre couleur orange vif pour les étoiles pleines */
+}
+
+.icon-star-empty {
+  color: var(--gris-clair); /* Couleur pour les étoiles vides (contour) */
+}
+
+/* Un conteneur pour aligner les étoiles si vous en avez plusieurs */
+.rating {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1; /* Empêche les sauts de ligne si les étoiles sont trop grandes */
+}
+
 header {
   background-color: var(--vert-foret-profond);
   color: var(--blanc-casse);
