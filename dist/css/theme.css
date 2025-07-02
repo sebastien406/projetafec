@@ -1075,7 +1075,8 @@ footer {
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .switch input {
