@@ -30,7 +30,7 @@ require_once("config/setting.php");
     <div class="carte-boutique">
         <div class="carte-apercu">
             <div class="carte-image">
-                <img src="images/laisse.png" alt="laisse pour chien">
+                <img src="<?php echo images_dir ?>laisse.png" alt="laisse pour chien">
             </div>
             <div class="carte-titre">
                 <p>Laisses</p>
@@ -53,7 +53,7 @@ require_once("config/setting.php");
    
         <div class="button-btn">
                 <button class="button" type="button">Ajouter au panier</button>
-                <img src="images/panier.png" alt="icon caddie ppour achat">
+                <img src="<?php echo images_dir ?>panier.png" alt="icon caddie ppour achat">
             </div>
 
             </div>
