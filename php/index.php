@@ -31,7 +31,7 @@ $repBotanique = $stmt->fetchAll();
    <?php //include ('layout/menuFiltre.php'); ?>
     <section class="hero">
         <div class="hero-content">     
-            <h1>Explorez le monde avec votre fidèle compagnon</h1>
+            <h1>Votre partenaire pour explorez le monde avec votre fidèle compagnon</h1>
             <p>Trouvez et partagez les meilleures randonnées seule ou en groupe pour vous et votre chien.</p>
             <form  class="search-bar" method="get" action="listing.php" >
                 <input name="keywords" type="search" placeholder="Rechercher une rando, un lieu...">
