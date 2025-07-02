@@ -92,6 +92,11 @@ require_once("config/setting.php");
 				<label for="name" class="text-form">Le caractère de votre chien:</label>
 				<input type="text" name=" Le caractere de votre chien" required>
 			</div>
+			<p>Votre chien est-il stérilisé ?</p>
+				<input type="radio" id="steriliseOui" name="sterilisation" value="oui">
+				<label for="steriliseOui">Oui</label><br>
+				<input type="radio" id="steriliseNon" name="sterilisation" value="non">
+				<label for="steriliseNon">Non</label>
 			
 			<div class="form-group">
 				<input type="hidden" value="50" name="id-article">
