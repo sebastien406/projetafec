@@ -28,7 +28,10 @@ header {
   } 
 
 }
-
+.nom-du-site h2 {
+  font-size: var(--font-size);
+  color: var(--blanc-casse);
+}
 .icon {
     padding-right:20px;
     display: flex;
