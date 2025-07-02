@@ -1075,6 +1075,7 @@ footer {
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin: auto;
 }
 
 .switch input {
@@ -1108,11 +1109,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  background-color: var(--vert-foret-profond);
 }
 
 input:checked + .slider:before {
