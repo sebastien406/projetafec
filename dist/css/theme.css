@@ -1068,7 +1068,6 @@ button button:hover {
   background-color: #c82333;
 }
 
-/* Styles pour les écrans plus petits */
 @media (max-width: 768px) {
   .grille-sections-profil {
     grid-template-columns: 1fr;

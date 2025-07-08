@@ -35,11 +35,11 @@ require_once("config/setting.php");
 					<label for="name" class="text-form"> Votre mot de passe:</label>
 					<input type="password" name=" password">
 				</div>
+				</form>
 				<div class="form-group">
 					<a href="utilisateur.php"><button type="submit"class="btn" >Se connecter</button></a>
 					 <!-- <a href="utilisateur.php" class="bouton-connexion">Se connecter</a> -->
-				</div>
-			</form>
+				</div> 
 		</div>
 	</div>
 	<div class="inscription">

@@ -20,7 +20,7 @@ require_once("config/setting.php");
         <ul>
        <li><a href="index.php">Accueil</a></li> 
         <li><a href="compte.php">Connection</a></li> 
-        <li><a href="compte.php">Mon compte</a></li> 
+        <li><a href="utilisateur.php">Mon compte</a></li> 
     </ul>
     </div>
     <main class="page-profil-utilisateur">
