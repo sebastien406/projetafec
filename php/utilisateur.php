@@ -45,34 +45,28 @@ require_once("config/setting.php");
             <div class="carte-profil">
                 <h2>Votre Rang de Randonneur</h2>
                 <div class="bloc-classement">
-                    <p class="rang-actuel">Vous êtes au **15ème** rang sur 250 randonneurs !</p>
+                    <p class="rang-actuel">Vous êtes au 15ème rang sur 250 randonneurs </p>
                     <div class="progression-barre">
                         <div class="progression-remplie" style="width: 60%;"></div>
                     </div>
-                    <p class="prochain-niveau">Prochain niveau : **Randonneur Émérite** à 200 km !</p>
+                    <p class="prochain-niveau">Prochain niveau :Randonneur Émériteà 200 km !</p>
                 </div>
-                <h3 class="titre-mini-classement">Top 3 Canirando :</h3>
-                <ul class="mini-classement">
-                    <li>🥇 **AventurierMax** - 180 km</li>
-                    <li>🥈 **PatteRapide** - 175 km</li>
-                    <li>🥉 **MontagneDog** - 160 km</li>
-                </ul>
                 <a href="#" class="lien-voir-tout">Voir le classement complet</a>
             </div>
             <div class="carte-profil">
                 <h2>Vos Dernières Activités</h2>
-                <ul class="liste-activites">
-                    <li><a href="#">Randonnée au Lac Bleu (25/06/2025)</a></li>
-                    <li><a href="#">Sentier des Crêtes (18/06/2025)</a></li>
-                    <li><a href="#">Balade en Forêt de Chênes (10/06/2025)</a></li>
-                </ul>
+                  <ul class="liste-activites">
+                    <li><a href="#">La casse patte (25/06/2025)</a></li>
+                    <li><a href="#">La feu au cul(18/04/2025)</a></li>
+                    <li><a href="#">La campagnarde (10/03/2025)</a></li>
+                  </ul>
                 <a href="#" class="lien-voir-tout">Voir toutes mes activités</a>
             </div>
 
             <div class="carte-profil">
                 <h2>Mes Groupes</h2>
                 <ul class="liste-groupes">
-                    <li><a href="groupe.php">Les P'tits Loups Randonneurs</a></li>
+                    <li><a href="groupe.php">Les Bioumans</a></li>
                     <li><a href="groupe.php">Aventuriers Canins du Sud</a></li>
                 </ul>
                 <a href="groupe.php" class="lien-voir-tout">Gérer mes groupes</a>
