@@ -19,7 +19,7 @@ require_once("config/setting.php");
 <div class="fil-ariane">
 		<ul>
 		<li><a href="index.php">Accueil</a></li>
-		<li><a href="">Compte</a></li>
+		<li><a href="">boutique</a></li>
 	</ul>
 </div>
 <body>

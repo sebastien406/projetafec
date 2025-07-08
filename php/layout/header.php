@@ -19,8 +19,7 @@
             <ul>
                 <li><a href="boutique.php">La boutique</a></li>
                 <li><a href="conseil.php">Nos conseils</a></li>
-                <li><a href="#destinations">Nos Destinations</a></li>
-                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="index.php">Nos Destinations</a></li>
             </ul>
         </nav>
     </header>
