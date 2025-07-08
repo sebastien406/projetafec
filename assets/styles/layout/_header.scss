@@ -65,7 +65,7 @@ header {
     height: 100px; 
     gap: 200px;
     
-          @media (max-width: 468px){
+          @media (max-width: 768px){
     height: 80px;
     gap: 20px;
   } 
@@ -82,7 +82,7 @@ header {
     padding: 10px 10px;
     text-decoration: none;
     border-radius:var( --border-radius-lg) ;
-          @media (max-width: 468px){
+          @media (max-width: 768px){
     padding: 3px 2px;
     font-size: medium;
     height: 50px;
