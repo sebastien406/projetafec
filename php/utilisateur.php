@@ -49,7 +49,7 @@ require_once("config/setting.php");
                     <div class="progression-barre">
                         <div class="progression-remplie" style="width: 60%;"></div>
                     </div>
-                    <p class="prochain-niveau">Prochain niveau :Randonneur Émériteà 200 km !</p>
+                    <p class="prochain-niveau">Prochain niveau :Randonneur Émérite à 200 km </p>
                 </div>
                 <a href="#" class="lien-voir-tout">Voir le classement complet</a>
             </div>
@@ -67,7 +67,7 @@ require_once("config/setting.php");
                 <h2>Mes Groupes</h2>
                 <ul class="liste-groupes">
                     <li><a href="groupe.php">Les Bioumans</a></li>
-                    <li><a href="groupe.php">Aventuriers Canins du Sud</a></li>
+                    <li><a href="groupe.php">La patte patrouille</a></li>
                 </ul>
                 <a href="groupe.php" class="lien-voir-tout">Gérer mes groupes</a>
             </div>

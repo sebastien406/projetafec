@@ -28,16 +28,16 @@ require_once("config/setting.php");
 			<form action="" method="post" enctype="multipart/form-data">
 				<div class="form-group">
 					<label for="name" class="text-form">Votre adresse e-mail:</label>
-					<input type="text" name=" Votre adresse e-mail " required>
+					<input type="text" name=" Votre adresse e-mail " >
 				</div>
 				<div class="form-group">
 					<label for="name" class="text-form"> Votre mot de passe:</label>
-					<input type="password" name=" password" required>
-				</div>
-				<div class="form-group">
-					<button type="submit" name="submit" class="btn">Se connecter</button>
+					<input type="password" name=" password" >
 				</div>
 			</form>
+			<div class="form-group">
+					<a href="pageGroupe.php"><button type="submit"class="btn" >Créer</button></a>	
+				</div>
 		</div>
 	</div> 
 	<div class="inscription">
