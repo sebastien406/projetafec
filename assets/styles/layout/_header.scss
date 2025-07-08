@@ -15,7 +15,7 @@ header {
 .logo img {
     height: 100px;
     width: 100px;
-    @media (max-width: 468px){
+    @media (max-width: 768px){
     height: 50px;
     width: 50px;
   } 
@@ -23,7 +23,7 @@ header {
 
 .nom-du-site h1 {
     font-size: 80px;
-        @media (max-width: 468px){
+        @media (max-width: 768px){
    font-size: var(--font-h2);
   } 
 
@@ -32,13 +32,13 @@ header {
     padding-right:20px;
     display: flex;
     gap: 20px;
-         @media (max-width: 468px){
+         @media (max-width: 768px){
   gap: 10px;
   }   
 }
 .icon img{
     height: 40px;
-      @media (max-width: 468px){
+      @media (max-width: 768px){
     height: 30px;
     width: 30px;
   }   
