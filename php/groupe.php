@@ -36,7 +36,7 @@ require_once("config/setting.php");
 				</div>
 			</form>
 			<div class="form-group">
-					<a href="pageGroupe.php"><button type="submit"class="btn" >Créer</button></a>	
+					<a href="pageGroupe.php"><button type="submit"class="btn" >Se connecter</button></a>	
 				</div>
 		</div>
 	</div> 
