@@ -22,7 +22,7 @@ require_once("config/setting.php");
         <li><a href="compte.php">Connection</a></li> 
         <li><a href="utilisateur.php">Mon compte</a></li> 
     </ul>
-    </div> <?php include ('layout/footer.php'); ?>
+    
 
     <main class="contenu-principal-groupe">
 
@@ -197,7 +197,7 @@ require_once("config/setting.php");
 
     </main>
 
-
+        </div> <?php include ('layout/footer.php'); ?>
         <script src="<?php echo js_dir; ?>theme.js?<?=time();?>" defer></script>
 </body>
 
