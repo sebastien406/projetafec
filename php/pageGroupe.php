@@ -96,12 +96,12 @@ require_once("config/setting.php");
                     Pour que nos balades restent un plaisir pour tous, voici les conditions concernant nos compagnons à quatre pattes :
                 </p>
                 <ul class="liste-conditions-groupe">
-                    <li>**Tous les chiens sont les bienvenus :** Petits, grands, jeunes, seniors, stérilisés ou non. L'important est leur sociabilité et leur capacité à suivre le groupe sur des parcours faciles.</li>
-                    <li>**Sociabilité :** Votre chien doit être à l'aise avec les autres chiens et les humains.</li>
-                    <li>**Contrôle :** Maîtrise du rappel essentielle ou tenue en laisse si nécessaire pour la sécurité de tous.</li>
-                    <li>**Équipement de base :** Laisse, harnais/collier, gamelle d'eau portable, sacs à déjections.</li>
-                    <li>**Santé :** Les chiens doivent être à jour de leurs vaccins et vermifuges.</li>
-                    <li>**Respect de l'environnement :** Ramassage systématique des déjections.</li>
+                    <li>Tous les chiens sont les bienvenus : Petits, grands, jeunes, seniors, stérilisés ou con. L'important est leur sociabilité et leur capacité à suivre le groupe sur des parcours faciles.</li>
+                    <li>Sociabilité : Votre chien doit être à l'aise avec les autres chiens et les humains.</li>
+                    <li>Contrôle : Maîtrise du rappel essentielle ou tenue en laisse si nécessaire pour la sécurité de tous.</li>
+                    <li>Équipement de base : Laisse, harnais/collier, gamelle d'eau portable, sacs à déjections.</li>
+                    <li>Santé : Les chiens doivent être à jour de leurs vaccins et vermifuges.</li>
+                    <li>Respect de l'environnement : Ramassage systématique des déjections.</li>
                 </ul>
                 <p class="texte-contact-conditions">
                     N'hésitez pas à nous contacter si vous avez des questions spécifiques concernant votre chien.

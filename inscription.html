@@ -11,26 +11,32 @@
 </head>
 
 <body>
-	<header>
-		<div class="header">
-			<div class="logo">
-				<img src="images/logo bulma.jpg" alt="joli chien avec une laisse dans la gueule"
-					style="height: 70px; width: 80px;border-radius: 90px;">
-			</div>
-			<div class="icon">
-				<div class="icon-profil">
-					<a href="compte.html"><img src="images/iconprofil.png" alt="icon de mon profil" srcset=""></a>
-				</div>
-				<div class="icon-groupe">
-					<a href="groupe.html"><img src="images/groupe.png" alt="icon deprofil pour le groupe" srcset=""></a>
-				</div>
-			</div>
-			<div class="nom-du-site">
-				<h1>CANIRANDO</h1>
-			</div>
-		</div>
-		</div>
-	</header>
+<header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo bulma.png" alt="Joli chien avec une laisse dans la gueule">
+            </div>
+            <div class="nom-du-site">
+                <h1>CANIRANDO</h1>
+            </div>
+            <div class="icon">
+                <div class="icon-profil">
+                    <a href="compte.html"><img src="images/iconprofil.png" alt="Icon de mon profil"></a>
+                </div>
+                <div class="icon-groupe">
+                    <a href="groupe.html"><img src="images/groupe.png" alt="Icon de profil pour le groupe"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="boutique.html">La boutique</a></li>
+                <li><a href="conseil.html">Nos conseils</a></li>
+                <li><a href="index.html">Nos Destinations</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="fil-ariane">
 		<ul>
 		<li><a href="index.html">Accueil</a></li>
@@ -40,18 +46,34 @@
 	</div>
 <body>
     <section>
-        <div class="connection">
-            <h2>Inscription</h2>
-            <div class="photo-profil">
-                <div class="img-profil">
-                    <p>Déposer votre photo de profil</p>
-                </div>
-                <div class="img-profil">
-                    <p>Déposer la photo de votre chien</p>
-                </div>
-            </div>
+       <div class="connection">
+            
+             <div>
 
-        </div>
+                <label for="photo" class="drop-container" id="dropcontainer">
+                  <span class="drop-title"></span>
+                
+                  <span class="btn">Choisir votre photo</span>
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                />
+                </label>
+            </div>
+                <div>
+                <label for="photo" class="drop-container" id="dropcontainer">
+                  <span class="drop-title"></span>
+            
+                  <span class="btn">Choisir la photo de votre compagnion</span>
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                />
+                </label>
+            </div>
+		</div>
     </section>
 	<div class="contact-form">
 		<form action="" method="post" enctype="multipart/form-data">
