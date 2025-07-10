@@ -28,9 +28,9 @@ require_once("config/setting.php");
 
 
         <section class="section-introduction-groupe">
-            <h2 class="titre-groupe-principal">La patte patrouille</h2>
+            <h2 class="titre-groupe-principal">La Patte Patrouille</h2>
             <p class="description-groupe">
-                Bienvenue sur la page La patte patrouille ! Nous sommes un groupe de passionnés de randonnée, humains et chiens, qui aimons les balades tranquilles en campagne et les sentiers faciles. Notre objectif est de profiter de la nature, de la compagnie de nos chiens et de partager des moments conviviaux, sans la contrainte des terrains difficiles. Que votre compagnon soit petit ou grand, stérilisé ou con, il est le bienvenu !
+                Bienvenue sur la page La Patte Patrouille ! Nous sommes un groupe de passionnés de randonnée, humains et chiens, qui aimons les balades tranquilles en campagne et les sentiers faciles. Notre objectif est de profiter de la nature, de la compagnie de nos chiens et de partager des moments conviviaux, sans la contrainte des terrains difficiles. Que votre compagnon soit petit ou grand, stérilisé ou con, il est le bienvenu !
             </p>
             <div class="visuel-introduction-groupe">
                 <img src="<?php echo images_dir ?>image-groupe.png" alt="Image d'un groupe de randonneurs avec des chiens dans un paysage de campagne" class="image-introduction-groupe">
@@ -168,7 +168,7 @@ require_once("config/setting.php");
                 <img src="<?php echo images_dir ?>selfivador.png" alt="Image de Dark Vador faisant un selfy" class="photo-galerie-groupe">
                 <img src="<?php echo images_dir ?>randovador.png" alt="Image d'un groupe de randonneur" class="photo-galerie-groupe">
                 <img src="<?php echo images_dir ?>randotranquil.png" alt="Image d'un groupe randonneurs" class="photo-galerie-groupe">
-                <img src="<?php echo images_dir ?>voldevache.png" alt="Image de vaches" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>voledevache.png" alt="Image de vaches" class="photo-galerie-groupe">
                 <img src="<?php echo images_dir ?>selfyvador.png" alt="Image d'un selfi" class="photo-galerie-groupe">
                 <img src="<?php echo images_dir ?>vadorplage.png" alt="Image d'une photo a la plage" class="photo-galerie-groupe">
             </div>
