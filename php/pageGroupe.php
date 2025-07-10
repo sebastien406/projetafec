@@ -45,7 +45,7 @@ require_once("config/setting.php");
                 <div class="details-admin-groupe">
                     <h3 class="nom-admin-groupe">Bernard</h3>
                     <p class="description-admin-groupe">
-                        Nanard est le fondateur et l'âme des Explorateurs Canins. Fort de plus de 15 ans d'expérience en randonnée, il privilégie les balades accessibles à tous, humains et chiens. Sa passion pour la nature et la convivialité fait de lui un guide hors pair. Il est toujours prêt à partager ses astuces pour des promenades sereines et joyeuses.
+                        Nanard est le fondateur et l'âme dela Patte Patrouille. Fort de plus de 15 ans d'expérience en randonnée, il privilégie les balades accessibles à tous, humains et chiens. Sa passion pour la nature et la convivialité fait de lui un guide hors pair. Il est toujours prêt à partager ses astuces pour des promenades sereines et joyeuses.
                     </p>
                     <p class="compagnon-admin-groupe">
                         Accompagné de son fidèle compagnon, Obywan.
