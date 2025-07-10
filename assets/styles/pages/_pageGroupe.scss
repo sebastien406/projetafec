@@ -6,7 +6,7 @@
 
 .entete-page {
     padding: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
     color: white;
     background-color: var(--vert-foret-profond);
 }
@@ -64,7 +64,7 @@
     margin-bottom: 3rem;
     padding: 2rem;
     border-radius: 0.75rem;
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
     background-color: white;
 }
 
@@ -102,14 +102,14 @@
     border-radius: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var( --shadow-box);
 }
 
 .section-administrateur {
     margin-bottom: 3rem;
     padding: 2rem;
     border-radius: 0.75rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-box);
     background-color: white;
 }
 
@@ -135,7 +135,7 @@
     object-fit: cover;
     margin-bottom: 1rem;
     border: 4px solid var(--vert-foret-profond);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
 }
 @media (min-width: 768px) {
     .photo-admin-groupe {
@@ -202,7 +202,7 @@
 .carte-membre {
     background-color: white;
     border-radius: 0.75rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow:var(--shadow-box);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -224,7 +224,7 @@
     object-fit: cover;
     margin-bottom: 0.75rem;
     border: 4px solid var(--vert-foret-profond);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
 }
 
 .nom-membre-groupe {
@@ -246,7 +246,7 @@
     margin-bottom: 3rem;
     padding: 2rem;
     border-radius: 0.75rem;
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
     background-color: white;
 }
 
@@ -296,7 +296,7 @@ text-align: center;
 .carte-randonnee {
     background-color: white;
     border-radius: 0.75rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow:var(--shadow-box);
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -317,7 +317,7 @@ text-align: center;
     object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow:var(--shadow-box);
 }
 
 .titre-randonnee {
@@ -351,7 +351,7 @@ text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-radius: 9999px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
@@ -370,7 +370,7 @@ text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-radius: 9999px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow:var(--shadow-box);
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
@@ -405,7 +405,7 @@ text-align: center;
     height: 500px;
     object-fit: cover;
     border-radius: var(--border-radius-l);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
 }
 
 .action-galerie-groupe {
@@ -433,6 +433,7 @@ text-align: center;
     margin-bottom: 1rem;
     color: var(--gris-anthracite);
 }
+
 
 .info-contact-groupe {
     margin-top: 1rem;
