@@ -1183,6 +1183,7 @@ button button:hover {
   padding-right: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: var(--blanc-casse);
 }
 
 @media (min-width: 768px) {
