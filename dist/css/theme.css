@@ -49,7 +49,6 @@
   --blanc-casse: #F8F0E3;
   --gris-anthracite: #36454F;
   --gris-clair: #D3D3D3;
-  --bleu-ciel-doux: #87CEEB;
 }
 
 :root {
@@ -1269,12 +1268,12 @@ button button:hover {
   }
 }
 .photo-admin-groupe {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 9999px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--border-radius-lg);
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 4px solid var(--bleu-ciel-doux);
+  border: 4px solid var(--vert-foret-profond);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -1359,12 +1358,12 @@ button button:hover {
 }
 
 .photo-membre-groupe {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 9999px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--border-radius-lg);
   object-fit: cover;
   margin-bottom: 0.75rem;
-  border: 4px solid var(--bleu-ciel-doux);
+  border: 4px solid var(--vert-foret-profond);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -1553,7 +1552,7 @@ button button:hover {
   width: 100%;
   height: 10rem;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-l);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
