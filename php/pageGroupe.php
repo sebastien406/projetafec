@@ -20,7 +20,7 @@ require_once("config/setting.php");
         <ul>
        <li><a href="index.php">Accueil</a></li> 
         <li><a href="compte.php">Connection</a></li> 
-        <li><a href="utilisateur.php">Mon compte</a></li> 
+        <li><a href="pageGroupe.php">Compte groupe</a></li> 
     </ul>
     
 
@@ -28,12 +28,12 @@ require_once("config/setting.php");
 
 
         <section class="section-introduction-groupe">
-            <h2 class="titre-groupe-principal">Les Explorateurs Canins</h2>
+            <h2 class="titre-groupe-principal">La patte patrouille</h2>
             <p class="description-groupe">
-                Bienvenue sur la page des Explorateurs Canins ! Nous sommes un groupe de passionnés de randonnée, humains et chiens, qui aimons les balades tranquilles en campagne et les sentiers faciles. Notre objectif est de profiter de la nature, de la compagnie de nos chiens et de partager des moments conviviaux, sans la contrainte des terrains difficiles. Que votre compagnon soit petit ou grand, stérilisé ou non, il est le bienvenu !
+                Bienvenue sur la page La patte patrouille ! Nous sommes un groupe de passionnés de randonnée, humains et chiens, qui aimons les balades tranquilles en campagne et les sentiers faciles. Notre objectif est de profiter de la nature, de la compagnie de nos chiens et de partager des moments conviviaux, sans la contrainte des terrains difficiles. Que votre compagnon soit petit ou grand, stérilisé ou con, il est le bienvenu !
             </p>
             <div class="visuel-introduction-groupe">
-                <img src="https://placehold.co/600x300/a7f3d0/065f46?text=Groupe+Explorateurs+Canins" alt="Image d'un groupe de randonneurs avec des chiens dans un paysage de campagne" class="image-introduction-groupe">
+                <img src="<?php echo images_dir ?>image-groupe.png" alt="Image d'un groupe de randonneurs avec des chiens dans un paysage de campagne" class="image-introduction-groupe">
             </div>
         </section>
 
@@ -41,14 +41,14 @@ require_once("config/setting.php");
         <section class="section-administrateur">
             <h2 class="titre-section">Notre Chef de Meute</h2>
             <div class="contenu-administrateur">
-                <img src="https://placehold.co/150x150/d1fae5/065f46?text=Admin" alt="Image de l'administrateur du groupe" class="photo-admin-groupe">
+                <img src="<?php echo images_dir ?>image-admin.png" alt="Image de l'administrateur du groupe" class="photo-admin-groupe">
                 <div class="details-admin-groupe">
-                    <h3 class="nom-admin-groupe">Jean-Luc Dubois</h3>
+                    <h3 class="nom-admin-groupe">Bernard</h3>
                     <p class="description-admin-groupe">
-                        Jean-Luc est le fondateur et l'âme des Explorateurs Canins. Fort de plus de 15 ans d'expérience en randonnée, il privilégie les balades accessibles à tous, humains et chiens. Sa passion pour la nature et la convivialité fait de lui un guide hors pair. Il est toujours prêt à partager ses astuces pour des promenades sereines et joyeuses.
+                        Nanard est le fondateur et l'âme des Explorateurs Canins. Fort de plus de 15 ans d'expérience en randonnée, il privilégie les balades accessibles à tous, humains et chiens. Sa passion pour la nature et la convivialité fait de lui un guide hors pair. Il est toujours prêt à partager ses astuces pour des promenades sereines et joyeuses.
                     </p>
                     <p class="compagnon-admin-groupe">
-                        Accompagné de son fidèle berger allemand, Rocky.
+                        Accompagné de son fidèle compagnon, Obywan.
                     </p>
                 </div>
             </div>
@@ -60,27 +60,27 @@ require_once("config/setting.php");
             <div class="liste-membres-groupe">
              
                 <div class="carte-membre">
-                    <img src="https://placehold.co/100x100/ecfdf5/065f46?text=Membre1" alt="Image d'un membre du groupe" class="photo-membre-groupe">
+                    <img src="<?php echo images_dir ?>image-sophieetluna.png" alt="Image d'un membre du groupe" class="photo-membre-groupe">
                     <h4 class="nom-membre-groupe">Sophie & Luna</h4>
                     <p class="description-membre-groupe">Amoureuses des sentiers de campagne</p>
                 </div>
               
                 <div class="carte-membre">
-                    <img src="https://placehold.co/100x100/a7f3d0/065f46?text=Membre2" alt="Image d'un membre du groupe" class="photo-membre-groupe">
+                    <img src="<?php echo images_dir ?>imagemarcetkoda.png" alt="Image d'un membre du groupe" class="photo-membre-groupe">
                     <h4 class="nom-membre-groupe">Marc & Koda</h4>
                     <p class="description-membre-groupe">Spécialistes des pique-niques en nature</p>
                 </div>
        
                 <div class="carte-membre">
-                    <img src="https://placehold.co/100x100/d1fae5/065f46?text=Membre3" alt="Image d'un membre du groupe" class="photo-membre-groupe">
+                    <img src="<?php echo images_dir ?>imagechloeetpixel.png" alt="Image d'un membre du groupe" class="photo-membre-groupe">
                     <h4 class="nom-membre-groupe">Chloé & Pixel</h4>
                     <p class="description-membre-groupe">Découvreuses de nouveaux chemins</p>
                 </div>
               
                 <div class="carte-membre">
-                    <img src="https://placehold.co/100x100/ecfdf5/065f46?text=Membre4" alt="Image d'un membre du groupe" class="photo-membre-groupe">
-                    <h4 class="nom-membre-groupe">David & Shadow</h4>
-                    <p class="description-membre-groupe">Experts en balades relaxantes</p>
+                    <img src="<?php echo images_dir ?>imageregisetbubulle.png" alt="Image d'un membre du groupe" class="photo-membre-groupe">
+                    <h4 class="nom-membre-groupe">Régis & Bubulle</h4>
+                    <p class="description-membre-groupe">Experts en balades!</p>
                 </div>
             </div>
             <div class="action-membres-groupe">
@@ -116,7 +116,7 @@ require_once("config/setting.php");
 
                 
                 <div class="carte-randonnee">
-                    <img src="https://placehold.co/400x250/d1fae5/065f46?text=Campagne+Verte" alt="Image d'un chien marchant sur un chemin vert à la campagne" class="image-randonnee">
+                    <img src="<?php echo images_dir ?>vacherando.png" alt="Image de vaches" class="image-randonnee">
                     <h3 class="titre-randonnee">Boucle des Champs Dorés</h3>
                     <p class="details-randonnee">
                         <span class="details-randonnee-label">Date:</span> Samedi 3 Août 2025<br>
@@ -131,7 +131,7 @@ require_once("config/setting.php");
 
 
                 <div class="carte-randonnee">
-                    <img src="https://placehold.co/400x250/ecfdf5/065f46?text=Bord+de+Rivière" alt="Image d'un chien près d'une rivière calme" class="image-randonnee">
+                    <img src="<?php echo images_dir ?>chienriviere.png" alt="Image d'un chien près d'une rivière" class="image-randonnee">
                     <h3 class="titre-randonnee">Chemin de la Rivière Paisible</h3>
                     <p class="details-randonnee">
                         <span class="details-randonnee-label">Date:</span> Dimanche 11 Août 2025<br>
@@ -146,7 +146,7 @@ require_once("config/setting.php");
 
   
                 <div class="carte-randonnee">
-                    <img src="https://placehold.co/400x250/a7f3d0/065f46?text=Sentier+Boisé" alt="Image d'un chien sur un sentier forestier" class="image-randonnee">
+                    <img src="<?php echo images_dir ?>chenecentenaire.png" alt="Image d'un sentier forestier" class="image-randonnee">
                     <h3 class="titre-randonnee">Sentier des Chênes Centenaires</h3>
                     <p class="details-randonnee">
                         <span class="details-randonnee-label">Date:</span> Samedi 24 Août 2025<br>
@@ -165,12 +165,12 @@ require_once("config/setting.php");
         <section class="section-galerie-groupe">
             <h2 class="titre-section">Nos Aventures en Images</h2>
             <div class="liste-photos-groupe">
-                <img src="https://placehold.co/300x200/d1fae5/065f46?text=Exp+Photo+1" alt="Image d'un chien et de son propriétaire marchant dans un champ" class="photo-galerie-groupe">
-                <img src="https://placehold.co/300x200/ecfdf5/065f46?text=Exp+Photo+2" alt="Image d'un petit chien profitant d'une promenade" class="photo-galerie-groupe">
-                <img src="https://placehold.co/300x200/a7f3d0/065f46?text=Exp+Photo+3" alt="Image d'un groupe de chiens jouant dans une prairie" class="photo-galerie-groupe">
-                <img src="https://placehold.co/300x200/d1fae5/065f46?text=Exp+Photo+4" alt="Image d'un grand chien sur un large sentier" class="photo-galerie-groupe">
-                <img src="https://placehold.co/300x200/ecfdf5/065f46?text=Exp+Photo+5" alt="Image d'un chien buvant dans un ruisseau" class="photo-galerie-groupe">
-                <img src="https://placehold.co/300x200/a7f3d0/065f46?text=Exp+Photo+6" alt="Image d'un chien heureux et de son propriétaire en promenade" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>selfivador.png" alt="Image de Dark Vador faisant un selfy" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>randovador.png" alt="Image d'un groupe de randonneur" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>randotranquil.png" alt="Image d'un groupe randonneurs" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>voldevache.png" alt="Image de vaches" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>selfyvador.png" alt="Image d'un selfi" class="photo-galerie-groupe">
+                <img src="<?php echo images_dir ?>vadorplage.png" alt="Image d'une photo a la plage" class="photo-galerie-groupe">
             </div>
             <div class="action-galerie-groupe">
                 <a href="#" class="bouton-secondaire">Voir toutes les photos des Explorateurs</a>
@@ -182,16 +182,16 @@ require_once("config/setting.php");
             <h2 class="titre-section">Nous Contacter pour Participer</h2>
             <div class="contenu-contact-groupe">
                 <p class="texte-contact-groupe">
-                    Pour vous inscrire à une de nos prochaines balades ou pour rejoindre le groupe des Explorateurs Canins, veuillez envoyer un message directement à notre chef de meute, Jean-Luc. Il se fera un plaisir de répondre à toutes vos questions et de vous guider.
+                    Pour vous inscrire à une de nos prochaines balades ou pour rejoindre le groupe de la Patte Patrouille, veuillez envoyer un message directement à notre chef de meute, Bernard (Nanard). Il se fera un plaisir de répondre à toutes vos questions et de vous guider ou pas.
                 </p>
                 <p class="info-contact-groupe">
-                    <span class="info-contact-label">Email :</span> jeanluc.explorateurs@canirando.fr <br>
+                    <span class="info-contact-label">Email :</span> bernard.vador@etoile noir de la mort qui tue.fr <br>
                     <span class="info-contact-label">Téléphone :</span> 06 XX XX XX XX (sur demande)
                 </p>
             </div>
             <div class="action-contact-groupe">
                
-                <a href="mailto:jeanluc.explorateurs@canirando.fr" class="bouton-primaire">Envoyer un message à Jean-Luc</a>
+                <a href="mailto:jeanluc.explorateurs@canirando.fr" class="bouton-primaire">Envoyer un message à Nanard</a>
             </div>
         </section>
 
