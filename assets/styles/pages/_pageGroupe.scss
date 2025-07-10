@@ -65,7 +65,7 @@
     padding: 2rem;
     border-radius: 0.75rem;
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-    background-color: var(--vert-foret-profond-light);
+    background-color: white;
 }
 
 .titre-groupe-principal {
@@ -110,7 +110,7 @@
     padding: 2rem;
     border-radius: 0.75rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    background-color: var(--blanc-casse);
+    background-color: white;
 }
 
 .contenu-administrateur {
@@ -129,8 +129,8 @@
 }
 
 .photo-admin-groupe {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: var(--border-radius-lg);
     object-fit: cover;
     margin-bottom: 1rem;
@@ -179,7 +179,7 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1.5rem;
-    max-width: 64rem;
+    max-width: 84rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -200,7 +200,7 @@
 }
 
 .carte-membre {
-    background-color: var(--blanc-casse);
+    background-color: white;
     border-radius: 0.75rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 1rem;
@@ -218,8 +218,8 @@
 }
 
 .photo-membre-groupe {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: var(--border-radius-lg);
     object-fit: cover;
     margin-bottom: 0.75rem;
@@ -247,34 +247,30 @@
     padding: 2rem;
     border-radius: 0.75rem;
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-    background-color: var(--bleu-ciel-doux-light);
+    background-color: white;
 }
 
 .contenu-conditions-groupe {
     max-width: 100%;
     font-size: var(--font-size);
     line-height: 1.6;
+    text-align: center;
+ 
 }
-
-// .texte-conditions-groupe {
-//     margin-bottom: 1rem;
-// }
-
+.texte-conditions-groupe {
+    margin: 20px;
+}
 .liste-conditions-groupe {
-border: solid 1px red;
 display: flex;
 flex-direction: column;
-  
+text-align: center;
+
     
 }
-// .liste-conditions-groupe li:not(:first-child) {
-//     margin-top: 0.5rem;
-// }
-
 
 .texte-contact-conditions {
-    margin-top: 1rem;
-    color: var(--gris-anthracite);
+    margin-top: var(--margin-top);
+
 }
 
 .section-randonnees-groupe {
@@ -298,7 +294,7 @@ flex-direction: column;
 }
 
 .carte-randonnee {
-    background-color: var(--blanc-casse);
+    background-color: white;
     border-radius: 0.75rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 1.5rem;
@@ -422,7 +418,7 @@ flex-direction: column;
     padding: 2rem;
     border-radius: 0.75rem;
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-    background-color: var(--bleu-ciel-doux-light);
+    background-color: white;
 }
 
 .contenu-contact-groupe {
