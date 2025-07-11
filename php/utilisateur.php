@@ -56,9 +56,9 @@ require_once("config/setting.php");
             <div class="carte-profil">
                 <h2>Vos Dernières Activités</h2>
                   <ul class="liste-activites">
-                    <li><a href="#">La casse patte (25/06/2025)</a></li>
-                    <li><a href="#">La feu au cul(18/04/2025)</a></li>
-                    <li><a href="#">La campagnarde (10/03/2025)</a></li>
+                    <li><a href="page-rando.php">La casse patte (25/06/2025)</a></li>
+                    <li><a href="index.php">La feu au cul(18/04/2025)</a></li>
+                    <li><a href="index.php">La campagnarde (10/03/2025)</a></li>
                   </ul>
                 <a href="#" class="lien-voir-tout">Voir toutes mes activités</a>
             </div>
@@ -67,7 +67,7 @@ require_once("config/setting.php");
                 <h2>Mes Groupes</h2>
                 <ul class="liste-groupes">
                     <li><a href="groupe.php">Les Bioumans</a></li>
-                    <li><a href="groupe.php">La patte patrouille</a></li>
+                    <li><a href="pageGroupe.php">La patte patrouille</a></li>
                 </ul>
                 <a href="groupe.php" class="lien-voir-tout">Gérer mes groupes</a>
             </div>
