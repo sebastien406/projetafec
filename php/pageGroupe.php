@@ -173,7 +173,7 @@ require_once("config/setting.php");
                 <img src="<?php echo images_dir ?>vadorplage.png" alt="Image d'une photo a la plage" class="photo-galerie-groupe">
             </div>
             <div class="action-galerie-groupe">
-                <a href="#" class="bouton-secondaire">Voir toutes les photos des Explorateurs</a>
+                <a href="#" class="bouton-secondaire">Voir toutes les photos de la Patte Patrouille</a>
             </div>
         </section>
 
