@@ -67,7 +67,7 @@ require_once("config/setting.php");
                 <h2>Mes Groupes</h2>
                 <ul class="liste-groupes">
                     <li><a href="groupe.php">Les Bioumans</a></li>
-                    <li><a href="pageGroupe.php">La patte patrouille</a></li>
+                    <li><a href="pageGroupe.php">La Patte Patrouille</a></li>
                 </ul>
                 <a href="groupe.php" class="lien-voir-tout">Gérer mes groupes</a>
             </div>

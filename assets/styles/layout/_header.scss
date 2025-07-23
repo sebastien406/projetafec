@@ -98,3 +98,9 @@ header {
   } 
     
 }
+.main-nav li:hover{
+  transform: translateY(-5px);
+}
+.main-nav a:hover {
+  background-color:var(--terre-de-sienne);
+}

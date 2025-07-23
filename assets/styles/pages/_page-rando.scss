@@ -52,10 +52,10 @@ button {
     font-size: 1rem; 
     transition: background-color 0.3s ease, transform 0.2s ease; 
     box-shadow: var(--shadow-box);
+    border-radius: var(--border-radius-lg);
 
 button:hover {
-    background-color: var(--terre-de-sienne); 
-    transform: translateY(-2px); 
+     transform: translateY(-5px); 
 }
 }
 
@@ -164,13 +164,9 @@ font-weight: bold;
     margin-bottom: 2rem;
 }
 
-#myBtn {
-    background-color: var(--orange-vibrant); 
-    color: white;
-}
 
 #myBtn:hover {
-    background-color: var(--terre-de-sienne);
+     transform: translateY(-5px);
 }
 
 

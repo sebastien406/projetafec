@@ -1,0 +1,98 @@
+// Variables (Assure-toi que ces variables sont définies et cohérentes avec le reste de ton projet Canirando)
+$vert-foret-profond: #2e8b57;
+$orange-vibrant: #f7a81b;
+$gris-clair: #f0f0f0;
+$gris-texte-fonce: #333;
+$gris-anthracite: #555;
+$blanc-pur: #ffffff;
+$blanc-casse: #f8f8f8;
+
+$shadow-box: 0 4px 15px rgba(0,0,0,0.08);
+$border-radius-md: 0.5rem;
+$border-radius-full: 9999px; // Pour les bords très arrondis
+
+// ----------------------------------------------------
+// Styles du contrôle de tri des discussions
+// ----------------------------------------------------
+.fr-controle-tri-discussions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; // Espace entre le label et le menu déroulant
+    margin-bottom: 2rem; // Marge sous le bloc de tri
+    justify-content: flex-end; // Aligne le tri à droite par défaut (souvent désiré pour les filtres)
+
+    // Adaptation pour les petits écrans (mobile)
+    @media (max-width: 768px) {
+        flex-direction: column; // Les éléments s'empilent verticalement
+        align-items: flex-start; // Alignés à gauche sur mobile
+        justify-content: flex-start;
+        width: 100%; // Prend toute la largeur disponible
+    }
+}
+
+.fr-label-tri {
+    font-size: 1em;
+    color: $gris-anthracite;
+    font-weight: 500;
+    white-space: nowrap; // Empêche le texte du label de passer à la ligne
+}
+
+.fr-conteneur-select {
+    position: relative; // Point de référence pour l'icône de flèche
+    display: inline-block; // Ajuste la largeur à son contenu
+    width: 220px; // Largeur fixe par défaut pour le menu déroulant
+    max-width: 100%; // S'adapte si l'écran est plus petit
+
+    // Sur mobile, le conteneur prend toute la largeur
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.fr-select-tri {
+    // Réinitialisation des styles par défaut du navigateur
+    -webkit-appearance: none; // Pour WebKit (Chrome, Safari)
+    -moz-appearance: none;    // Pour Mozilla (Firefox)
+    appearance: none;         // Standard
+
+    width: 100%;
+    padding: 0.75rem 1.5rem; // Espacement intérieur
+    padding-right: 2.8rem; // Laisse de la place pour l'icône de flèche personnalisée
+    font-size: 1em;
+    color: $gris-texte-fonce;
+    background-color: $blanc-pur;
+    border: 1px solid lighten($gris-clair, 10%); // Bordure légère
+    border-radius: $border-radius-md; // Bords légèrement arrondis
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); // Ombre discrète
+    cursor: pointer; // Indique que c'est cliquable
+    transition: all 0.2s ease; // Transition douce pour les interactions
+
+    // Styles au survol
+    &:hover {
+        border-color: $vert-foret-profond; // Bordure verte de Canirando au survol
+        box-shadow: 0 3px 8px rgba(0,0,0,0.08); // Ombre légèrement plus prononcée
+    }
+
+    // Styles au focus (quand l'utilisateur clique ou tabule sur le select)
+    &:focus {
+        outline: none; // Supprime l'outline par défaut du navigateur
+        border-color: $vert-foret-profond;
+        box-shadow: 0 0 0 3px rgba($vert-foret-profond, 0.2); // Crée un anneau de focus subtil avec la couleur de Canirando
+    }
+}
+
+// Style de l'icône de flèche personnalisée
+.fr-icone-fleche-bas {
+    position: absolute;
+    right: 1.2rem; // Position à droite du champ
+    top: 50%;
+    transform: translateY(-50%); // Centrage vertical
+    pointer-events: none; // Permet aux clics de passer à l'élément <select> en dessous
+    
+    // Crée une petite flèche CSS
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent; // Côté gauche du triangle
+    border-right: 6px solid transparent; // Côté droit du triangle
+    border-top: 6px solid $gris-anthracite; // Base du triangle (couleur de la flèche)
+}

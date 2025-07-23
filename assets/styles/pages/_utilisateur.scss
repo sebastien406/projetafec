@@ -23,6 +23,9 @@
     margin-bottom: 0;
     box-shadow: var(--shadow-box);
 }
+.entete-profil .photo-profil:hover {
+  transform: translateY(-5px);
+}
 
 .titre-profil {
     grid-column: 1 / -1;
@@ -69,6 +72,9 @@
     box-shadow: var(--shadow-box);
     display: flex;
     flex-direction: column;
+}
+.carte-profil:hover {
+   transform: translateY(-5px);
 }
 
 .carte-profil h2 {

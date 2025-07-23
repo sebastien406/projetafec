@@ -201,7 +201,7 @@
 
 .carte-membre {
     background-color: white;
-    border-radius: 0.75rem;
+    border-radius: var(--border-radius-lg);
     box-shadow:var(--shadow-box);
     padding: 1rem;
     display: flex;
@@ -240,6 +240,9 @@
 .action-membres-groupe {
     text-align: center;
     margin-top: 2rem;
+}
+.action-membres-groupe:hover{
+transform: translateY(-5px);
 }
 
 .section-conditions-groupe {
@@ -343,8 +346,8 @@ text-align: center;
 }
 
 .bouton-primaire {
-    background-color: var(--orange-vibrant);
-    color: white;
+    background-color: var(--vert-foret-profond);
+    color:white;
     font-weight: 600;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -352,41 +355,49 @@ text-align: center;
     padding-right: 1.5rem;
     border-radius: 9999px;
     box-shadow: var(--shadow-box);
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
     display: inline-block;
 }
 .bouton-primaire:hover {
-    background-color: var(--orange-vibrant-hover);
+   transform: translateY(-5px);
+   color:white;
 }
 
 .bouton-secondaire {
-    background-color: var(--gris-clair);
-    color: var(--gris-anthracite);
+    background-color: var(--vert-foret-profond);
+    color:white;
     font-weight: 600;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    border-radius: 9999px;
+    border-radius: var(--border-radius-lg);
     box-shadow:var(--shadow-box);
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
     display: inline-block;
 }
 .bouton-secondaire:hover {
-    background-color: var(--gris-clair-hover);
+   color: white;
 }
 
 .section-galerie-groupe {
     margin-bottom: 3rem;
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow:var(--shadow-box);
+    padding: var(--padding-xs);
 }
 
 .liste-photos-groupe {
     display: grid;
     grid-template-columns: 1fr;
+    
+}
+.liste-photos-groupe img {
+ background-color: var(--blanc-casse);  
+ margin-top: var(--margin-top);
+    
+}
+.liste-photos-groupe img:hover {
+ transform: translateY(-5px);
     
 }
 @media (min-width: 768px) {
@@ -404,7 +415,7 @@ text-align: center;
     width: 350px;
     height: 300px;
     object-fit: cover;
-    border-radius: var(--border-radius-l);
+    border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-box);
     margin-top: var(--margin-top);
     padding: 20px;
@@ -426,13 +437,18 @@ text-align: center;
 .action-galerie-groupe {
     text-align: center;
     margin-top: 2rem;
+    color:white;
+}
+.action-galerie-groupe:hover {
+  transform: translateY(-5px);
+  color:white;
 }
 
 .section-contact-groupe {
     margin-bottom: 3rem;
     padding: 2rem;
     border-radius: 0.75rem;
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow:var(--shadow-box);
     background-color: white;
 }
 

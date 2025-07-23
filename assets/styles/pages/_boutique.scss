@@ -17,22 +17,26 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    
+     
 }
-
+.product-categories li:hover{
+transform: translateY(-5px);
+}
 .product-categories li a {
     text-decoration: none;
-    color:var( --vert-foret-profond);
-    background-color: #f0f0f0;
+    color:white;
+    background-color:var(--vert-foret-profond);
     padding: 8px 15px;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: var(--shadow-box);
+   
 }
 
 .product-categories li a:hover {
     background-color:var( --vert-foret-profond);
     color: #fff;
+    
 }
 
 
@@ -43,6 +47,8 @@
     padding: 20px;
     text-align: center;
     background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-box);
 }
 
 .shop-page-container h2 {
@@ -51,6 +57,8 @@
     margin-bottom: 10px;
     font-weight: 700;
     background-color: var(--gris-clair);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-box);
 }
 
 .shop-page-container p {
