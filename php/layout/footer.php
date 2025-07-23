@@ -5,10 +5,10 @@
         <div class="info-footer">
             <div class="a-propos">
                 <h2>A propos</h2>
-                <p><a href="">Trouver une randonnée</a></p>
+                <p><a href="index.php">Trouver une randonnée</a></p>
                 <p><a href="">Groupes de randonneurs</a></p>
-                <p><a href="">Mes messages</a></p>
-                <p><a href="">Mon compte</a></p>
+                <p><a href="compte.php">Mes messages</a></p>
+                <p><a href="compte.php">Mon compte</a></p>
                 <a href="">Se déconnecter</a>
             </div>
             <div class="informations">

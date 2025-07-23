@@ -22,7 +22,158 @@ require_once("config/setting.php");
        <li><a href="forum.php">Forum</a></li> 
     </ul>
     </div>    	
-        
+     <main>
+    <div class="canirando-contenu-principal-forum">
+        <div class="canirando-entete-forum">
+            <h1>Forum Communauté Canirando</h1>
+            <a href="#" class="canirando-btn-nouveau-sujet"><i class="fas fa-plus-circle"></i> Nouveau Sujet</a>
+        </div>
+
+        <div class="canirando-barre-recherche-forum">
+            <input type="text" placeholder="Rechercher des discussions, des sujets, des utilisateurs...">
+        </div>
+
+        <section class="canirando-categories-forum">
+            <h2>Catégories de discussion</h2>
+            <div class="canirando-grille-categories">
+                <a href="#" class="canirando-carte-categorie">
+                    <h3><i class="fas fa-map-marked-alt"></i> Itinéraires & Destinations</h3>
+                    <p>Les meilleurs sentiers pour vos binômes, questions sur l'accès et les spécificités de chaque lieu.</p>
+                    <div class="canirando-stats-categorie">
+                        <span><i class="fas fa-comments"></i> 125 discussions</span>
+                        <span><i class="fas fa-file-alt"></i> 890 messages</span>
+                    </div>
+                </a>
+                <a href="#" class="canirando-carte-categorie">
+                    <h3><i class="fas fa-dog"></i> Santé & Bien-être Canin</h3>
+                    <p>Conseils vétérinaires, alimentation en rando, prévention des blessures, et récupération.</p>
+                    <div class="canirando-stats-categorie">
+                        <span><i class="fas fa-comments"></i> 98 discussions</span>
+                        <span><i class="fas fa-file-alt"></i> 720 messages</span>
+                    </div>
+                </a>
+                <a href="#" class="canirando-carte-categorie">
+                    <h3><i class="fas fa-tshirt"></i> Matériel & Équipement</h3>
+                    <p>Harnais, laisses, sacs à dos, chaussures, trousses de secours : partagez vos avis et découvertes !</p>
+                    <div class="canirando-stats-categorie">
+                        <span><i class="fas fa-comments"></i> 70 discussions</span>
+                        <span><i class="fas fa-file-alt"></i> 510 messages</span>
+                    </div>
+                </a>
+                <a href="#" class="canirando-carte-categorie">
+                    <h3><i class="fas fa-running"></i> Préparation & Entraînement</h3>
+                    <p>Programmes, exercices, conseils pour conditionner votre chien et vous pour la performance.</p>
+                    <div class="canirando-stats-categorie">
+                        <span><i class="fas fa-comments"></i> 60 discussions</span>
+                        <span><i class="fas fa-file-alt"></i> 480 messages</span>
+                    </div>
+                </a>
+                <a href="#" class="canirando-carte-categorie">
+                    <h3><i class="fas fa-user-friends"></i> Événements & Rencontres</h3>
+                    <p>Organisation de sorties, annonces de rassemblements, recherche de partenaires de rando.</p>
+                    <div class="canirando-stats-categorie">
+                        <span><i class="fas fa-comments"></i> 45 discussions</span>
+                        <span><i class="fas fa-file-alt"></i> 320 messages</span>
+                    </div>
+                </a>
+                <a href="#" class="canirando-carte-categorie">
+                    <h3><i class="fas fa-question-circle"></i> Questions Générales & Débutants</h3>
+                    <p>Votre premier pas en canirando ? Posez toutes vos questions ici !</p>
+                    <div class="canirando-stats-categorie">
+                        <span><i class="fas fa-comments"></i> 110 discussions</span>
+                        <span><i class="fas fa-file-alt"></i> 950 messages</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="canirando-sujets-forum">
+            <h2>Sujets Récents et Populaires</h2>
+            <div class="canirando-liste-sujets">
+                <a href="#" class="canirando-ligne-sujet">
+                    <div class="canirando-zone-titre-sujet">
+                        <h3>Conseils pour une rando de 3 jours avec bivouac en autonomie ?</h3>
+                        <p>Dans <span style="color: #4CAF50;">Itinéraires & Destinations</span></p>
+                    </div>
+                    <div class="canirando-info-auteur-sujet">
+                        Par <strong>@AventureDoggo</strong>
+                    </div>
+                    <div class="canirando-stats-sujet">
+                        <span><i class="fas fa-comment"></i> 18</span>
+                        <span><i class="fas fa-eye"></i> 345</span>
+                    </div>
+                    <div class="canirando-dernier-message-sujet">
+                        <strong>Il y a 2h</strong> par @RandoPro
+                    </div>
+                </a>
+                <a href="#" class="canirando-ligne-sujet">
+                    <div class="canirando-zone-titre-sujet">
+                        <h3>Mon chien refuse de boire en randonnée, que faire ?</h3>
+                        <p>Dans <span style="color: #4CAF50;">Santé & Bien-être Canin</span></p>
+                    </div>
+                    <div class="canirando-info-auteur-sujet">
+                        Par <strong>@CanineCare</strong>
+                    </div>
+                    <div class="canirando-stats-sujet">
+                        <span><i class="fas fa-comment"></i> 25</span>
+                        <span><i class="fas fa-eye"></i> 512</span>
+                    </div>
+                    <div class="canirando-dernier-message-sujet">
+                        <strong>Il y a 5h</strong> par @VetConseils
+                    </div>
+                </a>
+                <a href="#" class="canirando-ligne-sujet">
+                    <div class="canirando-zone-titre-sujet">
+                        <h3>Retour d'expérience sur le harnais de traction X-Back Pro</h3>
+                        <p>Dans <span style="color: #4CAF50;">Matériel & Équipement</span></p>
+                    </div>
+                    <div class="canirando-info-auteur-sujet">
+                        Par <strong>@GearTester</strong>
+                    </div>
+                    <div class="canirando-stats-sujet">
+                        <span><i class="fas fa-comment"></i> 12</span>
+                        <span><i class="fas fa-eye"></i> 280</span>
+                    </div>
+                    <div class="canirando-dernier-message-sujet">
+                        <strong>Il y a 1 jour</strong> par @FanDeMatos
+                    </div>
+                </a>
+                <a href="#" class="canirando-ligne-sujet">
+                    <div class="canirando-zone-titre-sujet">
+                        <h3>Rejoignez notre sortie "Canirando Douce" en forêt de Fontainebleau !</h3>
+                        <p>Dans <span style="color: #4CAF50;">Événements & Rencontres</span></p>
+                    </div>
+                    <div class="canirando-info-auteur-sujet">
+                        Par <strong>@OrganisateurIDF</strong>
+                    </div>
+                    <div class="canirando-stats-sujet">
+                        <span><i class="fas fa-comment"></i> 7</span>
+                        <span><i class="fas fa-eye"></i> 150</span>
+                    </div>
+                    <div class="canirando-dernier-message-sujet">
+                        <strong>Il y a 2 jours</strong> par @FontainebleauRando
+                    </div>
+                </a>
+                <a href="#" class="canirando-ligne-sujet">
+                    <div class="canirando-zone-titre-sujet">
+                        <h3>Comment éduquer son chiot à rester au pied en sentier fréquenté ?</h3>
+                        <p>Dans <span style="color: #4CAF50;">Préparation & Entraînement</span></p>
+                    </div>
+                    <div class="canirando-info-auteur-sujet">
+                        Par <strong>@JeuneMaître</strong>
+                    </div>
+                    <div class="canirando-stats-sujet">
+                        <span><i class="fas fa-comment"></i> 30</span>
+                        <span><i class="fas fa-eye"></i> 600</span>
+                    </div>
+                    <div class="canirando-dernier-message-sujet">
+                        <strong>Il y a 3 jours</strong> par @ÉducateurCanin
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+</main>   
         
         
         
