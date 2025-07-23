@@ -22,8 +22,8 @@
 
 .canirando-btn-nouveau-sujet {
      box-shadow: var(--shadow-box);
-    background-color: var(--orange-vibrant);
-    color: var(--blanc);
+    background-color: var(--vert-foret-profond);
+    color:white;
     padding: var(--margin-xs) var(--padding-xs);
     border: none;
     border-radius: 25px;
@@ -38,7 +38,8 @@
 }
 
 .canirando-btn-nouveau-sujet:hover {
-    background-color:var(--vert-foret-profond);
+    transform: translateY(-5px);
+    color:white;
 }
 
 .canirando-barre-recherche-forum {
