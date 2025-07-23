@@ -88,7 +88,7 @@ require_once("config/setting.php");
             </div>
         </section>
 
-    >
+    
         <section class="section-conditions-groupe">
             <h2 class="titre-section">Chiens acceptés et conditions</h2>
             <div class="contenu-conditions-groupe">
