@@ -93,7 +93,7 @@ require_once("config/setting.php");
                 <a href="#" class="canirando-ligne-sujet">
                     <div class="canirando-zone-titre-sujet">
                         <h3>Conseils pour une rando de 3 jours avec bivouac en autonomie ?</h3>
-                        <p>Dans <span style="color: #4CAF50;">Itinéraires & Destinations</span></p>
+                        <p>Dans Itinéraires & Destinations</span></p>
                     </div>
                     <div class="canirando-info-auteur-sujet">
                         Par <strong>@AventureDoggo</strong>
@@ -109,7 +109,7 @@ require_once("config/setting.php");
                 <a href="#" class="canirando-ligne-sujet">
                     <div class="canirando-zone-titre-sujet">
                         <h3>Mon chien refuse de boire en randonnée, que faire ?</h3>
-                        <p>Dans <span style="color: #4CAF50;">Santé & Bien-être Canin</span></p>
+                        <p>Dans Santé & Bien-être Canin</span></p>
                     </div>
                     <div class="canirando-info-auteur-sujet">
                         Par <strong>@CanineCare</strong>
@@ -125,7 +125,7 @@ require_once("config/setting.php");
                 <a href="#" class="canirando-ligne-sujet">
                     <div class="canirando-zone-titre-sujet">
                         <h3>Retour d'expérience sur le harnais de traction X-Back Pro</h3>
-                        <p>Dans <span style="color: #4CAF50;">Matériel & Équipement</span></p>
+                        <p>Dans Matériel & Équipement</span></p>
                     </div>
                     <div class="canirando-info-auteur-sujet">
                         Par <strong>@GearTester</strong>
@@ -141,7 +141,7 @@ require_once("config/setting.php");
                 <a href="#" class="canirando-ligne-sujet">
                     <div class="canirando-zone-titre-sujet">
                         <h3>Rejoignez notre sortie "Canirando Douce" en forêt de Fontainebleau !</h3>
-                        <p>Dans <span style="color: #4CAF50;">Événements & Rencontres</span></p>
+                        <p>Dans Événements & Rencontres</span></p>
                     </div>
                     <div class="canirando-info-auteur-sujet">
                         Par <strong>@OrganisateurIDF</strong>
@@ -157,7 +157,7 @@ require_once("config/setting.php");
                 <a href="#" class="canirando-ligne-sujet">
                     <div class="canirando-zone-titre-sujet">
                         <h3>Comment éduquer son chiot à rester au pied en sentier fréquenté ?</h3>
-                        <p>Dans <span style="color: #4CAF50;">Préparation & Entraînement</span></p>
+                        <p>Dans Préparation & Entraînement</span></p>
                     </div>
                     <div class="canirando-info-auteur-sujet">
                         Par <strong>@JeuneMaître</strong>
