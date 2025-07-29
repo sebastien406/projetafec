@@ -37,7 +37,13 @@
             </ul>
         </nav>
     </header>
-
+    <div class="fil-ariane">
+        <ul>
+       <li><a href="index.html">Accueil</a></li> 
+        <li><a href="compte.html">Connection</a></li> 
+        <li><a href="utilisateur.html">Votre compte</a></li> 
+    </ul>
+    </div>
     <main class="page-profil-utilisateur">
         <div class="entete-profil">
             <img src="images/randonneur.png" alt="Photo de profil de l'utilisateur" class="photo-profil">
@@ -82,23 +88,27 @@
             <div class="carte-profil">
                 <h2>Mes Groupes</h2>
                 <ul class="liste-groupes">
-                    <li><a href="groupe.html">Les Bioumans</a></li>
-                    <li><a href="groupe.html">La Patte Patrouille</a></li>
+                    <li><a href="pageGroupe.html">La Patte Patrouille</a></li>
                 </ul>
                 <a href="groupe.html" class="lien-voir-tout">Gérer mes groupes</a>
             </div>
 
-            <div class="carte-profil">
+            <!-- <div class="carte-profil">
                 <h2>Mes Messages</h2>
                 <p>Vous avez <strong>2 nouveaux messages</strong>.</p>
                 <a href="#" class="lien-voir-tout">Consulter mes messages</a>
-            </div>
+            </div> -->
+            <div class="carte-profil" id="carte-messages">
+    <h2>Mes Messages <span class="compteur-messages-non-lus">(2 nouveaux)</span></h2>
+    <div class="apercu-messages">
+        </div>
+    <a href="#" class="lien-voir-tout" id="openModalReviewBtn">Consulter mes messages</a> 
+</div>
 
             <div class="carte-profil actions-profil">
                 <h2>Réglages du Compte</h2>
                 <ul class="liste-actions">
-                    <li><a href="#">Modifier mon profil</a></li>
-                    <li><a href="#">Changer mon mot de passe</a></li>
+                    <li><a href="modifier-profil.html">Modifier mon profil</a></li>        
                     <li><a href="#">Historique des commandes (boutique)</a></li>
                 </ul>
                 <button class="button bouton-deconnexion" type="button">Se déconnecter</button>
@@ -129,5 +139,65 @@
         </div>
         <p>&copy; 2025 Canirando - Tous droits réservés.</p>
     </footer>
+<div id="reviewModal" class="box-wrapper">
+    <div class="box-container">
+        <div class="box-title">
+            <h2>Ma Boîte de Réception</h2>
+            <button class="btn-close" id="closeReviewModalBtn">&times;</button>
+        </div>
+       <div class="box-content">
+            <div class="liste-messages-complets">
+                <div class="message-detail">
+                    <p class="message-detail-expediteur">De : **Sophie_Rando**</p>
+                    <p class="message-detail-date">Le : 25 juillet 2025 à 14h30</p>
+                    <h3 class="message-detail-objet">Objet : Rando prévue ce week-end ?</h3>
+                    <p class="message-detail-corps">Salut Bernard ! J'espère que vous allez bien, toi et Youki. Je pensais faire le parcours du Lac Bleu ce samedi matin, départ 9h. C'est une rando de niveau moyen, environ 10km avec quelques passages un peu techniques mais superbes vues. Ton chien Max serait intéressé ? Fais-moi signe si ça te tente !</p>
+                    <div class="actions-message">
+                        <button class="bouton-repondre">Répondre</button>
+                        <button class="bouton-marquer-lu">Marquer comme lu</button>
+                    </div>
+                </div>
+
+                <div class="message-detail lu">
+                    <p class="message-detail-expediteur">De : **Admin Canirando**</p>
+                    <p class="message-detail-date">Le : 20 juillet 2025 à 10h00</p>
+                    <h3 class="message-detail-objet">Objet : Nouvelle fonctionnalité disponible !</h3>
+                    <p class="message-detail-corps">Bonjour Bernard et Youki, nous sommes ravis de vous annoncer le déploiement de notre nouvelle carte interactive des points d'eau pour chiens sur les sentiers de randonnée ! Planifiez vos pauses hydratation plus facilement. Rendez-vous dans la section "Nos Destinations" pour la découvrir. Bonne randonnée ! L'équipe Canirando.</p>
+                    <div class="actions-message">
+                         <button class="bouton-repondre">Répondre</button>
+                    </div>
+                </div>
+
+                <div class="message-detail">
+                    <p class="message-detail-expediteur">De : **Marc_Balade**</p>
+                    <p class="message-detail-date">Le : 28 juillet 2025 à 09h15</p>
+                    <h3 class="message-detail-objet">Objet : Demande d'ajout au groupe "Les Patte Patrouille"</h3>
+                    <p class="message-detail-corps">Bonjour Bernard, je suis intéressé par votre groupe de randonnée. Pouvez-vous m'ajouter ? Merci !</p>
+                    <div class="actions-message">
+                        <button class="bouton-repondre">Répondre</button>
+                        <button class="bouton-marquer-lu">Marquer comme lu</button>
+                    </div>
+                </div>
+
+                <div class="message-detail lu">
+                    <p class="message-detail-expediteur">De : **Système Canirando**</p>
+                    <p class="message-detail-date">Le : 15 juillet 2025 à 18h00</p>
+                    <h3 class="message-detail-objet">Objet : Votre profil a été mis à jour avec succès !</h3>
+                    <p class="message-detail-corps">Vos informations de profil ont été enregistrées. N'hésitez pas à explorer les nouveautés !</p>
+                    <div class="actions-message">
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
+
+<script defer src="dist/js/theme.js"></script>
 </html>
+
+
+

@@ -1,7 +1,163 @@
 
 
+// .box-wrapper {
+//     display: none; 
+//     position: fixed;
+//     z-index: 1000;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     overflow: auto;
+//     background-color: rgba(0, 0, 0, 0.6);
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .box-wrapper.active {
+//     display: flex; 
+// }
+
+// .box-container {
+//     background-color: var(--blanc-casse);
+//     padding: 0;
+//     border: 1px solid var(--gris-clair);
+//     width: 90%;
+//     max-width: 500px;
+//     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+//     animation-name: animatetop;
+//     animation-duration: 0.4s;
+//     border-radius: 10px;
+//     overflow: hidden;
+// }
+
+// @keyframes animatetop {
+//     from {top: -300px; opacity: 0}
+//     to {top: 0; opacity: 1}
+// }
+
+// .box-title {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 15px 20px;
+//     background-color: var(--vert-foret-profond);
+//     color: var(--blanc-casse);
+//     font-size: 1.3em;
+//     font-weight: bold;
+//     border-bottom: 1px solid var(--terre-de-sienne);
+// }
+
+// .button-exit {
+//     margin-left: auto;
+// }
+
+// .btn-close {
+//     background: none;
+//     border: none;
+//     font-size: 1.8em;
+//     cursor: pointer;
+//     color: var(--blanc-casse);
+//     transition: color 0.3s ease;
+//     padding: 5px;
+// }
+
+// .btn-close:hover,
+// .btn-close:focus {
+//     color: var(--orange-vibrant);
+//     text-decoration: none;
+//     outline: none;
+// }
+
+// .box-content {
+//     padding: 25px;
+//     text-align: center;
+//     color: var(--gris-anthracite);
+// }
+
+// .box-content h2 {
+//     margin-top: 0;
+//     margin-bottom: 25px;
+//     color: var(--terre-de-sienne);
+//     font-size: 1.8em;
+// }
+
+// .box-content form {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+// }
+
+// .box-content textarea {
+//     width: calc(100% - 20px);
+//     padding: 15px;
+//     border: 1px solid var(--gris-clair);
+//     border-radius: 8px;
+//     resize: vertical;
+//     min-height: 120px;
+//     font-family: 'Arial', sans-serif;
+//     font-size: 1.1em;
+//     color: var(--gris-anthracite);
+//     background-color: white;
+// }
+
+// .box-content textarea::placeholder {
+//     color: var(--gris-clair);
+// }
+
+// .espace-avis {
+//     margin-top: 15px;
+// }
+
+// .envoyer {
+//     background-color: var(--orange-vibrant);
+//     color: white;
+//     padding: 12px 25px;
+//     border: none;
+//     border-radius: 8px;
+//     cursor: pointer;
+//     font-size: 1.1em;
+//     font-weight: bold;
+//     transition: background-color 0.3s ease, transform 0.2s ease;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+// }
+
+// .envoyer:hover {
+//     background-color: #e67e00;
+//     transform: translateY(-2px);
+// }
+
+// @media (max-width: 600px) {
+//     .box-container {
+//         width: 95%;
+//     }
+
+//     .box-title {
+//         font-size: 1.1em;
+//         padding: 12px 15px;
+//     }
+
+//     .btn-close {
+//         font-size: 1.5em;
+//     }
+
+//     .box-content h2 {
+//         font-size: 1.5em;
+//     }
+
+//     .box-content textarea {
+//         font-size: 1em;
+//         min-height: 100px;
+//     }
+
+//     .envoyer {
+//         padding: 10px 20px;
+//         font-size: 1em;
+//     }
+// }
+
 .box-wrapper {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -9,13 +165,14 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .box-wrapper.active {
-    display: flex; 
+    display: flex;
 }
 
 .box-container {
@@ -23,135 +180,236 @@
     padding: 0;
     border: 1px solid var(--gris-clair);
     width: 90%;
-    max-width: 500px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     animation-name: animatetop;
-    animation-duration: 0.4s;
-    border-radius: 10px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    border-radius: var(--border-radius-lg);
     overflow: hidden;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.box-wrapper.active .box-container {
+    transform: scale(1);
+    opacity: 1;
 }
 
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+        transform: translateY(-50px) scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
 }
 
 .box-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 18px 25px;
     background-color: var(--vert-foret-profond);
     color: var(--blanc-casse);
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: bold;
-    border-bottom: 1px solid var(--terre-de-sienne);
+    border-bottom: 2px solid var(--terre-de-sienne);
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
 }
 
-.button-exit {
-    margin-left: auto;
+.box-title h2 {
+    margin: 0;
+    font-size: 1.2em;
 }
 
 .btn-close {
     background: none;
     border: none;
-    font-size: 1.8em;
+    font-size: 2.2em;
     cursor: pointer;
     color: var(--blanc-casse);
-    transition: color 0.3s ease;
-    padding: 5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 5px 10px;
 }
 
 .btn-close:hover,
 .btn-close:focus {
     color: var(--orange-vibrant);
+    transform: rotate(90deg);
     text-decoration: none;
     outline: none;
 }
 
 .box-content {
-    padding: 25px;
-    text-align: center;
+    padding: 30px 25px;
+    text-align: left;
     color: var(--gris-anthracite);
+    line-height: 1.6;
 }
 
-.box-content h2 {
-    margin-top: 0;
+.box-content .liste-messages-complets {
+    max-height: 350px;
+    overflow-y: auto;
     margin-bottom: 25px;
-    color: var(--terre-de-sienne);
-    font-size: 1.8em;
+    padding-right: 10px;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--gris-clair);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #888;
+    }
 }
 
-.box-content form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.message-detail {
+    border: 1px solid #e5e5e5;
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.box-content textarea {
-    width: calc(100% - 20px);
-    padding: 15px;
-    border: 1px solid var(--gris-clair);
-    border-radius: 8px;
-    resize: vertical;
-    min-height: 120px;
-    font-family: 'Arial', sans-serif;
+.message-detail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.message-detail.lu {
+    background-color: #f8f8f8;
+    opacity: 0.9;
+    border-color: #f0f0f0;
+}
+
+.message-detail-expediteur {
+    font-weight: bold;
+    color: var(--vert-foret-profond);
+    margin-bottom: 8px;
     font-size: 1.1em;
-    color: var(--gris-anthracite);
-    background-color: white;
 }
 
-.box-content textarea::placeholder {
-    color: var(--gris-clair);
+.message-detail-date {
+    font-size: 0.85em;
+    color: #999;
+    margin-bottom: 12px;
 }
 
-.espace-avis {
-    margin-top: 15px;
+.message-detail-objet {
+    font-size: 1.3em;
+    color: var(--terre-de-sienne);
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.envoyer {
+.message-detail-corps {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+}
+
+.actions-message {
+    margin-top: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.actions-message button {
     background-color: var(--orange-vibrant);
     color: white;
-    padding: 12px 25px;
     border: none;
-    border-radius: 8px;
+    padding: 10px 18px;
+    border-radius: var(--border-radius-sm);
     cursor: pointer;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 0.95em;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
-.envoyer:hover {
+.actions-message button:hover {
     background-color: #e67e00;
     transform: translateY(-2px);
+}
+
+.bouton-marquer-lu {
+    background-color: var(--gris-clair) !important;
+    color: var(--gris-anthracite) !important;
+}
+
+.bouton-marquer-lu:hover {
+    background-color: #b0b0b0 !important;
+    transform: translateY(-2px);
+}
+
+.bouton-aller-boite-reception {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: var(--vert-foret-profond);
+    color: white;
+    padding: 15px 30px;
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bouton-aller-boite-reception:hover {
+    background-color: #2a5a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 600px) {
     .box-container {
         width: 95%;
+        border-radius: var(--border-radius-md);
     }
-
     .box-title {
-        font-size: 1.1em;
-        padding: 12px 15px;
+        font-size: 1.2em;
+        padding: 15px 20px;
+        border-top-left-radius: var(--border-radius-md);
+        border-top-right-radius: var(--border-radius-md);
     }
-
     .btn-close {
-        font-size: 1.5em;
+        font-size: 2em;
     }
-
-    .box-content h2 {
-        font-size: 1.5em;
+    .box-content {
+        padding: 20px;
     }
-
-    .box-content textarea {
+    .message-detail {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .actions-message {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .actions-message button {
+        width: 100%;
+        margin-left: 0;
+    }
+    .bouton-aller-boite-reception {
+        padding: 12px 20px;
         font-size: 1em;
-        min-height: 100px;
     }
-
-    .envoyer {
-        padding: 10px 20px;
-        font-size: 1em;
+    .box-content .liste-messages-complets {
+        max-height: 250px;
     }
 }

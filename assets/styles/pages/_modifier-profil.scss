@@ -1,0 +1,468 @@
+.page-generique {
+    max-width: 900px;
+    margin: var(--padding-lg) auto;
+    padding: var(--padding-xs);
+    background-color: var(--blanc);
+    box-shadow: var(--shadow-box);
+    border-radius: var(--border-radius-lg);
+
+}
+.page-profil {
+
+}
+.entete-section {
+    text-align: center;
+    padding: var(--padding-sm) 0;
+    border-bottom: 1px solid var(--gris-clair);
+    margin-bottom: var(--padding-sm);
+    box-shadow: var(--shadow-box);
+   
+    
+}
+
+.entete-section h1 {
+    font-size: 2.5em;
+    color: var(--vert-foret-profond);
+    margin-bottom: 10px;
+}
+
+.entete-section p {
+    font-size: 1.1em;
+    color: var(--gris-anthracite);
+}
+
+/* --- Styles Spécifiques à la Page de Contact --- */
+.page-contact {
+    max-width: 900px;
+    margin: var(--padding-lg) auto;
+    padding: var(--padding-xs);
+    background-color: var(--blanc);
+    box-shadow: var(--shadow-box);
+    border-radius: var(--border-radius-lg);
+}
+
+.bloc-info-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: var(--padding-sm) 0;
+    border-bottom: 1px solid var(--gris-clair);
+    margin-bottom: var(--padding-sm);
+}
+
+.carte-info-contact {
+    flex: 1 1 250px;
+    text-align: center;
+    background-color: var(--blanc-casse);
+    padding: var(--padding-xs);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-box);
+}
+
+.carte-info-contact i {
+    font-size: 2.5em;
+    color: var(--orange-vibrant);
+    margin-bottom: 15px;
+}
+
+.carte-info-contact h3 {
+    font-size: 1.4em;
+    color: var(--vert-foret-profond);
+    margin-bottom: 10px;
+}
+
+.carte-info-contact p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: var(--gris-anthracite);
+}
+
+.carte-info-contact a {
+    color: var(--gris-anthracite);
+    text-decoration: none;
+}
+
+.carte-info-contact a:hover {
+    color: var(--orange-vibrant);
+    text-decoration: underline;
+}
+
+.formulaire-contact {
+    padding: var(--padding-sm) 0;
+    border-bottom: 1px solid var(--gris-clair);
+    margin-bottom: var(--padding-sm);
+}
+
+.formulaire-contact h2 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--vert-foret-profond);
+    margin-bottom: var(--padding-xs);
+}
+
+.formulaire-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reseaux-sociaux-contact {
+    text-align: center;
+    padding: var(--padding-sm) 0;
+}
+
+.reseaux-sociaux-contact h2 {
+    font-size: 2em;
+    color: var(--vert-foret-profond);
+    margin-bottom: var(--padding-xs);
+}
+
+.icones-sociaux {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icone-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--gris-anthracite);
+    color: var(--blanc);
+    border-radius: 50%;
+    font-size: 1.8em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.icone-social:hover {
+    background-color: var(--orange-vibrant);
+    transform: translateY(-3px);
+}
+
+/* --- Styles Spécifiques à la Page de Profil --- */
+.page-profil {
+    max-width: 900px;
+    margin: var(--padding-lg) auto;
+    padding: var(--padding-xs);
+    background-color: white;
+    box-shadow: var(--shadow-box);
+    border-radius: var(--border-radius-lg);
+}
+
+.entete-profil {
+    text-align: center;
+    padding: var(--padding-sm) 0;
+    border-bottom: 1px solid var(--gris-clair);
+    margin-bottom: var(--padding-sm);
+
+}
+
+.entete-profil h1 {
+    font-size: 2.5em;
+    color: var(--vert-foret-profond);
+    margin-bottom: 10px;
+}
+
+.entete-profil p {
+    font-size: 1.1em;
+    color: var(--gris-anthracite);
+    margin: auto;
+}
+
+.formulaire-profil {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-sm);
+}
+
+.bloc-avatar-pseudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-xs);
+    padding: var(--padding-xs);
+    background-color: var(--blanc-casse);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--gris-clair);
+    box-shadow: var(--shadow-box);
+    margin-bottom: var(--padding-sm);
+}
+
+.bloc-telechargement-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar-actuel {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--vert-foret-profond);
+    box-shadow: var(--shadow-box);
+}
+
+.bouton-telechargement {
+    background-color: var(--vert-foret-profond);
+    color: white;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-telechargement:hover {
+  
+    transform: translateY(-5px);
+}
+
+.pseudo-groupe {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.pseudo-groupe label i {
+    color: var(--orange-vibrant);
+    margin-right: 5px;
+}
+
+.section-profil {
+    border: 1px solid var(--gris-clair);
+    border-radius: var(--border-radius-lg);
+    padding: var(--padding-xs);
+    background-color: var(--blanc-casse);
+   box-shadow: var(--shadow-box);
+}
+
+.section-profil legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--vert-foret-profond);
+    padding: 0 10px;
+    margin-left: -10px;
+    background-color: var(--blanc-casse);
+    border-radius: var(--border-radius-lg);
+}
+
+.section-profil legend i {
+    margin-right: 8px;
+    color: var(--orange-vibrant);
+}
+
+/* --- Styles des Éléments de Formulaire Génériques --- */
+.groupe-formulaire {
+    margin-bottom: 15px;
+}
+
+.groupe-formulaire label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--gris-anthracite);
+}
+
+.groupe-formulaire input[type="text"],
+.groupe-formulaire input[type="email"],
+.groupe-formulaire input[type="number"],
+.groupe-formulaire input[type="password"],
+.groupe-formulaire textarea,
+.groupe-formulaire select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid var(--gris-clair);
+    border-radius: var(--border-radius-sm);
+    font-size: 1em;
+    color: var(--gris-anthracite);
+    background-color: white;
+}
+
+.groupe-formulaire textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.groupe-formulaire input:focus,
+.groupe-formulaire textarea:focus,
+.groupe-formulaire select:focus {
+    outline: 2px solid var(--orange-vibrant); /* Utiliser outline plutôt que border pour l'accessibilité */
+    border-color: var(--orange-vibrant); /* Optionnel: conserver aussi la couleur de bordure */
+    box-shadow: var(--shadow-box);
+}
+
+.texte-info {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.groupe-case-cocher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    margin-top: 10px;
+}
+
+.groupe-case-cocher input[type="checkbox"] {
+    display: none;
+}
+
+.groupe-case-cocher input[type="checkbox"] + label {
+    background-color: var(--gris-clair);
+    color: var(--gris-anthracite);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.95em;
+    border: 1px solid var(--gris-clair);
+}
+
+.groupe-case-cocher input[type="checkbox"]:checked + label {
+    background-color: var(--vert-foret-profond);
+    color: white;
+    border-color: var(--vert-foret-profond);
+}
+
+.groupe-case-cocher input[type="checkbox"]:hover + label {
+    opacity: 0.9;
+    transform: translateY(-5px);
+}
+
+/* --- Boutons Génériques --- */
+.bouton-primaire,
+.bouton-enregistrer,
+.bouton-soumettre {
+    background-color: var(--vert-foret-profond);
+    color: var(--blanc);
+    padding: 12px 25px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouton-primaire:hover,
+.bouton-enregistrer:hover,
+.bouton-soumettre:hover {
+    background-color: #1a4427;
+}
+
+.bouton-enregistrer {
+    background-color: var(--vert-foret-profond);
+    padding: 15px 30px;
+    align-self: flex-end;
+    margin-top: var(--padding-xs);
+    color: white;
+}
+
+.bouton-enregistrer:hover {
+   transform: translateY(-5px);
+}
+
+/* --- Pied de Page (Footer) --- */
+footer {
+    text-align: center;
+    padding: var(--padding-xs);
+    background-color: var(--vert-foret-profond);
+    color: var(--blanc-casse);
+    margin-top: var(--padding-lg);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 12px;
+}
+
+/* --- Responsive Design (Media Queries) --- */
+@media (min-width: 769px) {
+    .bloc-avatar-pseudo {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .pseudo-groupe {
+        margin-left: var(--padding-sm);
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-generique,
+    .page-contact,
+    .page-profil {
+        margin: var(--margin-md) var(--margin-xxs);
+        padding: var(--padding-xxs);
+    }
+
+    .entete-section h1,
+    .entete-profil h1 {
+        font-size: 2em;
+    }
+
+    .carte-info-contact,
+    .section-profil {
+        flex: 1 1 90%;
+        max-width: 400px;
+    }
+
+    .formulaire-contact h2,
+    .reseaux-sociaux-contact h2,
+    .section-profil legend {
+        font-size: 1.8em;
+    }
+
+    .groupe-formulaire input[type="text"],
+    .groupe-formulaire input[type="email"],
+    .groupe-formulaire input[type="number"],
+    .groupe-formulaire input[type="password"],
+    .groupe-formulaire textarea,
+    .groupe-formulaire select {
+        width: calc(100% - 20px);
+    }
+    
+    .bouton-enregistrer,
+    .bouton-soumettre {
+        width: 100%;
+        align-self: center;
+    }
+
+    .groupe-case-cocher {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .groupe-case-cocher input[type="checkbox"] + label {
+        width: fit-content;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-generique,
+    .page-contact,
+    .page-profil {
+        padding: var(--padding-xxs);
+    }
+
+    .entete-section h1,
+    .entete-profil h1 {
+        font-size: 1.8em;
+    }
+
+    .section-profil {
+        padding: var(--margin-xs);
+    }
+
+}

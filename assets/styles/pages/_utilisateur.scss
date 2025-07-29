@@ -167,7 +167,7 @@
 .rang-actuel {
     font-size: 1.3em;
     font-weight: bold;
-    color: #4CAF50;
+    color: var(--terre-de-sienne);
     margin-bottom: 10px;
 }
 
@@ -182,7 +182,7 @@
 
 .progression-remplie {
     height: 100%;
-    background-color: #4CAF50;
+    background-color:var(--terre-de-sienne);
     border-radius: 6px;
 }
 
