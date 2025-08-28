@@ -2361,7 +2361,7 @@ footer {
 }
 
 .formulaire-gestion-groupe {
-  max-width: 800px;
+  max-width: 90%;
   margin: auto;
   background-color: var(--blanc-casse);
   padding: var(--padding-sm);
@@ -2439,7 +2439,6 @@ footer {
 
 .groupe-texte-info {
   font-size: 0.9rem;
-  color: var(--gris-clair);
   margin-top: var(--margin-xxs);
 }
 
@@ -2545,7 +2544,6 @@ footer {
 }
 
 .bouton-enregistrer-groupe:hover {
-  background-color: var(--terre-de-sienne);
   transform: translateY(-5px);
 }
 
@@ -2575,10 +2573,11 @@ footer {
 .groupe-galerie-photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .groupe-photo-rando {
-  margin: 20px;
+  margin-bottom: 40px;
 }
 
 header {
