@@ -347,7 +347,7 @@ text-align: center;
 
 .bouton-primaire {
     background-color: var(--vert-foret-profond);
-    color:white;
+    color: white;
     font-weight: 600;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -479,4 +479,16 @@ text-align: center;
 .action-contact-groupe {
     text-align: center;
     margin-top: 2rem;
+    color:white
 }
+.action-contact-modifier-groupe .bouton-primaire{
+    color: white;
+  background-color:var(--terre-de-sienne);
+  display: flex;
+
+}
+.action-contact-modifier-groupe .bouton-primaire:hover{
+color:white;
+  background-color:var(--terre-de-sienne);
+}
+

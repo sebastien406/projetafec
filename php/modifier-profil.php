@@ -24,14 +24,6 @@ require_once("config/setting.php");
 	</ul>
 	</div>
 
-    <div class="fil-ariane">
-        <ul>
-       <li><a href="index.html">Accueil</a></li> 
-        <li><a href="compte.html">Connection</a></li> 
-        <li><a href="utilisateur.html">Votre compte</a></li> 
-        <li><a href="modifier-profil.html">Modifier profil</a></li> 
-    </ul>
-    </div>
 
  <main class="page-profil">
         <section class="entete-profil">
