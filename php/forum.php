@@ -1,4 +1,4 @@
-  <?php
+<?php
 require_once("config/setting.php");
 ?>
 
@@ -15,18 +15,18 @@ require_once("config/setting.php");
 </head>
 
 <body>
-   <?php include ('layout/header.php'); ?>
-     <div class="fil-ariane">
+    <?php include ('layout/header.php'); ?>
+      <div class="fil-ariane">
         <ul>
        <li><a href="index.php">Accueil</a></li> 
        <li><a href="forum.php">Forum</a></li> 
     </ul>
-    </div>    	
-     <main>
+    </div>      
+      <main>
     <div class="canirando-contenu-principal-forum">
         <div class="canirando-entete-forum">
             <h1>Forum Communauté Canirando</h1>
-            <a href="#" class="canirando-btn-nouveau-sujet"><i class="fas fa-plus-circle"></i> Nouveau Sujet</a>
+            <a href="#" class="canirando-btn-nouveau-sujet"> Nouveau Sujet</a>
         </div>
 
         <div class="canirando-barre-recherche-forum">
@@ -37,51 +37,51 @@ require_once("config/setting.php");
             <h2>Catégories de discussion</h2>
             <div class="canirando-grille-categories">
                 <a href="#" class="canirando-carte-categorie">
-                    <h3><i class="fas fa-map-marked-alt"></i> Itinéraires & Destinations</h3>
+                    <h3> Itinéraires & Destinations</h3>
                     <p>Les meilleurs sentiers pour vos binômes, questions sur l'accès et les spécificités de chaque lieu.</p>
                     <div class="canirando-stats-categorie">
-                        <span><i class="fas fa-comments"></i> 125 discussions</span>
-                        <span><i class="fas fa-file-alt"></i> 890 messages</span>
+                        <span> 125 discussions</span>
+                        <span> 890 messages</span>
                     </div>
                 </a>
                 <a href="#" class="canirando-carte-categorie">
-                    <h3><i class="fas fa-dog"></i> Santé & Bien-être Canin</h3>
+                    <h3> Santé & Bien-être Canin</h3>
                     <p>Conseils vétérinaires, alimentation en rando, prévention des blessures, et récupération.</p>
                     <div class="canirando-stats-categorie">
-                        <span><i class="fas fa-comments"></i> 98 discussions</span>
-                        <span><i class="fas fa-file-alt"></i> 720 messages</span>
+                        <span> 98 discussions</span>
+                        <span> 720 messages</span>
                     </div>
                 </a>
                 <a href="#" class="canirando-carte-categorie">
-                    <h3><i class="fas fa-tshirt"></i> Matériel & Équipement</h3>
+                    <h3> Matériel & Équipement</h3>
                     <p>Harnais, laisses, sacs à dos, chaussures, trousses de secours : partagez vos avis et découvertes !</p>
                     <div class="canirando-stats-categorie">
-                        <span><i class="fas fa-comments"></i> 70 discussions</span>
-                        <span><i class="fas fa-file-alt"></i> 510 messages</span>
+                        <span> 70 discussions</span>
+                        <span> 510 messages</span>
                     </div>
                 </a>
                 <a href="#" class="canirando-carte-categorie">
-                    <h3><i class="fas fa-running"></i> Préparation & Entraînement</h3>
+                    <h3> Préparation & Entraînement</h3>
                     <p>Programmes, exercices, conseils pour conditionner votre chien et vous pour la performance.</p>
                     <div class="canirando-stats-categorie">
-                        <span><i class="fas fa-comments"></i> 60 discussions</span>
-                        <span><i class="fas fa-file-alt"></i> 480 messages</span>
+                        <span> 60 discussions</span>
+                        <span> 480 messages</span>
                     </div>
                 </a>
                 <a href="#" class="canirando-carte-categorie">
-                    <h3><i class="fas fa-user-friends"></i> Événements & Rencontres</h3>
+                    <h3> Événements & Rencontres</h3>
                     <p>Organisation de sorties, annonces de rassemblements, recherche de partenaires de rando.</p>
                     <div class="canirando-stats-categorie">
-                        <span><i class="fas fa-comments"></i> 45 discussions</span>
-                        <span><i class="fas fa-file-alt"></i> 320 messages</span>
+                        <span> 45 discussions</span>
+                        <span> 320 messages</span>
                     </div>
                 </a>
                 <a href="#" class="canirando-carte-categorie">
-                    <h3><i class="fas fa-question-circle"></i> Questions Générales & Débutants</h3>
+                    <h3> Questions Générales & Débutants</h3>
                     <p>Votre premier pas en canirando ? Posez toutes vos questions ici !</p>
                     <div class="canirando-stats-categorie">
-                        <span><i class="fas fa-comments"></i> 110 discussions</span>
-                        <span><i class="fas fa-file-alt"></i> 950 messages</span>
+                        <span> 110 discussions</span>
+                        <span> 950 messages</span>
                     </div>
                 </a>
             </div>
@@ -99,8 +99,8 @@ require_once("config/setting.php");
                         Par <strong>@AventureDoggo</strong>
                     </div>
                     <div class="canirando-stats-sujet">
-                        <span><i class="fas fa-comment"></i> 18</span>
-                        <span><i class="fas fa-eye"></i> 345</span>
+                        <span> 18</span>
+                        <span> 345</span>
                     </div>
                     <div class="canirando-dernier-message-sujet">
                         <strong>Il y a 2h</strong> par @RandoPro
@@ -115,8 +115,8 @@ require_once("config/setting.php");
                         Par <strong>@CanineCare</strong>
                     </div>
                     <div class="canirando-stats-sujet">
-                        <span><i class="fas fa-comment"></i> 25</span>
-                        <span><i class="fas fa-eye"></i> 512</span>
+                        <span> 25</span>
+                        <span> 512</span>
                     </div>
                     <div class="canirando-dernier-message-sujet">
                         <strong>Il y a 5h</strong> par @VetConseils
@@ -131,8 +131,8 @@ require_once("config/setting.php");
                         Par <strong>@GearTester</strong>
                     </div>
                     <div class="canirando-stats-sujet">
-                        <span><i class="fas fa-comment"></i> 12</span>
-                        <span><i class="fas fa-eye"></i> 280</span>
+                        <span> 12</span>
+                        <span> 280</span>
                     </div>
                     <div class="canirando-dernier-message-sujet">
                         <strong>Il y a 1 jour</strong> par @FanDeMatos
@@ -147,8 +147,8 @@ require_once("config/setting.php");
                         Par <strong>@OrganisateurIDF</strong>
                     </div>
                     <div class="canirando-stats-sujet">
-                        <span><i class="fas fa-comment"></i> 7</span>
-                        <span><i class="fas fa-eye"></i> 150</span>
+                        <span> 7</span>
+                        <span> 150</span>
                     </div>
                     <div class="canirando-dernier-message-sujet">
                         <strong>Il y a 2 jours</strong> par @FontainebleauRando
@@ -163,8 +163,8 @@ require_once("config/setting.php");
                         Par <strong>@JeuneMaître</strong>
                     </div>
                     <div class="canirando-stats-sujet">
-                        <span><i class="fas fa-comment"></i> 30</span>
-                        <span><i class="fas fa-eye"></i> 600</span>
+                        <span> 30</span>
+                        <span> 600</span>
                     </div>
                     <div class="canirando-dernier-message-sujet">
                         <strong>Il y a 3 jours</strong> par @ÉducateurCanin
@@ -173,7 +173,7 @@ require_once("config/setting.php");
             </div>
         </section>
     </div>
-</main>   
+</main>      
         
         
         

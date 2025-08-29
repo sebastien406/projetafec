@@ -6,171 +6,171 @@ require_once("config/setting.php");
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8" />
-	<title>Canirando</title>
-	<meta name="description" content="site de randonne canine" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Canirando</title>
+    <meta name="description" content="site de randonne canine" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="<?php echo css_dir ?>theme.css?<?php echo time(); ?>">
     <link rel="shortcut icon" href="<?php echo images_dir ?>logo bulma.png">
 </head>
 
-	
+    
     <?php include ('layout/header.php'); ?>
     <div class="fil-ariane">
-		<ul>
-		<li><a href="index.php">Accueil</a></li>
+        <ul>
+        <li><a href="index.php">Accueil</a></li>
         <li><a href="compte.php">Mon compte</a></li>
         <li><a href="modifier-profil.php">Modifier profil</a></li>
-	</ul>
-	</div>
+    </ul>
+    </div>
 
 
- <main class="page-profil">
-        <section class="entete-profil">
-            <h1>Modifier mon profil Canirando</h1>
-            <p>Gérez vos informations personnelles, votre compagnon canin et vos préférences de randonnée.</p>
-        </section>
+<main class="page-profil">
+    <section class="entete-profil">
+        <h1>Modifier mon profil Canirando</h1>
+        <p>Gérez vos informations personnelles, votre compagnon canin et vos préférences de randonnée.</p>
+    </section>
 
-        <form action="#" method="POST" class="formulaire-profil" enctype="multipart/form-data">
-            
-            <div class="bloc-avatar-pseudo">
-                <div class="bloc-telechargement-avatar">
-                    <img src="images/image-randonneur.png" alt="Avatar actuel" class="avatar-actuel" id="avatar-utilisateur-actuel">
-                    <label for="avatar-utilisateur" class="bouton-telechargement">
-                        <i class="fas fa-camera"></i> Changer d'avatar
-                    </label>
-                    <input type="file" id="avatar-utilisateur" name="avatar_utilisateur" accept="image/*" style="display: none;">
-                    <p class="texte-info">Photo de profil (max 2MB, JPG/PNG)</p>
-                </div>
-                <div class="groupe-formulaire pseudo-groupe">
-                    <label for="pseudo"><i class="fas fa-signature"></i> Mon Pseudo Canirando :</label>
-                    <input type="text" id="pseudo" name="pseudo" value="Juste le BG" required>
-                    <p class="texte-info">C'est le nom qui apparaîtra sur le forum et vos avis.</p>
+    <form action="#" method="POST" class="formulaire-profil" enctype="multipart/form-data">
+        
+        <div class="bloc-avatar-pseudo">
+            <div class="bloc-telechargement-avatar">
+                <img src="images/image-randonneur.png" alt="Avatar actuel" class="avatar-actuel" id="avatar-utilisateur-actuel">
+                <label for="avatar-utilisateur" class="bouton-telechargement">
+                     Changer d'avatar
+                </label>
+                <input type="file" id="avatar-utilisateur" name="avatar_utilisateur" accept="image/*" style="display: none;">
+                <p class="texte-info">Photo de profil (max 2MB, JPG/PNG)</p>
+            </div>
+            <div class="groupe-formulaire pseudo-groupe">
+                <label for="pseudo"> Mon Pseudo Canirando :</label>
+                <input type="text" id="pseudo" name="pseudo" value="Juste le BG" required>
+                <p class="texte-info">C'est le nom qui apparaîtra sur le forum et vos avis.</p>
+            </div>
+        </div>
+
+        <fieldset class="section-profil">
+            <legend> Mes Informations Générales</legend>
+            <div class="groupe-formulaire">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" value="Juste" required>
+            </div>
+            <div class="groupe-formulaire">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" value="Leblanc" required>
+            </div>
+            <div class="groupe-formulaire">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" value="justeleblanc@exemple.com" required>
+            </div>
+            <div class="groupe-formulaire">
+                <label for="localisation">Localisation (Ville, Département, Région) :</label>
+                <input type="text" id="localisation" name="localisation" value="MONTCUK">
+                <p class="texte-info">Aide les autres membres à vous situer.</p>
+            </div>
+            <div class="groupe-formulaire">
+                <label for="bio">Ma Bio Canirando :</label>
+                <textarea id="bio" name="bio" rows="4">Passionné de randonnée avec mon petit chien, PouicPouic. J'adore les sentiers boisés et les points d'eau et les cailloux !</textarea>
+                <p class="texte-info">Parlez de vous et de votre passion pour le canirando !</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="section-profil">
+            <legend> Mon Compagnon Canin</legend>
+            <div class="bloc-telechargement-avatar">
+                <img src="images/image-pouicpouic.png" alt="Photo du chien" class="avatar-actuel" id="avatar-chien-actuel">
+                <label for="avatar-chien" class="bouton-telechargement">
+                     Changer la photo du chien
+                </label>
+                <input type="file" id="avatar-chien" name="avatar_chien" accept="image/*" style="display: none;">
+                <p class="texte-info">Photo de votre compagnon (max 2MB, JPG/PNG)</p>
+            </div>
+            <div class="groupe-formulaire">
+                <label for="nom-chien">Nom du chien :</label>
+                <input type="text" id="nom-chien" name="nom_chien" value="PouicPouic">
+            </div>
+            <div class="groupe-formulaire">
+                <label for="race-chien">Race du chien :</label>
+                <input type="text" id="race-chien" name="race_chien" value="dogue">
+            </div>
+            <div class="groupe-formulaire">
+                <label for="age-chien">Âge du chien (années) :</label>
+                <input type="number" id="age-chien" name="age_chien" min="0" max="20" value="4">
+            </div>
+            <div class="groupe-formulaire">
+                <label for="niveau-chien">Niveau d'énergie de mon chien en rando :</label>
+                <select id="niveau-chien" name="niveau_chien">
+                    <option value="bas">Bas (petites balades)</option>
+                    <option value="moyen" selected>Moyen (randos modérées)</option>
+                    <option value="eleve">Élevé (longues et intenses randos)</option>
+                </select>
+            </div>
+            <div class="groupe-formulaire">
+                <label for="description-chien">A propos de mon chien :</label>
+                <textarea id="description-chien" name="description_chien" rows="3">Max est un chien très joueur et endurant, parfait pour les longues randonnées. Il adore l'eau !</textarea>
+                <p class="texte-info">Quelques mots sur le caractère et les habitudes de votre chien en rando.</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="section-profil">
+            <legend> Mes Préférences de Randonnée</legend>
+            <div class="groupe-formulaire">
+                <label>Types de terrains préférés :</label>
+                <div class="groupe-case-cocher">
+                    <input type="checkbox" id="terrain-foret" name="terrain_pref[]" value="foret" checked>
+                    <label for="terrain-foret">Forêt</label>
+                    <input type="checkbox" id="terrain-montagne" name="terrain_pref[]" value="montagne">
+                    <label for="terrain-montagne">Montagne</label>
+                    <input type="checkbox" id="terrain-bord-eau" name="terrain_pref[]" value="bord_eau" checked>
+                    <label for="terrain-bord-eau">Bord de l'eau</label>
+                    <input type="checkbox" id="terrain-campagne" name="terrain_pref[]" value="campagne">
+                    <label for="terrain-campagne">Campagne / Plaine</label>
                 </div>
             </div>
+            <div class="groupe-formulaire">
+                <label>Durée et distance préférées :</label>
+                <select id="duree-distance-pref" name="duree_distance_pref">
+                    <option value="courte">Courtes (jusqu'à 2h / 5km)</option>
+                    <option value="moyenne" selected>Moyennes (2-4h / 5-15km)</option>
+                    <option value="longue">Longues (plus de 4h / 15km+)</option>
+                </select>
+            </div>
+            <div class="groupe-formulaire">
+                <label>Critères importants pour mes randos :</label>
+                <div class="groupe-case-cocher">
+                    <input type="checkbox" id="critere-eau" name="critere_imp[]" value="points_eau" checked>
+                    <label for="critere-eau">Points d'eau réguliers</label>
+                    <input type="checkbox" id="critere-ombre" name="critere_imp[]" value="ombrage">
+                    <label for="critere-ombre">Zones d'ombre</label>
+                    <input type="checkbox" id="critere-faible-denivele" name="critere_imp[]" value="faible_denivele">
+                    <label for="critere-faible-denivele">Faible dénivelé</label>
+                    <input type="checkbox" id="critere-peu-frequente" name="critere_imp[]" value="peu_frequente">
+                    <label for="critere-peu-frequente">Peu fréquentée</label>
+                </div>
+            </div>
+        </fieldset>
 
-            <fieldset class="section-profil">
-                <legend><i class="fas fa-user-circle"></i> Mes Informations Générales</legend>
-                <div class="groupe-formulaire">
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" value="Juste" required>
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" value="Leblanc" required>
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" value="justeleblanc@exemple.com" required>
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="localisation">Localisation (Ville, Département, Région) :</label>
-                    <input type="text" id="localisation" name="localisation" value="MONTCUK">
-                    <p class="texte-info">Aide les autres membres à vous situer.</p>
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="bio">Ma Bio Canirando :</label>
-                    <textarea id="bio" name="bio" rows="4">Passionné de randonnée avec mon petit chien, PouicPouic. J'adore les sentiers boisés et les points d'eau et les cailloux !</textarea>
-                    <p class="texte-info">Parlez de vous et de votre passion pour le canirando !</p>
-                </div>
-            </fieldset>
+        <fieldset class="section-profil">
+            <legend> Sécurité et Mot de Passe</legend>
+            <p class="texte-info">Pour des raisons de sécurité, vous devez entrer votre mot de passe actuel pour toute modification.</p>
+            <div class="groupe-formulaire">
+                <label for="mot-de-passe-actuel">Mot de passe actuel :</label>
+                <input type="password" id="mot-de-passe-actuel" name="mot_de_passe_actuel" required>
+            </div>
+            <p class="texte-info">Laissez les champs "Nouveau mot de passe" vides si vous ne souhaitez pas le changer.</p>
+            <div class="groupe-formulaire">
+                <label for="nouveau-mot-de-passe">Nouveau mot de passe :</label>
+                <input type="password" id="nouveau-mot-de-passe" name="nouveau_mot_de_passe">
+            </div>
+            <div class="groupe-formulaire">
+                <label for="confirmer-mot-de-passe">Confirmer le nouveau mot de passe :</label>
+                <input type="password" id="confirmer-mot-de-passe" name="confirmer_mot_de_passe">
+            </div>
+        </fieldset>
 
-            <fieldset class="section-profil">
-                <legend><i class="fas fa-paw"></i> Mon Compagnon Canin</legend>
-                <div class="bloc-telechargement-avatar">
-                    <img src="images/image-pouicpouic.png" alt="Photo du chien" class="avatar-actuel" id="avatar-chien-actuel">
-                    <label for="avatar-chien" class="bouton-telechargement">
-                        <i class="fas fa-camera"></i> Changer la photo du chien
-                    </label>
-                    <input type="file" id="avatar-chien" name="avatar_chien" accept="image/*" style="display: none;">
-                    <p class="texte-info">Photo de votre compagnon (max 2MB, JPG/PNG)</p>
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="nom-chien">Nom du chien :</label>
-                    <input type="text" id="nom-chien" name="nom_chien" value="PouicPouic">
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="race-chien">Race du chien :</label>
-                    <input type="text" id="race-chien" name="race_chien" value="dogue">
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="age-chien">Âge du chien (années) :</label>
-                    <input type="number" id="age-chien" name="age_chien" min="0" max="20" value="4">
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="niveau-chien">Niveau d'énergie de mon chien en rando :</label>
-                    <select id="niveau-chien" name="niveau_chien">
-                        <option value="bas">Bas (petites balades)</option>
-                        <option value="moyen" selected>Moyen (randos modérées)</option>
-                        <option value="eleve">Élevé (longues et intenses randos)</option>
-                    </select>
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="description-chien">A propos de mon chien :</label>
-                    <textarea id="description-chien" name="description_chien" rows="3">Max est un chien très joueur et endurant, parfait pour les longues randonnées. Il adore l'eau !</textarea>
-                    <p class="texte-info">Quelques mots sur le caractère et les habitudes de votre chien en rando.</p>
-                </div>
-            </fieldset>
-
-            <fieldset class="section-profil">
-                <legend><i class="fas fa-route"></i> Mes Préférences de Randonnée</legend>
-                <div class="groupe-formulaire">
-                    <label>Types de terrains préférés :</label>
-                    <div class="groupe-case-cocher">
-                        <input type="checkbox" id="terrain-foret" name="terrain_pref[]" value="foret" checked>
-                        <label for="terrain-foret">Forêt</label>
-                        <input type="checkbox" id="terrain-montagne" name="terrain_pref[]" value="montagne">
-                        <label for="terrain-montagne">Montagne</label>
-                        <input type="checkbox" id="terrain-bord-eau" name="terrain_pref[]" value="bord_eau" checked>
-                        <label for="terrain-bord-eau">Bord de l'eau</label>
-                        <input type="checkbox" id="terrain-campagne" name="terrain_pref[]" value="campagne">
-                        <label for="terrain-campagne">Campagne / Plaine</label>
-                    </div>
-                </div>
-                <div class="groupe-formulaire">
-                    <label>Durée et distance préférées :</label>
-                    <select id="duree-distance-pref" name="duree_distance_pref">
-                        <option value="courte">Courtes (jusqu'à 2h / 5km)</option>
-                        <option value="moyenne" selected>Moyennes (2-4h / 5-15km)</option>
-                        <option value="longue">Longues (plus de 4h / 15km+)</option>
-                    </select>
-                </div>
-                <div class="groupe-formulaire">
-                    <label>Critères importants pour mes randos :</label>
-                    <div class="groupe-case-cocher">
-                        <input type="checkbox" id="critere-eau" name="critere_imp[]" value="points_eau" checked>
-                        <label for="critere-eau">Points d'eau réguliers</label>
-                        <input type="checkbox" id="critere-ombre" name="critere_imp[]" value="ombrage">
-                        <label for="critere-ombre">Zones d'ombre</label>
-                        <input type="checkbox" id="critere-faible-denivele" name="critere_imp[]" value="faible_denivele">
-                        <label for="critere-faible-denivele">Faible dénivelé</label>
-                        <input type="checkbox" id="critere-peu-frequente" name="critere_imp[]" value="peu_frequente">
-                        <label for="critere-peu-frequente">Peu fréquentée</label>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset class="section-profil">
-                <legend><i class="fas fa-lock"></i> Sécurité et Mot de Passe</legend>
-                <p class="texte-info">Pour des raisons de sécurité, vous devez entrer votre mot de passe actuel pour toute modification.</p>
-                <div class="groupe-formulaire">
-                    <label for="mot-de-passe-actuel">Mot de passe actuel :</label>
-                    <input type="password" id="mot-de-passe-actuel" name="mot_de_passe_actuel" required>
-                </div>
-                <p class="texte-info">Laissez les champs "Nouveau mot de passe" vides si vous ne souhaitez pas le changer.</p>
-                <div class="groupe-formulaire">
-                    <label for="nouveau-mot-de-passe">Nouveau mot de passe :</label>
-                    <input type="password" id="nouveau-mot-de-passe" name="nouveau_mot_de_passe">
-                </div>
-                <div class="groupe-formulaire">
-                    <label for="confirmer-mot-de-passe">Confirmer le nouveau mot de passe :</label>
-                    <input type="password" id="confirmer-mot-de-passe" name="confirmer_mot_de_passe">
-                </div>
-            </fieldset>
-
-            <button type="submit" class="bouton-enregistrer">Enregistrer toutes les modifications</button>
-        </form>
-    </main>
+        <button type="submit" class="bouton-enregistrer">Enregistrer toutes les modifications</button>
+    </form>
+</main>
 
 
 <?php include ('layout/footer.php'); ?>

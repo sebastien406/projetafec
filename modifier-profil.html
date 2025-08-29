@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8" />
     <title>Canirando - Mon Profil</title>
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="dist/css/theme.css">
     <link rel="shortcut icon" href="images/logo bulma.png">
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -37,42 +35,38 @@
             </ul>
         </nav>
     </header>
-
    <div class="fil-ariane">
         <ul>
-       <li><a href="index.html">Accueil</a></li> 
-        <li><a href="compte.html">Connection</a></li> 
-        <li><a href="utilisateur.html">Votre compte</a></li> 
-        <li><a href="modifier-profil.html">Modifier profil</a></li> 
+       <li><a href="index.html">Accueil</a></li>
+        <li><a href="compte.html">Connection</a></li>
+        <li><a href="utilisateur.html">Votre compte</a></li>
+        <li><a href="modifier-profil.html">Modifier profil</a></li>
     </ul>
     </div>
-
  <main class="page-profil">
         <section class="entete-profil">
             <h1>Modifier mon profil Canirando</h1>
             <p>Gérez vos informations personnelles, votre compagnon canin et vos préférences de randonnée.</p>
         </section>
-
         <form action="#" method="POST" class="formulaire-profil" enctype="multipart/form-data">
-            
+
             <div class="bloc-avatar-pseudo">
                 <div class="bloc-telechargement-avatar">
                     <img src="images/image-randonneur.png" alt="Avatar actuel" class="avatar-actuel" id="avatar-utilisateur-actuel">
                     <label for="avatar-utilisateur" class="bouton-telechargement">
-                        <i class="fas fa-camera"></i> Changer d'avatar
+                        Changer d'avatar
                     </label>
                     <input type="file" id="avatar-utilisateur" name="avatar_utilisateur" accept="image/*" style="display: none;">
                     <p class="texte-info">Photo de profil (max 2MB, JPG/PNG)</p>
                 </div>
                 <div class="groupe-formulaire pseudo-groupe">
-                    <label for="pseudo"><i class="fas fa-signature"></i> Mon Pseudo Canirando :</label>
+                    <label for="pseudo">Mon Pseudo Canirando :</label>
                     <input type="text" id="pseudo" name="pseudo" value="Juste le BG" required>
                     <p class="texte-info">C'est le nom qui apparaîtra sur le forum et vos avis.</p>
                 </div>
             </div>
-
             <fieldset class="section-profil">
-                <legend><i class="fas fa-user-circle"></i> Mes Informations Générales</legend>
+                <legend>Mes Informations Générales</legend>
                 <div class="groupe-formulaire">
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" value="Juste" required>
@@ -96,13 +90,12 @@
                     <p class="texte-info">Parlez de vous et de votre passion pour le canirando !</p>
                 </div>
             </fieldset>
-
             <fieldset class="section-profil">
-                <legend><i class="fas fa-paw"></i> Mon Compagnon Canin</legend>
+                <legend>Mon Compagnon Canin</legend>
                 <div class="bloc-telechargement-avatar">
                     <img src="images/image-pouicpouic.png" alt="Photo du chien" class="avatar-actuel" id="avatar-chien-actuel">
                     <label for="avatar-chien" class="bouton-telechargement">
-                        <i class="fas fa-camera"></i> Changer la photo du chien
+                        Changer la photo du chien
                     </label>
                     <input type="file" id="avatar-chien" name="avatar_chien" accept="image/*" style="display: none;">
                     <p class="texte-info">Photo de votre compagnon (max 2MB, JPG/PNG)</p>
@@ -133,9 +126,8 @@
                     <p class="texte-info">Quelques mots sur le caractère et les habitudes de votre chien en rando.</p>
                 </div>
             </fieldset>
-
             <fieldset class="section-profil">
-                <legend><i class="fas fa-route"></i> Mes Préférences de Randonnée</legend>
+                <legend>Mes Préférences de Randonnée</legend>
                 <div class="groupe-formulaire">
                     <label>Types de terrains préférés :</label>
                     <div class="groupe-case-cocher">
@@ -171,9 +163,8 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="section-profil">
-                <legend><i class="fas fa-lock"></i> Sécurité et Mot de Passe</legend>
+                <legend>Sécurité et Mot de Passe</legend>
                 <p class="texte-info">Pour des raisons de sécurité, vous devez entrer votre mot de passe actuel pour toute modification.</p>
                 <div class="groupe-formulaire">
                     <label for="mot-de-passe-actuel">Mot de passe actuel :</label>
@@ -189,14 +180,9 @@
                     <input type="password" id="confirmer-mot-de-passe" name="confirmer_mot_de_passe">
                 </div>
             </fieldset>
-
             <button type="submit" class="bouton-enregistrer">Enregistrer toutes les modifications</button>
         </form>
     </main>
-
-
-
-
     <footer>
         <div class="logo-footer">
             <a href=""><img src="images/logo bulma.png" alt="logo avec une tête de chien"></a>
