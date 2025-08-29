@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// bouton afficher plus\n\nfu
   \*********************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\ndocument.addEventListener('DOMContentLoaded', function () {\n  var openModalBtn = document.getElementById('openModalReviewBtn');\n  var reviewModal = document.getElementById('reviewModal');\n  var closeModalBtn = document.getElementById('closeReviewModalBtn');\n  if (openModalBtn) {\n    openModalBtn.addEventListener('click', function () {\n      if (reviewModal) {\n        reviewModal.classList.add('active');\n      }\n    });\n  }\n  if (closeModalBtn) {\n    closeModalBtn.addEventListener('click', function () {\n      if (reviewModal) {\n        reviewModal.classList.remove('active');\n      }\n    });\n  }\n  if (reviewModal) {\n    reviewModal.addEventListener('click', function (event) {\n      if (event.target === reviewModal) {\n        reviewModal.classList.remove('active');\n      }\n    });\n  }\n});\n\n//# sourceURL=webpack://Afec_Starter_kit/./assets/scripts/modal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   closeModal: () => (/* binding */ closeModal),\n/* harmony export */   openModal: () => (/* binding */ openModal),\n/* harmony export */   setupModal: () => (/* binding */ setupModal)\n/* harmony export */ });\n// document.addEventListener('DOMContentLoaded', function() {\n//     const openModalBtn = document.getElementById('openModalReviewBtn');\n//     const reviewModal = document.getElementById('reviewModal');\n//     const closeModalBtn = document.getElementById('closeReviewModalBtn');\n//     if (openModalBtn) {\n//         openModalBtn.addEventListener('click', function() {\n//             if (reviewModal) {\n//                 reviewModal.classList.add('active');\n//             }\n//         });\n//     }\n// if (closeModalBtn) {\n//         closeModalBtn.addEventListener('click', function() {\n//             if (reviewModal) {\n//                 reviewModal.classList.remove('active'); \n//             }\n//         });\n//     }\n//  if (reviewModal) {\n//         reviewModal.addEventListener('click', function(event) {\n//             if (event.target === reviewModal) { \n//                 reviewModal.classList.remove('active');\n//             }\n//         });\n//     }\n// });\n// Fonction pour ouvrir la modale\nfunction openModal(reviewModal) {\n  if (reviewModal) {\n    reviewModal.classList.add('active');\n  }\n}\n\n// Fonction pour fermer la modale\nfunction closeModal(reviewModal) {\n  if (reviewModal) {\n    reviewModal.classList.remove('active');\n  }\n}\n\n// Fonction pour configurer les écouteurs d'événements\nfunction setupModal() {\n  var openModalBtn = document.getElementById('openModalReviewBtn');\n  var reviewModal = document.getElementById('reviewModal');\n  var closeModalBtn = document.getElementById('closeReviewModalBtn');\n  if (openModalBtn) {\n    openModalBtn.addEventListener('click', function () {\n      return openModal(reviewModal);\n    });\n  }\n  if (closeModalBtn) {\n    closeModalBtn.addEventListener('click', function () {\n      return closeModal(reviewModal);\n    });\n  }\n  if (reviewModal) {\n    reviewModal.addEventListener('click', function (event) {\n      if (event.target === reviewModal) {\n        closeModal(reviewModal);\n      }\n    });\n  }\n}\n\n// Appeler setupModal quand le DOM est chargé\ndocument.addEventListener('DOMContentLoaded', setupModal);\n\n//# sourceURL=webpack://Afec_Starter_kit/./assets/scripts/modal.js?");
 
 /***/ }),
 
@@ -77,6 +77,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
